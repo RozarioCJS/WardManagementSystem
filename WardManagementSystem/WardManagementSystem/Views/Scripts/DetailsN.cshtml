@@ -1,0 +1,37 @@
+﻿@model WardManagementSystem.Data.Models.ScriptDetailsViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutScripts.cshtml";
+}
+@if (Model != null)
+{
+    <h1>Script Details</h1>
+    <section>
+        <strong><label>Script ID:</label></strong>
+        <span>@Model.ScriptID</span>
+        <strong><label>Doctor:</label></strong>
+        <span>@Model.FirstName</span>
+        <strong><label>Date:</label></strong>
+        <span>@Model.Date</span>
+    </section>
+    <hr />
+    <h3>Patient Name:</h3>
+    <p>@Model.PatientName</p>
+    <h3>Status:</h3>
+    <p>@Model.Status</p>
+    <h3>Medication:</h3>
+    <p>@Model.medicationName @Model.Dosage mg</p>
+    <hr />
+    <br />
+    <form asp-action="SendScript" method="post">
+        <input type="hidden" name="Id" value="@Model.ScriptID" />
+        <button class = "btn btn-outline-primary" id="ShowCustomAlert" type="submit">Send</button>
+    </form>
+    <div id="customAlert" style="display: none;">
+        <span class="closebtn">&times;</span>
+        <strong>Script Sent Successfully</strong>
+    </div>
+}
+else
+{
+    <h1>Model Failed to Load</h1>
+}

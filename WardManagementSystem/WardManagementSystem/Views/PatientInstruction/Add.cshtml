@@ -1,0 +1,53 @@
+﻿@model WardManagementSystem.Data.Models.Domain.Patient_Instruction
+@{
+    Layout = "~/Views/Shared/_LayoutDoctor.cshtml";
+}
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h1>Add</h1>
+<p>
+    <a asp-action="DisplayAll">View All Patient Instructions</a>
+</p>
+
+<h4>Patient_Instruction</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Add">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <!--<div class="form-group">
+                <label asp-for="PatientInstructionID" class="control-label"></label>
+                <input asp-for="PatientInstructionID" class="form-control" />
+                <span asp-validation-for="PatientInstructionID" class="text-danger"></span>
+            </div>  -->
+            <div class="form-group">
+                <label asp-for="PatientFileID" class="control-label"></label>
+                <input asp-for="PatientFileID" class="form-control" />
+                <span asp-validation-for="PatientFileID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoctorID" class="control-label"></label>
+                <input asp-for="DoctorID" class="form-control" />
+                <span asp-validation-for="DoctorID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Instruction" class="control-label"></label>
+                <input asp-for="Instruction" class="form-control" />
+                <span asp-validation-for="Instruction" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

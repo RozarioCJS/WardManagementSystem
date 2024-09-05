@@ -1,0 +1,58 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.WardConsumableStockViewModel>
+@{
+    Layout = "~/Views/Shared/_layoutConsumables.cshtml";
+}
+<h1>Consumables for @Model.First().WardName</h1>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Consumable Name</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ConsumableName</td>
+                <td>@item.Quantity</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+<!-- Leave Purchasing Consumables, try first update-->
+
+<button class="btn btn-outline-primary" id="ShowOrderForm">Update Stock</button>
+
+<div id="order-form" style="display: none;">
+    <form asp-action="UpdateStock" method="post">
+        @foreach (var item in Model)
+        {
+            <input type="hidden" name="ids" value="@item.WardConsumableStockID" />
+        }
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Consumable Name</th>
+                    <th>Desired Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ConsumableName</td>
+                        <td>
+                            <input type="hidden" name="@item.WardConsumableStockID" value="@item.WardConsumableStockID" />
+                            <input name="@item.Quantity" value="@item.Quantity" />
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+        <button class="btn btn-outline-danger" id="ShowCustomAlert" type="submit">Send Order</button>
+    </form>
+</div>

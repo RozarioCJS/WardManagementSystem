@@ -1,0 +1,33 @@
+﻿@model WardManagementSystem.Data.Models.ScriptStatusCountViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutScripts.cshtml";
+}
+<h2>Script Management</h2>
+<hr />
+<div class="container">
+    <div class="card">
+        <div class="clickable-row" data-href="@Url.Action("DisplayScriptListN", "Scripts", new { Status = 'N' })">
+            <div class="card-title">
+                <h2>New scripts</h2>
+                <h3>@Model.NewCount</h3>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-title clickable-row" data-href="@Url.Action("DisplayScriptListP", "Scripts", new { Status = 'P' })">
+            <h2>Processed scripts</h2>
+            <h3>@Model.ProcessedCount</h3>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-title clickable-row" data-href="@Url.Action("DisplayScriptListR", "Scripts", new { Status = 'R' })">
+            <div class="card-title">
+                <h2>Received scripts</h2>
+                <h3>@Model.ReceivedCount</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+    <h6>Back</h6>
+</a>

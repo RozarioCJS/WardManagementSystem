@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Patient Care Subsystem UI - Manage nurse information and more." />
+    <meta name="keywords" content="patient care, nurse management, healthcare" />
+    <title>@ViewData["Title"] - PatientCareSubsystem.UI</title>
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PatientCareSubsystem.UI.styles.css" asp-append-version="true" />
+    <style>
+
+        <!--This is the styling for the navbar and it is shared amoungst all the landing page views-->
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .custom-bg{
+            background: #1A1727;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .logo-title{
+            width: 100px;
+            font-size: 10px;
+        }
+
+        .navbar-container {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1A1727;
+        }
+
+        .navbar-ul{ 
+            display: flex;
+            margin-right: 50px;
+            gap: 40px;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            color: #ffffff;
+
+        }
+
+        .navbar-ul li a{
+            text-decoration: none;
+            color: #fff;       
+            font-size: 12px;
+            font-family: "Libre Franklin", sans-serif;
+            letter-spacing: 1px;
+            padding: 3px; /* Set padding initially to avoid jump */
+            transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+
+        }
+
+        .navbar-ul li a:hover {
+            color: #e3dbff; /* Gold color when hovered */
+            background-color: rgba(255, 255, 255, 0.1); /* Light background change on hover */
+            /* No change to padding or border */
+            border-radius: 5px;
+        }
+        
+
+        .text-white {
+            color: white;
+            
+        }
+        
+       
+       
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light custom-bg">
+            <div class="navbar-container">
+                <div class="logo">
+                    <img src="/peaky-blinders-logo.png" height="60px"  />
+                    <h6 class="logo-title text-white logo" >Peaky Blinders Medical Center</h6>
+                </div>
+                <ul class="navbar-ul">
+                    <li class=""><a href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li class=""><a href="@Url.Action("About", "LandingPage")">About Us</a></li>
+                    <li class=""><a href="@Url.Action("Services", "LandingPage")">Services</a></li>
+                    <li class=""><a href="@Url.Action("Doctors", "LandingPage")">Doctors</a></li>
+                    <li class=""><a href="@Url.Action("News", "LandingPage")">News</a></li>
+                    <li class=""><a href="@Url.Action("Contact", "LandingPage")">Contact</a></li
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div class="main-content">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - PatientCareSubsystem.UI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js" defer></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="~/js/site.js" defer></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js" defer></script>
+    <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" defer></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

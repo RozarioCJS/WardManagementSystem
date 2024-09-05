@@ -1,0 +1,55 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Patient_Instruction>
+@{
+    Layout = "~/Views/Shared/_LayoutDoctor.cshtml";
+}
+@{
+    ViewData["Title"] = "DisplayAll";
+}
+
+<h1>DisplayAll</h1>
+
+<p>
+    <a asp-action="Add">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientInstructionID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientFileID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DoctorID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Instruction)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientInstructionID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientFileID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoctorID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Instruction)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

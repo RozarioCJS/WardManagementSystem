@@ -1,0 +1,29 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Ward>
+@{
+    Layout = "~/Views/Shared/_layoutConsumables.cshtml";
+}
+<h1>Dashboard</h1>
+<hr />
+<div class="container">
+    <div class="card">
+        <div class="card-title  clickable-row" data-href="@Url.Action("DetailsA", "Consumables", new { Id = 1 })">
+            <h2>Ward A</h2>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title  clickable-row" data-href="@Url.Action("DetailsB", "Consumables", new { Id = 2 })">
+            <h2>Ward B</h2>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-title  clickable-row" data-href="@Url.Action("DetailsC", "Consumables", new { Id = 3 })">
+            <h2>Ward C</h2>
+        </div>
+    </div>
+</div>
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+    <h6>Back</h6>
+</a>

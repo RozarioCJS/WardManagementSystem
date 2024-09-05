@@ -1,0 +1,30 @@
+﻿@model WardManagementSystem.Data.Models.Domain.Nurse
+
+@{
+    ViewData["Title"] = "Nurse Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="card">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">ID</dt>
+            <dd class="col-sm-9">@Model.NurseId</dd>
+
+            <dt class="col-sm-3">First Name</dt>
+            <dd class="col-sm-9">@Model.FirstName</dd>
+
+            <dt class="col-sm-3">Last Name</dt>
+            <dd class="col-sm-9">@Model.LastName</dd>
+
+            <dt class="col-sm-3">Phone Number</dt>
+            <dd class="col-sm-9">@Model.PhoneNumber</dd>
+
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">@Model.Email</dd>
+        </dl>
+        <a asp-action="Edit" asp-route-id="@Model.NurseId" class="btn btn-warning">Edit</a>
+        <a asp-action="DisplayAll" class="btn btn-primary">Back to List</a>
+    </div>
+</div>

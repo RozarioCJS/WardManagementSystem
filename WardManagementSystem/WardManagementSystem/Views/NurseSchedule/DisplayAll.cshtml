@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.NurseSchedule>
+
+@{
+    ViewData["Title"] = "Nurse Schedules";
+}
+
+<h2>Nurse Schedules</h2>
+
+<p>
+    <a asp-action="Add" class="btn btn-primary">Add New Schedule</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nurse ID</th>
+            <th>Shift</th>
+            <th>Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NurseId</td>
+                <td>@item.ShiftType</td>
+                <td>@item.Date.ToString("yyyy-MM-dd")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

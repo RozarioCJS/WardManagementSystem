@@ -1,0 +1,30 @@
+﻿@model WardManagementSystem.Data.Models.Domain.NurseSchedule
+
+@{
+    ViewData["Title"] = "Edit Nurse Schedule";
+}
+
+<h2>Edit Nurse Schedule</h2>
+
+<form asp-action="Edit">
+    <div class="form-group">
+        <label asp-for="NurseId" class="control-label"></label>
+        <input asp-for="NurseId" class="form-control" />
+        <span asp-validation-for="NurseId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ShiftType" class="control-label"></label>
+        <input asp-for="ShiftType" class="form-control" />
+        <span asp-validation-for="ShiftType" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Date" class="control-label"></label>
+        <input asp-for="Date" class="form-control" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+<a asp-action="DisplayAll">Back to List</a>

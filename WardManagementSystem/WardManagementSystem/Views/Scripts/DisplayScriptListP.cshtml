@@ -1,0 +1,28 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.ScriptListViewModel>
+@{
+    Layout = "~/Views/Shared/_LayoutScripts.cshtml";
+}
+
+<h2>Scripts</h2>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Doctor</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="clickable-row" data-href="@Url.Action("DetailsP", "Scripts", new { id = item.ScriptID })">
+                <td>@item.ScriptID</td>
+                <td>Dr. @item.FirstName</td>
+                <td>@item.Date</td>
+                <td>@item.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

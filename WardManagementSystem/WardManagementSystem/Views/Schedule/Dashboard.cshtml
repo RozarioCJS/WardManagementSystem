@@ -1,0 +1,26 @@
+﻿@model WardManagementSystem.Data.Models.ScheduleCountViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutDoctor.cshtml";
+}
+<h2>DASHBOARD</h2>
+<hr />
+<div class="container">
+    <div class="card">
+        <div class="clickable-row" data-href="@Url.Action("DisplayAll", "Schedule")">
+            <div class="card-title">
+                <h2>Visits Scheduled Today</h2>
+                <h3>@Model.TodayCount</h3>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-title clickable-row" data-href="@Url.Action("DisplayAll", "Schedule")">
+            <h2>Total Visits Scheduled</h2>
+            <h3>@Model.TotalCount</h3>
+        </div>
+    </div>
+   
+</div>
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+    <h6>Back</h6>
+</a>

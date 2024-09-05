@@ -1,0 +1,42 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Nurse>
+
+@{
+    ViewData["Title"] = "Nurses";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var nurse in Model)
+        {
+            <tr>
+                <td>@nurse.NurseId</td>
+                <td>@nurse.FirstName</td>
+                <td>@nurse.LastName</td>
+                <td>@nurse.PhoneNumber</td>
+                <td>@nurse.Email</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@nurse.NurseId" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="GetById" asp-route-id="@nurse.NurseId" class="btn btn-info btn-sm">View</a>
+                    <a asp-action="Delete" asp-route-id="@nurse.NurseId" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Add" class="btn btn-primary">Add New Nurse</a>
+<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+    <h6>Back</h6>
+</a>
