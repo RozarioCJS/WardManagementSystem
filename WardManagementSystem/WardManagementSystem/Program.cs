@@ -1,4 +1,5 @@
 using WardManagementSystem.Data.DataAccess;
+using WardManagementSystem.Data.Models.Services;
 using WardManagementSystem.Data.Repository;
 using WardManagementSystem.Data.Respository;
 
@@ -10,6 +11,7 @@ builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
 //Rozario's Services
 builder.Services.AddTransient<IScriptDetailsRepo, ScriptDetailsRepo>();
 builder.Services.AddTransient<IWardConsumableRepository, WardConsumableRepository>();
+builder.Services.AddScoped<PDFService>();
 //Ryan's Services
 builder.Services.AddTransient<IPatientInstructionRepo, PatientInstructionRepo>();
 builder.Services.AddTransient<IScriptRepo, ScriptRepo>();

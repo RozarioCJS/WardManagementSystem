@@ -1,0 +1,13 @@
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\bin\Release\net8.0\WardManagementSystem.Data.deps.json
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\bin\Release\net8.0\WardManagementSystem.Data.dll
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\bin\Release\net8.0\WardManagementSystem.Data.pdb
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Release\net8.0\WardManagementSystem.Data.csproj.AssemblyReference.cache
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Release\net8.0\WardManagementSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Release\net8.0\WardManagementSystem.Data.AssemblyInfoInputs.cache
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Release\net8.0\WardManagementSystem.Data.AssemblyInfo.cs
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Release\net8.0\WardManagementSystem.Data.csproj.CoreCompileInputs.cache
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Release\net8.0\WardManagementSystem.Data.sourcelink.json
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Release\net8.0\WardManagementSystem.Data.dll
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Release\net8.0\refint\WardManagementSystem.Data.dll
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Release\net8.0\WardManagementSystem.Data.pdb
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Release\net8.0\ref\WardManagementSystem.Data.dll

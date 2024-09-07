@@ -18,7 +18,7 @@ namespace WardManagementSystem.Data.Repository
         }
         public async Task<IEnumerable<Ward>> GetAllAsync()
         {
-            return await _db.GetData<Ward, dynamic>("spGetWards", new { });
+            return await _db.GetData<Ward, dynamic>("sp_GetWards", new { });
         }
         public async Task<IEnumerable<WardConsumableStockViewModel>> GetByIdAsync(int Id)
         {

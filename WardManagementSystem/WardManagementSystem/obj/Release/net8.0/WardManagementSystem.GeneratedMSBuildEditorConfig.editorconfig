@@ -1,0 +1,207 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WardManagementSystem
+build_property.RootNamespace = WardManagementSystem
+build_property.ProjectDir = C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Consumables/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uc3VtYWJsZXNcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Consumables/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uc3VtYWJsZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/LandingPage/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/LandingPage/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcQ29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/LandingPage/Doctors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcRG9jdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/LandingPage/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/LandingPage/News.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcTmV3cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/LandingPage/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1BhZ2VcU2VydmljZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/NurseSchedule/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VTY2hlZHVsZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/NurseSchedule/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VTY2hlZHVsZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/NurseSchedule/DisplayAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VTY2hlZHVsZVxEaXNwbGF5QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/NurseSchedule/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VTY2hlZHVsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Nurse/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Nurse/DisplayAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcRGlzcGxheUFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Nurse/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Nurse/GetById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnVyc2VcR2V0QnlJZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/PatientInstruction/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEluc3RydWN0aW9uXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/PatientInstruction/DisplayAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEluc3RydWN0aW9uXERpc3BsYXlBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Schedule/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Schedule/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Schedule/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Schedule/DisplayAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVcRGlzcGxheUFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Schedule/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NoZWR1bGVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Scripts/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyaXB0c1xEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Scripts/DetailsN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyaXB0c1xEZXRhaWxzTi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Scripts/DetailsP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyaXB0c1xEZXRhaWxzUC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Scripts/DisplayScriptListN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyaXB0c1xEaXNwbGF5U2NyaXB0TGlzdE4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Scripts/DisplayScriptListP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyaXB0c1xEaXNwbGF5U2NyaXB0TGlzdFAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Scripts/DisplayScriptListR.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyaXB0c1xEaXNwbGF5U2NyaXB0TGlzdFIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Script/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyaXB0XEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Script/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyaXB0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Script/DisplayAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyaXB0XERpc3BsYXlBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Script/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NyaXB0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Shared/_layoutConsumables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sYXlvdXRDb25zdW1hYmxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Shared/_LayoutDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXREb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Shared/_LayoutScripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRTY3JpcHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/SisterNurse/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVyTnVyc2VcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/SisterNurse/DisplayAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVyTnVyc2VcRGlzcGxheUFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/SisterNurse/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVyTnVyc2VcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/SisterNurse/GetById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lzdGVyTnVyc2VcR2V0QnlJZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-zlf51uzdv1

@@ -20,7 +20,7 @@
             <tr class="clickable-row" data-href="@Url.Action("DetailsP", "Scripts", new { id = item.ScriptID })">
                 <td>@item.ScriptID</td>
                 <td>Dr. @item.FirstName</td>
-                <td>@item.Date</td>
+                <td>@item.Date.ToString("yyy-MM-dd")</td>
                 <td>@item.Status</td>
             </tr>
         }

@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\sodie\Desktop\Publish</_PublishTargetUrl>
+    <History>True|2024-09-06T11:45:27.6025464Z||;True|2024-09-06T13:44:33.7328376+02:00||;True|2024-09-06T13:38:19.7377545+02:00||;True|2024-09-06T13:33:55.3125408+02:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="conn">
+      <Value>Data Source=soit-sql.mandela.ac.za%3bInitial Catalog=GRP-03-35%3bUser ID=GRP-03-35%3bPassword=grp-03-35-2024#%3bTrust Server Certificate=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <File Include="Controllers/AccountController.cs">
+      <publishTime>09/05/2024 19:53:47</publishTime>
+    </File>
+    <File Include="Controllers/ConsumablesController.cs">
+      <publishTime>09/05/2024 19:54:01</publishTime>
+    </File>
+    <File Include="Controllers/HomeController.cs">
+      <publishTime>09/05/2024 19:54:06</publishTime>
+    </File>
+    <File Include="Controllers/LandingPageController.cs">
+      <publishTime>09/05/2024 19:54:12</publishTime>
+    </File>
+    <File Include="Controllers/NurseController.cs">
+      <publishTime>09/05/2024 19:54:29</publishTime>
+    </File>
+    <File Include="Controllers/NurseScheduleController.cs">
+      <publishTime>09/05/2024 19:54:44</publishTime>
+    </File>
+    <File Include="Controllers/PatientInstructionController.cs">
+      <publishTime>09/05/2024 19:55:04</publishTime>
+    </File>
+    <File Include="Controllers/PatientsController.cs">
+      <publishTime>09/05/2024 19:55:03</publishTime>
+    </File>
+    <File Include="Controllers/ScheduleController.cs">
+      <publishTime>09/05/2024 19:55:20</publishTime>
+    </File>
+    <File Include="Controllers/ScriptController.cs">
+      <publishTime>09/05/2024 19:55:30</publishTime>
+    </File>
+    <File Include="Controllers/ScriptsController.cs">
+      <publishTime>09/05/2024 20:04:45</publishTime>
+    </File>
+    <File Include="Controllers/SisterNurseController.cs">
+      <publishTime>09/05/2024 19:55:56</publishTime>
+    </File>
+    <File Include="Models/ErrorViewModel.cs">
+      <publishTime>09/05/2024 19:23:36</publishTime>
+    </File>
+    <File Include="Views/Consumables/Dashboard.cshtml">
+      <publishTime>09/05/2024 20:04:29</publishTime>
+    </File>
+    <File Include="Views/Consumables/Details.cshtml">
+      <publishTime>09/05/2024 19:58:33</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>09/05/2024 18:42:16</publishTime>
+    </File>
+    <File Include="Views/Home/Privacy.cshtml">
+      <publishTime>09/05/2024 13:42:01</publishTime>
+    </File>
+    <File Include="Views/LandingPage/AboutUs.cshtml">
+      <publishTime>09/05/2024 15:30:28</publishTime>
+    </File>
+    <File Include="Views/LandingPage/Contact.cshtml">
+      <publishTime>09/05/2024 15:30:28</publishTime>
+    </File>
+    <File Include="Views/LandingPage/Doctors.cshtml">
+      <publishTime>09/05/2024 15:30:28</publishTime>
+    </File>
+    <File Include="Views/LandingPage/Home.cshtml">
+      <publishTime>09/05/2024 15:30:28</publishTime>
+    </File>
+    <File Include="Views/LandingPage/News.cshtml">
+      <publishTime>09/05/2024 15:30:28</publishTime>
+    </File>
+    <File Include="Views/LandingPage/Services.cshtml">
+      <publishTime>09/05/2024 15:30:28</publishTime>
+    </File>
+    <File Include="Views/Nurse/Add.cshtml">
+      <publishTime>09/05/2024 19:59:45</publishTime>
+    </File>
+    <File Include="Views/Nurse/DisplayAll.cshtml">
+      <publishTime>09/05/2024 20:00:06</publishTime>
+    </File>
+    <File Include="Views/Nurse/Edit.cshtml">
+      <publishTime>09/05/2024 20:00:18</publishTime>
+    </File>
+    <File Include="Views/Nurse/GetById.cshtml">
+      <publishTime>09/05/2024 20:00:25</publishTime>
+    </File>
+    <File Include="Views/NurseSchedule/Add.cshtml">
+      <publishTime>09/05/2024 20:00:36</publishTime>
+    </File>
+    <File Include="Views/NurseSchedule/Delete.cshtml">
+      <publishTime>09/05/2024 20:00:43</publishTime>
+    </File>
+    <File Include="Views/NurseSchedule/DisplayAll.cshtml">
+      <publishTime>09/05/2024 20:00:53</publishTime>
+    </File>
+    <File Include="Views/NurseSchedule/Edit.cshtml">
+      <publishTime>09/05/2024 20:01:00</publishTime>
+    </File>
+    <File Include="Views/PatientInstruction/Add.cshtml">
+      <publishTime>09/05/2024 20:01:16</publishTime>
+    </File>
+    <File Include="Views/PatientInstruction/DisplayAll.cshtml">
+      <publishTime>09/05/2024 20:01:22</publishTime>
+    </File>
+    <File Include="Views/Schedule/Add.cshtml">
+      <publishTime>09/05/2024 20:01:28</publishTime>
+    </File>
+    <File Include="Views/Schedule/Dashboard.cshtml">
+      <publishTime>09/05/2024 20:01:38</publishTime>
+    </File>
+    <File Include="Views/Schedule/Delete.cshtml">
+      <publishTime>09/05/2024 20:01:42</publishTime>
+    </File>
+    <File Include="Views/Schedule/DisplayAll.cshtml">
+      <publishTime>09/05/2024 20:01:48</publishTime>
+    </File>
+    <File Include="Views/Schedule/Edit.cshtml">
+      <publishTime>09/05/2024 20:01:52</publishTime>
+    </File>
+    <File Include="Views/Script/Add.cshtml">
+      <publishTime>09/05/2024 20:05:58</publishTime>
+    </File>
+    <File Include="Views/Script/Delete.cshtml">
+      <publishTime>09/05/2024 20:06:01</publishTime>
+    </File>
+    <File Include="Views/Script/DisplayAll.cshtml">
+      <publishTime>09/05/2024 20:06:04</publishTime>
+    </File>
+    <File Include="Views/Script/Edit.cshtml">
+      <publishTime>09/05/2024 20:06:08</publishTime>
+    </File>
+    <File Include="Views/Scripts/Dashboard.cshtml">
+      <publishTime>09/05/2024 20:05:08</publishTime>
+    </File>
+    <File Include="Views/Scripts/DetailsN.cshtml">
+      <publishTime>09/05/2024 20:05:16</publishTime>
+    </File>
+    <File Include="Views/Scripts/DetailsP.cshtml">
+      <publishTime>09/05/2024 20:05:22</publishTime>
+    </File>
+    <File Include="Views/Scripts/DisplayScriptListN.cshtml">
+      <publishTime>09/05/2024 20:05:28</publishTime>
+    </File>
+    <File Include="Views/Scripts/DisplayScriptListP.cshtml">
+      <publishTime>09/05/2024 20:05:35</publishTime>
+    </File>
+    <File Include="Views/Scripts/DisplayScriptListR.cshtml">
+      <publishTime>09/05/2024 20:05:39</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>09/05/2024 20:03:22</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>09/05/2024 18:53:42</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml.css">
+      <publishTime>09/05/2024 13:42:01</publishTime>
+    </File>
+    <File Include="Views/Shared/_layoutConsumables.cshtml">
+      <publishTime>09/05/2024 13:42:01</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutDoctor.cshtml">
+      <publishTime>09/05/2024 20:11:24</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutScripts.cshtml">
+      <publishTime>09/05/2024 14:47:06</publishTime>
+    </File>
+    <File Include="Views/Shared/_ValidationScriptsPartial.cshtml">
+      <publishTime>09/05/2024 13:42:01</publishTime>
+    </File>
+    <File Include="Views/SisterNurse/Add.cshtml">
+      <publishTime>09/05/2024 20:06:24</publishTime>
+    </File>
+    <File Include="Views/SisterNurse/DisplayAll.cshtml">
+      <publishTime>09/05/2024 20:06:27</publishTime>
+    </File>
+    <File Include="Views/SisterNurse/Edit.cshtml">
+      <publishTime>09/05/2024 20:06:31</publishTime>
+    </File>
+    <File Include="Views/SisterNurse/GetById.cshtml">
+      <publishTime>09/05/2024 20:06:35</publishTime>
+    </File>
+    <File Include="Views/_ViewImports.cshtml">
+      <publishTime>09/05/2024 20:03:10</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>09/05/2024 13:42:01</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>09/05/2024 13:42:01</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/hero-background.jpg">
+      <publishTime>09/05/2024 15:30:29</publishTime>
+    </File>
+    <File Include="wwwroot/home-page-doctors-image.jpg">
+      <publishTime>09/05/2024 15:30:29</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>09/05/2024 13:42:01</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/LICENSE.md">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.js">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.map">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/LICENSE.txt">
+      <publishTime>09/05/2024 19:23:33</publishTime>
+    </File>
+    <File Include="wwwroot/peaky-blinders-logo.png">
+      <publishTime>09/05/2024 15:30:29</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

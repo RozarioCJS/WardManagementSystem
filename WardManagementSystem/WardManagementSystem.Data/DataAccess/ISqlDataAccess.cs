@@ -8,7 +8,7 @@ namespace WardManagementSystem.Data.DataAccess
 {
     public interface ISqlDataAccess
     {
-        Task<IEnumerable<T>> GetData<T, P>(string spName, P paramters, string connectionId = "conn");
-        Task SaveData<P>(string spName, P paramters, string connectionId = "conn");
+        Task<IEnumerable<T>> GetData<T, P>(string spName, P paramters, string connectionId = "Testconn");
+        Task SaveData<P>(string spName, P paramters, string connectionId = "Testconn");
     }
 }

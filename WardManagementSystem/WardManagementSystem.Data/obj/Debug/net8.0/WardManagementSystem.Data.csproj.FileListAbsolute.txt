@@ -22,3 +22,4 @@ C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementS
 C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\refint\WardManagementSystem.Data.dll
 C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.pdb
 C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\ref\WardManagementSystem.Data.dll
+C:\Users\sodie\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.sourcelink.json

@@ -2,15 +2,24 @@
 using WardManagementSystem.Data.Models.Domain;
 using WardManagementSystem.Data.Models;
 using WardManagementSystem.Data.Repository;
+using WardManagementSystem.Data.Models.Services;
 
 namespace WardManagementSystem.Controllers
 {
     public class ScriptsController : Controller
     {
         private readonly IScriptDetailsRepo _SDRepo;
-        public ScriptsController(IScriptDetailsRepo sDRepo)
+        private readonly PDFService _pdfservice;
+        public ScriptsController(IScriptDetailsRepo sDRepo, PDFService pdfservice)
         {
             _SDRepo = sDRepo;
+            _pdfservice = pdfservice;
+        }
+        public async Task<IActionResult> PrintScript(int id)
+        {
+            ScriptDetailsViewModel scriptDetailsViewModel = await _SDRepo.GetByIdAsync(id);
+            byte[] pdfBytes = _pdfservice.GeneratePDF(scriptDetailsViewModel);
+            return File(pdfBytes, "application/pdf", "Prescription.pdf");
         }
         public async Task<IActionResult> Dashboard()
         {
