@@ -3,6 +3,7 @@
     Layout = "~/Views/Shared/_LayoutScripts.cshtml";
 }
 @if (Model != null)
+
 {
     <h1>Script Details</h1>
     <section>
@@ -22,16 +23,21 @@
     <p>@Model.medicationName @Model.Dosage mg</p>
     <hr />
     <br />
-    <form asp-action="SendScript" method="post">
-        <input type="hidden" name="Id" value="@Model.ScriptID" />
-        <button class = "btn btn-outline-primary" id="ShowCustomAlert" type="submit">Send</button>
-    </form>
+    <div class="button-container">
+        <form asp-action="SendScript" method="post">
+            <input type="hidden" name="Id" value="@Model.ScriptID" />
+            <button class="btn btn-outline-primary" id="ShowCustomAlert" type="submit">Send</button>
+        </form>
+    </div>
+
     <div id="customAlert" style="display: none;">
         <span class="closebtn">&times;</span>
         <strong>Script Sent Successfully</strong>
     </div>
 }
+
 else
+
 {
     <h1>Model Failed to Load</h1>
 }

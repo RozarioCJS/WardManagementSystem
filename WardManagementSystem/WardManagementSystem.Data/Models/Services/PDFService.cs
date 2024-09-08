@@ -27,9 +27,6 @@ namespace WardManagementSystem.Data.Models.Services
                 // Navigate to the wwwroot folder
                 string wwwrootPath = Path.Combine(baseDirectory, "wwwroot");
 
-                // Debugging: Output the full path to verify it's correct
-                Console.WriteLine($"wwwroot path: {wwwrootPath}");
-
                 // Add logo
                 string logoPath = Path.Combine(wwwrootPath, "peaky-blinders-logo.png");
 

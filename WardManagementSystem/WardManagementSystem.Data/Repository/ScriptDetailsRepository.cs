@@ -33,6 +33,23 @@ namespace WardManagementSystem.Data.Repository
                 return false;
             }
         }
+        public async Task<bool> ReceivedScriptsAsync(Script script)
+        {
+            try
+            {
+                var parameters = new
+                {
+                    Id = script.ScriptID,
+                };
+                await _db.SaveData("sp_ReceivedScripts", parameters);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Update failed for ScriptDetailID: " + script.ScriptID + " Error: " + ex.Message);
+                return false;
+            }
+        }
         public async Task<ScriptDetailsViewModel> GetByIdAsync(int id)
         {
             IEnumerable<ScriptDetailsViewModel> result = await _db.GetData<ScriptDetailsViewModel, dynamic>("DisplayNewScriptDetail", new { ID = id });

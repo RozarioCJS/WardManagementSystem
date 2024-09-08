@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r0/Qd3Y17DNtlXP/PWor4zfv1nwnZiXei7K59fSbbuc=",
+  "Hash": "L6Z3fKhHF6aprzoAeqEv3Lc69AoSMQmj4bfwnRZ7b4w=",
   "Source": "WardManagementSystem",
   "BasePath": "_content/WardManagementSystem",
   "Mode": "Default",
@@ -1250,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\peaky-blinders-logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\snake_icon.png",
+      "SourceId": "WardManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "BasePath": "_content/WardManagementSystem",
+      "RelativePath": "snake_icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\snake_icon.png"
     }
   ]
 }

@@ -94,5 +94,30 @@ namespace WardManagementSystem.Controllers
             return RedirectToAction("Dashboard");
         }
 
+        // Marks scripts as Received (Changes script status from P to )
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ReceivedScripts(int Id)
+        {
+            try
+            {
+                var scriptDetails = new Script { ScriptID = Id };
+                bool updateRecord = await _SDRepo.ReceivedScriptsAsync(scriptDetails);
+                if (updateRecord)
+                {
+                    TempData["msg"] = "Successfully Updated";
+                }
+                else
+                {
+                    TempData["msg"] = "Successfully failed";
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Successfully failed";
+            }
+            return RedirectToAction("Dashboard");
+        }
+
     }
 }

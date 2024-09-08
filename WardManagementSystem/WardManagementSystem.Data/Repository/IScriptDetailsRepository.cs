@@ -11,6 +11,7 @@ namespace WardManagementSystem.Data.Repository
     public interface IScriptDetailsRepo
     {
         Task<bool> UpdateAsync(Script Script);
+        Task<bool> ReceivedScriptsAsync(Script Script);
         Task<ScriptDetailsViewModel> GetByIdAsync(int id);
         Task<IEnumerable<ScriptListViewModel>> GetAllAsync(char status);
     }

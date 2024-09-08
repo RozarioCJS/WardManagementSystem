@@ -257,6 +257,10 @@
       "PackagePath": "staticwebassets\\peaky-blinders-logo.png"
     },
     {
+      "Id": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\snake_icon.png",
+      "PackagePath": "staticwebassets\\snake_icon.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WardManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

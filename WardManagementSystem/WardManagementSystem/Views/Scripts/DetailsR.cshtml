@@ -3,7 +3,6 @@
     Layout = "~/Views/Shared/_LayoutScripts.cshtml";
 }
 @if (Model != null)
-
 {
     <h1>Script Details</h1>
     <section>
@@ -25,18 +24,11 @@
     <br />
 
     <div class="button-container">
-        <button class="btn btn-outline-primary" onclick="window.open('@Url.Action("PrintScript", "Scripts", new { id = Model.ScriptID })', '_blank')">Print</button>
-
-        <form asp-action="ReceivedScripts" method="post" style="display: inline-block;">
-            <input type="hidden" name="Id" value="@Model.ScriptID" />
-            <button class="btn btn-outline-primary" id="ShowCustomAlert" type="submit">Received</button>
-        </form>
+        <button class="btn btn-outline-primary" onclick="window.open('@Url.Action("PrintScript", "Scripts", new { id = Model.ScriptID })')">Print</button>
     </div>
 
 }
-
 else
-
 {
     <h1>Model Failed to Load</h1>
 }
