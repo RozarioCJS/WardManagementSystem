@@ -4,7 +4,17 @@
 }
 
 <h2>Scripts</h2>
-
+<div class="card-body">
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="DisplayScriptListP" method="get">
+                <label for="SearchDate">Search by Date:</label>
+                <input type="date" class="form-control" id="SearchDate" name="searchDate" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+                <button type="submit" class="btn btn-outline-primary">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
 <table class="table table-hover">
     <thead>
         <tr>
@@ -16,6 +26,7 @@
     </thead>
     <tbody>
         @foreach (var item in Model)
+
         {
             <tr class="clickable-row" data-href="@Url.Action("DetailsP", "Scripts", new { id = item.ScriptID })">
                 <td>@item.ScriptID</td>

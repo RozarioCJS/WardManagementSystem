@@ -9,7 +9,9 @@ namespace WardManagementSystem.Data.Models
     public class WardConsumableStockViewModel
     {
         public int WardConsumableStockID { get; set; }
+        public int WardID { get; set; }
         public string WardName { get; set; }
+        public int ConsumableID { get; set; }
         public string ConsumableName { get; set; }
         public int Quantity { get; set; }
     }

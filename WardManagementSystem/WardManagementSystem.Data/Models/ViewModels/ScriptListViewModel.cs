@@ -12,5 +12,6 @@ namespace WardManagementSystem.Data.Models
         public string FirstName { get; set; }
         public DateTime Date { get; set; }
         public char Status { get; set; }
+        public DateTime SearchDate { get; set; }
     }
 }

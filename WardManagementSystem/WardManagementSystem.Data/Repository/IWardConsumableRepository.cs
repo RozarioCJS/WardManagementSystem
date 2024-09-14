@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WardManagementSystem.Data.Models.Domain;
+using WardManagementSystem.Data.Models.ViewModels;
 
 namespace WardManagementSystem.Data.Repository
 {
@@ -12,6 +13,6 @@ namespace WardManagementSystem.Data.Repository
     {
         Task<IEnumerable<Ward>> GetAllAsync();
         Task<IEnumerable<WardConsumableStockViewModel>> GetByIdAsync(int id);
-
+        Task<bool> UpdateStockAsync(int WardID, int ConsumableID, int Quantity);
     }
 }
