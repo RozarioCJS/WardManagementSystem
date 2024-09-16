@@ -138,11 +138,11 @@
             }
         </div>
 
-        <!--TODO: Implement Create Order-->
-        <div class="button-container">
-            <button class="btn btn-outline-primary" onclick="">Create Order</button>
-        </div>
-    </div>
+        <!--Create Order-->
+<div class="button-container">
+    <a class="btn btn-outline-primary" href="@Url.Action("Order", "Consumables", new{ WardID = Model.First().WardID})">Create Order</a>
+</div>
+
 
     <!-- Hidden form for updating 1 consumable -->
 

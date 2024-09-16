@@ -9,17 +9,9 @@ namespace WardManagementSystem.Data.Models.ViewModels
 {
     public class PurchaseOrderViewModel
     {
-        [Key]
-        public int PurchaseOrderID { get; set; }
-
-        [Required]
         public int SupplierID { get; set; }
-        public string? SupplierName { get; set; }
-
-        [Required]
-        public int ConsumableMangerID { get; set; }
-        public string? ConsumableManagerName { get; set; }
-
-        public List<PurchaseOrderDetailViewModel> PurchaseOrderDetails { get; set; } = new List<PurchaseOrderDetailViewModel>();
+        public int ConsumableManagerID { get; set; }
+        public int WardID { get; set; }
+        public List<ConsumableOrder> ConsumableOrders { get; set; } = new List<ConsumableOrder>();
     }
 }
