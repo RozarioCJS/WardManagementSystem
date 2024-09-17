@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\consumables\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\consumables\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\models\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\models\\services\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\models\\viewmodels\\purchaseorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\models\\viewmodels\\purchaseorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\repository\\iwardconsumablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\repository\\iwardconsumablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\controllers\\consumablescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\controllers\\consumablescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\repository\\wardconsumablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\repository\\wardconsumablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\scripts\\detailsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\scripts\\detailsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,80 +42,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Order.cshtml",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "RelativeToolTip": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAADQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T18:48:26.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ConsumablesController.cs",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\ConsumablesController.cs",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Controllers\\ConsumablesController.cs",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\ConsumablesController.cs",
-              "RelativeToolTip": "WardManagementSystem\\Controllers\\ConsumablesController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwFsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T18:43:25.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Details.cshtml",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Consumables\\Details.cshtml",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Details.cshtml",
-              "RelativeToolTip": "WardManagementSystem\\Views\\Consumables\\Details.cshtml",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHUAAAB9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T18:48:04.91Z",
+              "Title": "PDFService.cs",
+              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\Services\\PDFService.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Models\\Services\\PDFService.cs",
+              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\Services\\PDFService.cs",
+              "RelativeToolTip": "WardManagementSystem.Data\\Models\\Services\\PDFService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T18:32:12.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PurchaseOrderViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\ViewModels\\PurchaseOrderViewModel.cs",
-              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Models\\ViewModels\\PurchaseOrderViewModel.cs",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\ViewModels\\PurchaseOrderViewModel.cs",
-              "RelativeToolTip": "WardManagementSystem.Data\\Models\\ViewModels\\PurchaseOrderViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T18:41:04.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IWardConsumableRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\IWardConsumableRepository.cs",
-              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Repository\\IWardConsumableRepository.cs",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\IWardConsumableRepository.cs",
-              "RelativeToolTip": "WardManagementSystem.Data\\Repository\\IWardConsumableRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T18:17:47.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WardConsumableRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\WardConsumableRepository.cs",
-              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Repository\\WardConsumableRepository.cs",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\WardConsumableRepository.cs",
-              "RelativeToolTip": "WardManagementSystem.Data\\Repository\\WardConsumableRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwD8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T18:24:11.964Z",
+              "Title": "DetailsP.cshtml",
+              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Scripts\\DetailsP.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Scripts\\DetailsP.cshtml",
+              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Scripts\\DetailsP.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Scripts\\DetailsP.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T18:30:12.687Z",
               "EditorCaption": ""
             }
           ]
