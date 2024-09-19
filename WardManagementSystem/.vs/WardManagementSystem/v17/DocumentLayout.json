@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\consumables\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\consumables\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\consumables\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\consumables\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\consumables\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\consumables\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,11 +42,23 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Consumables\\Dashboard.cshtml",
@@ -59,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Details.cshtml",
               "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Consumables\\Details.cshtml",
@@ -67,8 +79,7 @@
               "RelativeToolTip": "WardManagementSystem\\Views\\Consumables\\Details.cshtml",
               "ViewState": "AgIAALQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T18:46:36.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T18:46:36.515Z"
             },
             {
               "$type": "Document",
@@ -80,8 +91,7 @@
               "RelativeToolTip": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T18:46:37.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T18:46:37.093Z"
             }
           ]
         }
