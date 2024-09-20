@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using WardManagementSystem.Data.Models;
+using WardManagementSystem.Data.Models.Domain;
 using WardManagementSystem.Data.Models.ViewModels;
 using WardManagementSystem.Data.Repository;
 
@@ -71,7 +72,13 @@ namespace WardManagementSystem.Controllers
             var model = new PurchaseOrderViewModel
             {
                 WardID = WardID,
-                ConsumableOrders = new List<ConsumableOrder>()
+                WardName = "Ward A",
+                ConsumableOrders = new List<ConsumableOrder>
+                {
+                    new ConsumableOrder{ ConsumableID = 1001, ConsumableName = "Gloves"},
+                    new ConsumableOrder{ConsumableID = 1002, ConsumableName = "Masks"},
+                    new ConsumableOrder{ConsumableID = 1003, ConsumableName = "Linen Savers"}
+                }
             };
             return View(model);
         }
@@ -79,17 +86,6 @@ namespace WardManagementSystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Order(PurchaseOrderViewModel purchaseorderviewmodel)
         {
-            var duplicateConsumableIds = purchaseorderviewmodel.ConsumableOrders
-           .GroupBy(x => x.ConsumableID)
-           .Where(g => g.Count() > 1)
-           .Select(g => g.Key)
-           .ToList();
-
-            if (duplicateConsumableIds.Any())
-            {
-                ModelState.AddModelError("", "Duplicate Consumable IDs: " + string.Join(", ", duplicateConsumableIds));
-                return View(purchaseorderviewmodel);
-            }
             if (ModelState.IsValid)
             {
                 var purchaseOrderID = await _WCRepo.AddPurchaseOrderAsync(purchaseorderviewmodel.SupplierID, purchaseorderviewmodel.ConsumableManagerID, purchaseorderviewmodel.WardID);

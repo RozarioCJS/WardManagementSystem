@@ -5,13 +5,14 @@
 <style>
     .container {
         display: flex;
-        gap: 50px;
+        flex-direction: column;
+        gap: 20px;
         background-color: white;
-        padding: 20px;
+        padding: 30px;
         border-radius: 10px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         width: 80%;
-        margin: 20px;
+        margin: 20px auto;
         background-image: url('~/snake_icon.png');
         background-size: cover;
         background-repeat: no-repeat;
@@ -25,85 +26,67 @@
         width: 100%;
     }
 
-        .order-form div {
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+        .form-group label {
+            display: block;
             margin-bottom: 10px;
+            font-weight: bold;
         }
 
-        .order-form label {
-            display: block;
-            margin-bottom: 5px;
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
     .button-container {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin: 20px 0;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border-radius: 5px;
     }
 </style>
-
 <div class="container">
-    <h3>MedSups SupplierID: 1</h3>
-    <h3>Current Consuambles and their IDs:</h3>
-        <ul>
-            <li>GlovesID: 1001</li>
-            <li>MasksID: 1002</li>
-            <li>LinenSavers: 1003</li>
-        </ul>       
-     
+    <h1 class="text-lg-center">Purchase Page</h1>
 </div>
 
 <div class="container">
     <div class="order-form">
         <form asp-action="Order" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div>
-                <label for="SupplierID">Supplier ID</label>
-                <input type="number" id="SupplierID" name="SupplierID" asp-for="SupplierID" required />
+            <div class="form-group">
+                <input type="hidden" id="SupplierID" name="SupplierID" asp-for="SupplierID" class="form-control" value="1" required />
             </div>
-            <div>
-                <label for="ConsumableManagerID">Consumable Manager ID</label>
-                <input type="number" id="ConsumableManagerID" name="ConsumableManagerID" asp-for="ConsumableManagerID" required />
+            <div class="form-group">
+                <input type="hidden" id="ConsumableManagerID" name="ConsumableManagerID" asp-for="ConsumableManagerID" class="form-control" value="1" required />
             </div>
-            <div>
+            <div class="form-group">
                 <label for="WardID">Ward ID</label>
-                <input type="number" id="WardID" name="WardID" asp-for="WardID" value="@Model.WardID" readonly />
-            </div>
-            <div id="consumableOrders">
-                @for (int i = 0; i < Model.ConsumableOrders.Count; i++)
-                {
-                    <div class="consumable-order">
-                        <label asp-for="ConsumableOrders[i].ConsumableID">Consumable ID</label>
-                        <input asp-for="ConsumableOrders[i].ConsumableID" />
-                        <label asp-for="ConsumableOrders[i].Quantity">Quantity</label>
-                        <input asp-for="ConsumableOrders[i].Quantity" />
-                    </div>
-                }
+                <input type="hidden" id="WardID" name="WardID" asp-for="WardID" class="form-control" value="@Model.WardID" readonly />
             </div>
 
+            @for (int i = 0; i < Model.ConsumableOrders.Count; i++)
+            {
+                <div class="consumable-order form-group">
+                    <label asp-for="ConsumableOrders[i].ConsumableName">Consumable Name</label>
+                    <input asp-for="ConsumableOrders[i].ConsumableName" class="form-control" readonly />
+                    <label asp-for="ConsumableOrders[i].Quantity">Quantity</label>
+                    <input asp-for="ConsumableOrders[i].Quantity" class="form-control" />
+                </div>
+            }
+
+
             <div class="button-container">
-                <button class="btn btn-outline-primary" type="button" onclick="addConsumableOrder()">Add Consumable</button>
                 <button class="btn btn-outline-warning" type="submit">Place Order</button>
             </div>
         </form>
     </div>
-
 </div>
-
-
-<script>
-    function addConsumableOrder() {
-        var container = document.getElementById('consumableOrders');
-        var index = container.children.length;
-        var div = document.createElement('div');
-        div.className = 'consumable-order';
-        div.innerHTML = `
-                                <label for="ConsumableOrders_${index}__ConsumableID">Consumable ID</label>
-                                <input type="number" id="ConsumableOrders_${index}__ConsumableID" name="ConsumableOrders[${index}].ConsumableID" />
-                                <label for="ConsumableOrders_${index}__Quantity">Quantity</label>
-                                <input type="number" id="ConsumableOrders_${index}__Quantity" name="ConsumableOrders[${index}].Quantity" />
-                            `;
-        container.appendChild(div);
-    }
-</script>

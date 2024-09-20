@@ -9,6 +9,7 @@ namespace WardManagementSystem.Data.Models.ViewModels
     public class ConsumableOrder
     {
         public int ConsumableID { get; set; }
+        public string ConsumableName { get; set; }
         public int Quantity { get; set; }
     }
 }

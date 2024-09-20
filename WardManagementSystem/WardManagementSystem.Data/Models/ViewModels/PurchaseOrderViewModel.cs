@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Identity.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace WardManagementSystem.Data.Models.ViewModels
         public int SupplierID { get; set; }
         public int ConsumableManagerID { get; set; }
         public int WardID { get; set; }
+        public string WardName { get; set; }
         public List<ConsumableOrder> ConsumableOrders { get; set; } = new List<ConsumableOrder>();
     }
 }
