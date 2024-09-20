@@ -42,10 +42,18 @@ namespace WardManagementSystem.Controllers
             var scriptDetails = await _SDRepo.GetAllAsync('N');
             return View(scriptDetails);
         }
-        public async Task<IActionResult> DisplayScriptListP()
+        public async Task<IActionResult> DisplayScriptListP(DateTime? searchDate = null)
         {
-            var scriptDetails = await _SDRepo.GetAllAsync('P');
-            return View(scriptDetails);
+            if (searchDate.HasValue)
+            {
+                var scriptDetails = await _SDRepo.GetByDateAsync(searchDate.Value);
+                return View(scriptDetails);
+            }
+            else
+            {
+                var scriptDetails = await _SDRepo.GetAllAsync('P');
+                return View(scriptDetails);
+            }
         }
         public async Task<IActionResult> DisplayScriptListR()
         {
@@ -118,6 +126,5 @@ namespace WardManagementSystem.Controllers
             }
             return RedirectToAction("Dashboard");
         }
-
     }
 }

@@ -2,28 +2,48 @@
 @{
     Layout = "~/Views/Shared/_layoutConsumables.cshtml";
 }
-<h1>Dashboard</h1>
-<hr />
-<div class="container">
-    <div class="card">
-        <div class="card-title  clickable-row" data-href="@Url.Action("DetailsA", "Consumables", new { Id = 1 })">
-            <h2>Ward A</h2>
+<style>
+    .container {
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+        background-image: url('/snake_icon.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .card{
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        justify-content: space-evenly;
+        flex: 1;
+    }
+</style>
+<body>
+    <h1>Dashboard</h1>
+    <hr />
+    <div class="container">
+        <div class="card">
+            <div class="card-title  clickable-row" data-href="@Url.Action("DetailsA", "Consumables", new { Id = 1002 })">
+                <h2>Ward A</h2>
+            </div>
         </div>
-    </div>
 
-    <div class="card">
-        <div class="card-title  clickable-row" data-href="@Url.Action("DetailsB", "Consumables", new { Id = 2 })">
-            <h2>Ward B</h2>
+        <div class="card">
+            <div class="card-title  clickable-row" data-href="@Url.Action("DetailsB", "Consumables", new { Id = 1003 })">
+                <h2>Ward B</h2>
+            </div>
         </div>
-    </div>
 
 
-    <div class="card">
-        <div class="card-title  clickable-row" data-href="@Url.Action("DetailsC", "Consumables", new { Id = 3 })">
-            <h2>Ward C</h2>
+        <div class="card">
+            <div class="card-title  clickable-row" data-href="@Url.Action("DetailsC", "Consumables", new { Id = 1004 })">
+                <h2>Ward C</h2>
+            </div>
         </div>
+        <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">
+            <h6>Back</h6>
+        </a>
     </div>
-</div>
-<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
-    <h6>Back</h6>
-</a>
+</body>

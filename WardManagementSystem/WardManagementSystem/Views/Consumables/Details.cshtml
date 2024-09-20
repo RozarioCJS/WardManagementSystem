@@ -2,57 +2,222 @@
 @{
     Layout = "~/Views/Shared/_layoutConsumables.cshtml";
 }
-<h1>Consumables for @Model.First().WardName</h1>
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>Consumable Name</th>
-            <th>Quantity</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.ConsumableName</td>
-                <td>@item.Quantity</td>
-            </tr>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ward Consumables</title>
+    <style>
+        body {
+            font-family: Verdana;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
         }
-    </tbody>
 
-</table>
-
-<!-- Leave Purchasing Consumables, try first update-->
-
-<button class="btn btn-outline-primary" id="ShowOrderForm">Update Stock</button>
-
-<div id="order-form" style="display: none;">
-    <form asp-action="UpdateStock" method="post">
-        @foreach (var item in Model)
-        {
-            <input type="hidden" name="ids" value="@item.WardConsumableStockID" />
+        .container {
+            display: flex;
+            gap: 50px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 20px;
+            background-image: url('~/snake_icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>Consumable Name</th>
-                    <th>Desired Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.ConsumableName</td>
-                        <td>
-                            <input type="hidden" name="@item.WardConsumableStockID" value="@item.WardConsumableStockID" />
-                            <input name="@item.Quantity" value="@item.Quantity" />
-                        </td>
-                    </tr>
-                }
-            </tbody>
 
-        </table>
-        <button class="btn btn-outline-danger" id="ShowCustomAlert" type="submit">Send Order</button>
-    </form>
+        .canvas-adjust {
+            flex: 1;
+        }
+
+        .consumables-list-adjust {
+            flex: 1;
+        }
+
+        .status {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: white;
+            margin-left: auto;
+        }
+
+        .status-good {
+            background-color: green;
+            color: white;
+        }
+
+        .status-low {
+            background-color: red;
+            color: white;
+        }
+
+        .status-okay {
+            background-color: yellow;
+            color: black;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .update-form {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+            .update-form div {
+                margin-bottom: 10px;
+            }
+
+            .update-form label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+        .consumable-row-clicks {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+        <h1>Consumables for @Model.First().WardName</h1>
+        <h1>@Model.First().WardID</h1>
+
+        <!-- This is where chart -->
+        <div class="canvas-adjust">
+            <canvas id="bar-chart" width="800" height="450"></canvas>
+        </div>
+        <!-- clickable List of Consumables and the Statuses -->
+        <div class="consumables-list-adjust">
+            @foreach (var item in Model)
+            {
+                <a class="consumable-row-clicks" onclick="showUpdateForm('@item.ConsumableID', '@item.Quantity','@item.ConsumableName')">
+                    <div>
+                        <span class="consumable-name">@item.ConsumableName</span>
+                        <span class="amount">Amount: @item.Quantity</span>
+                    </div>
+                    @{
+                        if (item.Quantity == 50)
+                        {
+                            <span class="status status-okay">Okay</span>
+                        }
+                        else if (item.Quantity < 50)
+                        {
+                            <span class="status status-low">Low</span>
+                        }
+                        else
+                        {
+                            <span class="status status-good">Good</span>
+                        }
+                    }
+                </a>
+            }
+        </div>
+
+        <!--Create Order-->
+<div class="button-container">
+    <a class="btn btn-outline-primary" href="@Url.Action("Order", "Consumables", new{ WardID = Model.First().WardID})">Create Order</a>
 </div>
+
+
+    <!-- Hidden form for updating 1 consumable -->
+
+        <div class="update-form" id="updateForm" style="display:none;">
+            <h1>Update Stock for @Model.First().WardName</h1>
+            <h1></h1>
+            <form method="post" asp-action="UpdateStock">
+
+                <label for="consumable">Consumable:</label>
+                <input type="text" id="consumable" name="consumable" required disabled>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <input type="hidden" id="consumableID" name="consumableID" value="">
+                <input type="hidden" name="WardID" value="@Model.First().WardID">
+
+                <div class="button-container">
+                    <button class="btn btn-outline-primary" type="submit">Update Stock</button>
+                </div>
+            </form>
+        </div>
+
+
+
+    <!-- Charts, Grafs, and other javascript things -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        new Chart(document.getElementById("bar-chart"), {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(Model.Select(x => x.ConsumableName).ToList())),
+                datasets: [
+                    {
+                        label: "Stock Level",
+                        backgroundColor: ["#4C78A8", "#72B7B2", "#F58518"],
+                        data: @Html.Raw(Json.Serialize(Model.Select(x => x.Quantity).ToList()))
+                                                                                                     }
+                ]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: 'Consumable Stock Levels'
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            max: 100,
+                            stepSize: 10
+                        }
+                    }]
+                }
+            }
+        });
+
+        function showUpdateForm(ConsumableID, quantity, ConsumableName) {
+
+            //shows the form
+            var updateForm = document.getElementById("updateForm");
+            updateForm.style.display = "block";
+
+            //puts the consumableID into the form
+            var consumableIDInput = document.getElementById("consumableID");
+            consumableIDInput.value = ConsumableID;
+
+            //puts the quantity of the consumable in the form
+            var quantityInput = document.getElementById("quantity");
+            quantityInput.value = quantity;
+
+            var consumableInput = document.getElementById("consumable");
+            consumableInput.value = ConsumableName;
+        }
+
+    </script>
+</body>

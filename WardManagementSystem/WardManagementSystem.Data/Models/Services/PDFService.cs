@@ -37,7 +37,7 @@ namespace WardManagementSystem.Data.Models.Services
                 }
 
                 Image logo = new Image(ImageDataFactory.Create(logoPath));
-                logo.ScaleAbsolute(50, 50); // adjust the size of the logo
+                logo.ScaleAbsolute(50, 50); //logo size, this thing faded idk what to do ngl
                 logo.SetMarginTop(10);
                 document.Add(logo);
 
@@ -58,7 +58,7 @@ namespace WardManagementSystem.Data.Models.Services
                 document.Add(new Paragraph($"Name: {ScriptDetailsViewModel.PatientName}")
                     .SetTextAlignment(TextAlignment.LEFT)
                     .SetFontSize(12));
-                document.Add(new Paragraph($"Date: {ScriptDetailsViewModel.Date.ToString("yyyy-MM-dd")}") // format date to display only the date part
+                document.Add(new Paragraph($"Date: {ScriptDetailsViewModel.Date.ToString("yyyy-MM-dd")}")
                     .SetTextAlignment(TextAlignment.LEFT)
                     .SetFontSize(12));
 

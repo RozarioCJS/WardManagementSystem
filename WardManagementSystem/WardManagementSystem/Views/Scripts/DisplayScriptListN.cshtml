@@ -2,27 +2,36 @@
 @{
     Layout = "~/Views/Shared/_LayoutScripts.cshtml";
 }
+<style>
+    body {
+        background-image: url('~/snake_icon.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+<body>
+    <h2>Scripts</h2>
 
-<h2>Scripts</h2>
-
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Doctor</th>
-            <th>Date</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr class="clickable-row" data-href="@Url.Action("DetailsN", "Scripts", new { id = item.ScriptID })">
-                <td>@item.ScriptID</td>
-                <td>Dr. @item.FirstName</td>
-                <td>@item.Date.ToString("yyy-MM-dd")</td>
-                <td>@item.Status</td>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Doctor</th>
+                <th>Date</th>
+                <th>Status</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="clickable-row" data-href="@Url.Action("DetailsN", "Scripts", new { id = item.ScriptID })">
+                    <td>@item.ScriptID</td>
+                    <td>Dr. @item.FirstName</td>
+                    <td>@item.Date.ToString("yyy-MM-dd")</td>
+                    <td>@item.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>

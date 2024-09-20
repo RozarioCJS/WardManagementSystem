@@ -2,27 +2,47 @@
 @{
     Layout = "~/Views/Shared/_LayoutScripts.cshtml";
 }
-
-<h2>Scripts</h2>
-
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Doctor</th>
-            <th>Date</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr class="clickable-row" data-href="@Url.Action("DetailsP", "Scripts", new { id = item.ScriptID })">
-                <td>@item.ScriptID</td>
-                <td>Dr. @item.FirstName</td>
-                <td>@item.Date.ToString("yyy-MM-dd")</td>
-                <td>@item.Status</td>
+<style>
+    body {
+        background-image: url('~/snake_icon.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+<body>
+    <h2>Scripts</h2>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="DisplayScriptListP" method="get">
+                    <label for="SearchDate">Search by Date:</label>
+                    <input type="date" class="form-control" id="SearchDate" name="searchDate" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+                    <button type="submit" class="btn btn-outline-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Doctor</th>
+                <th>Date</th>
+                <th>Status</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+
+            {
+                <tr class="clickable-row" data-href="@Url.Action("DetailsP", "Scripts", new { id = item.ScriptID })">
+                    <td>@item.ScriptID</td>
+                    <td>Dr. @item.FirstName</td>
+                    <td>@item.Date.ToString("yyy-MM-dd")</td>
+                    <td>@item.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>

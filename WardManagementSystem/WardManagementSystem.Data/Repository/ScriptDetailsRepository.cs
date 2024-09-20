@@ -59,5 +59,9 @@ namespace WardManagementSystem.Data.Repository
         {
             return await _db.GetData<ScriptListViewModel, dynamic>("ListAllNewScripts", new { Status = status });
         }
+        public async Task<IEnumerable<ScriptListViewModel>> GetByDateAsync(DateTime SearchDate)
+        {
+            return await _db.GetData<ScriptListViewModel, dynamic>("SearchByDate", new { SearchDate = SearchDate });
+        }
     }
 }
