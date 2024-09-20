@@ -74,5 +74,10 @@ namespace WardManagementSystem.Data.Repository
         {
             return await _db.GetData<DoctorDashboardViewModel, dynamic>("sp_TotalVisitsScheduled", new { DoctorID = DoctorID });
         }
+
+        public async Task<IEnumerable<DoctorDashboardViewModel>> GetDashboardAsync(int DoctorID)
+        {
+            return await _db.GetData<DoctorDashboardViewModel, dynamic>("sp_DashboardSchedule", new { DoctorID = DoctorID });
+        }
     }
 }

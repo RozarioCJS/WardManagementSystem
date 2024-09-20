@@ -9,8 +9,8 @@ namespace WardManagementSystem.Data.Repository
 {
     public interface IPatientInstructionRepo
     {
-        Task<bool> AddAsync(Patient_Instruction instruction);
-        Task<bool> UpdateAsync(Patient_Instruction instruction);
+        Task<bool> AddAsync(Patient_Instruction patient_instruction);
+        Task<bool> UpdateAsync(Patient_Instruction patient_instruction);
         Task<bool> DeleteAsync(int id);
         Task<Patient_Instruction> GetByIdAsync(int id);
         Task<IEnumerable<Patient_Instruction>> GetAllAsync();

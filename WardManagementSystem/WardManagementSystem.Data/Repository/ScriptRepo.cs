@@ -16,7 +16,7 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-                await _db.SaveData("sp_CreateScript", new { script.DoctorID, script.PatientFileID, script.MedicationID, script.Date, script.Dosage });          // Status field Will be added in stored procedure to 'N'
+                await _db.SaveData("sp_CreateScript", new { script.DoctorID, script.PatientFileID, script.MedicationID, script.Dosage });          // Date to current date and Status field will be to 'N' in stored procedure
                 return true;
             }
             catch (Exception ex)
@@ -54,7 +54,7 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-                await _db.SaveData("sp_UpdateScript", script);
+                await _db.SaveData("sp_UpdateScript", new { script.MedicationID, script.Dosage });
                 return true;
             }
             catch (Exception ex)

@@ -45,7 +45,8 @@
                 @Html.DisplayFor(modelItem => item.DoctorID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Date)
+                @* @Html.DisplayFor(modelItem => item.Date.ToString("yyyy-MM-dd")) *@   @*Find a way to make this work*@
+                    @Html.DisplayFor(modelItem => item.Date)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Time)

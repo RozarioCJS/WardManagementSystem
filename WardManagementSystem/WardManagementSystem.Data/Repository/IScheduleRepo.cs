@@ -17,5 +17,6 @@ namespace WardManagementSystem.Data.Repository
         Task<IEnumerable<Schedule>> GetAllAsync(); //will later be changed to all by Doctor (Can be done with the sql statement, should'nt have to change code).
         Task<IEnumerable<DoctorDashboardViewModel>> GetAllTodayAsync(int DoctorID);     //Get total scheduled for today only
         Task<IEnumerable<DoctorDashboardViewModel>> GetAllTotalAsync(int DoctorID);     //Get total scheduled for doctor
+        Task<IEnumerable<DoctorDashboardViewModel>> GetDashboardAsync(int DoctorID);    //Get the data for the scheduled today table
     }
 }

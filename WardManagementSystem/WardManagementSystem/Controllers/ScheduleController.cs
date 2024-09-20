@@ -21,18 +21,21 @@ namespace WardManagementSystem.Controllers
 
         public async Task<IActionResult> Dashboard()            //should be Dashboard(int DoctorID)
         {
-            //returns count for all scripts based on status
-            var todayCount = await _scheduleRepo.GetAllTodayAsync(0);           //GetAllTodayAsync(DoctorID)
-            var totalCount = await _scheduleRepo.GetAllTotalAsync(0);
+            //retrieve data from database
+            var todayCount = await _scheduleRepo.GetAllTodayAsync(1);           //GetAllTodayAsync(DoctorID)
+            var totalCount = await _scheduleRepo.GetAllTotalAsync(1);
+            var schedules = await _scheduleRepo.GetDashboardAsync(1);
 
-            var viewModel = new ScheduleCountViewModel
+            //using ViewData to store the different data for different ViewModels
+            ViewData["DoctorDashboardViewModel"] = schedules;
+            ViewData["ScheduleCountViewModel"] = new ScheduleCountViewModel
             {
+                //returns count for all scripts based on status
                 TodayCount = todayCount.Count(),
                 TotalCount = totalCount.Count(),
             };
-            return View(viewModel);
+            return View();
         }
-
 
 
         //Display all

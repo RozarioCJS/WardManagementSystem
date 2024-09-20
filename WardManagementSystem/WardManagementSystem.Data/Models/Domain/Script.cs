@@ -14,9 +14,9 @@ namespace WardManagementSystem.Data.Models.Domain
         public int DoctorID { get; set; }
         public int PatientFileID { get; set; }
         public int MedicationID { get; set; }
-        public int PrescriptionManagerID { get; set; }
-        public DateTime Date {  get; set; }
-        public char Status { get; set; }
-        public int Dosage { get; set; }
+        public int? PrescriptionManagerID { get; set; }
+        public DateTime? Date {  get; set; }     
+        public char? Status { get; set; }
+        public string Dosage { get; set; }
     }
 }
