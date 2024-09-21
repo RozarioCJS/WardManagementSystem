@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Data;
 using WardManagementSystem.Data.Models.Domain;
 using WardManagementSystem.Data.Models.ViewModels;
 using WardManagementSystem.Data.Repository;
@@ -90,17 +91,77 @@ namespace WardManagementSystem.Controllers
             return RedirectToAction(nameof(ManageEmployees));
         }
 
-
-
-
-
-
+        //Ward Management Below
 
         [HttpGet]
         public async Task<IActionResult> ManageWards()
         {
-            return View();
+            var GetUsers = await _adminRepository.GetAllWardAsync();
+            return View(GetUsers);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> UpdateWard(int Id)
+        {
+            var person = await _adminRepository.GetUserByIdAsync(Id);
+            return View(person);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateWard(int WardID, string WardName)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View();
+                bool updateRecord = await _adminRepository.UpdateWardAsync(WardID, WardName);
+
+                if (updateRecord)
+                    TempData["msg"] = "Successful";
+                else
+                    TempData["msg"] = "Failed";
+            }
+
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Error!";
+            }
+            return RedirectToAction(nameof(ManageWards));
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteWard(int Id)
+        {
+            var deleteResult = await _adminRepository.DeleteWardAsync(Id);
+            return RedirectToAction(nameof(ManageWards));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddWard(Ward ward)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View(ward);
+                bool addPerson = await _adminRepository.AddWardAsync(ward);
+                if (addPerson)
+                {
+                    TempData["msg"] = "Sucessfully Added";
+                }
+                else
+                {
+                    TempData["msg"] = "Could not add";
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Something went wrong!";
+            }
+            return RedirectToAction(nameof(ManageWards));
+        }
+
         [HttpGet]
         public async Task<IActionResult> ManageConsumables()
         {

@@ -9,6 +9,7 @@ using WardManagementSystem.Data.DataAccess;
 using WardManagementSystem.Data.Models;
 using WardManagementSystem.Data.Models.Domain;
 using WardManagementSystem.Data.Models.ViewModels;
+using static iText.IO.Image.Jpeg2000ImageData;
 using static iText.StyledXmlParser.Jsoup.Select.Evaluator;
 
 namespace WardManagementSystem.Data.Repository
@@ -20,6 +21,8 @@ namespace WardManagementSystem.Data.Repository
         {
             _db = db;
         }
+
+        //User Management
         public async Task<int> AddUserAsync(string UserName, string Password, string Role)
         {
 
@@ -29,7 +32,7 @@ namespace WardManagementSystem.Data.Repository
             parameters.Add("@Role", Role);
             parameters.Add("@UserID", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-            await _db.SaveData("sp_AddUserAdmin",parameters);
+            await _db.SaveData("sp_AddUserAdmin", parameters);
 
             return parameters.Get<int>("UserID");
 
@@ -60,11 +63,6 @@ namespace WardManagementSystem.Data.Repository
             }
         }
 
-        public async Task<IEnumerable<User>> GetAllUserAsync()
-        {
-            return await _db.GetData<User, dynamic>("sp_GetAllUsers", new { });
-        }
-
         public async Task<UserViewModel> GetUserByIdAsync(int Id)
         {
             IEnumerable<UserViewModel> result = await _db.GetData<UserViewModel, dynamic>("sp_GetEmployeeDetail", new { UserID = Id });
@@ -84,5 +82,63 @@ namespace WardManagementSystem.Data.Repository
                 return false;
             }
         }
+        public async Task<IEnumerable<User>> GetAllUserAsync()
+        {
+            return await _db.GetData<User, dynamic>("sp_GetAllUsers", new { });
+        }
+
+
+        //Ward Management
+        public async Task<bool> AddWardAsync(Ward ward)
+        {
+            try
+            {
+                await _db.SaveData("sp_AddWard", new { ward.WardName, ward.WardNumber});
+                return true;
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+        }
+        public async Task<bool> UpdateWardAsync(int WardID, string WardName)
+        {
+            try
+            {
+
+                await _db.SaveData("sp_UpdateWard", new { WardID, WardName });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public async Task<bool> DeleteWardAsync(int id)
+        {
+            try
+            {
+                await _db.SaveData("sp_DeleteWard", new { WardID = id });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public async Task<IEnumerable<Ward>> GetAllWardAsync()
+        {
+            return await _db.GetData<Ward, dynamic>("spGetWards", new { });
+        }
+
+        public async Task<Ward> GetByIdAsync(int Id)
+        {
+            IEnumerable<Ward> result = await _db.GetData<Ward, dynamic>("spGetWardsByID", new { UserID = Id });
+
+            return result.FirstOrDefault();
+        }
+
+
     }
 }

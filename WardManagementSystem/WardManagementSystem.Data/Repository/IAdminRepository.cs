@@ -10,6 +10,7 @@ namespace WardManagementSystem.Data.Repository
 {
     public interface IAdminRepository
     {
+        //User Management
         Task<int> AddUserAsync(string UserName, string Password, string Role);
         Task<bool> AddUserDetailsAsync(int UserID, string FirstName, string LastName, string ContactNumber, string Email, string Address1, string Address2, string Role);
         Task<bool> UpdateUserAsync(int UserID, string ContactNumber, string Role);
@@ -18,5 +19,14 @@ namespace WardManagementSystem.Data.Repository
         Task<UserViewModel> GetUserByIdAsync(int Id);
 
         Task<IEnumerable<User>> GetAllUserAsync();
+
+        //Ward Management
+        Task<bool> AddWardAsync(Ward ward);
+        Task<bool> UpdateWardAsync(int WardID, string WardName);
+        Task<bool> DeleteWardAsync(int id);
+
+        Task<Ward> GetByIdAsync(int id);
+
+        Task<IEnumerable<Ward>> GetAllWardAsync();
     }
 }
