@@ -12,7 +12,7 @@ namespace WardManagementSystem.Data.Repository
     {
         Task<int> AddUserAsync(string UserName, string Password, string Role);
         Task<bool> AddUserDetailsAsync(int UserID, string FirstName, string LastName, string ContactNumber, string Email, string Address1, string Address2, string Role);
-        Task<bool> UpdateUserAsync(User person);
+        Task<bool> UpdateUserAsync(int UserID, string ContactNumber, string Role);
         Task<bool> DeleteUserAsync(int id);
 
         Task<UserViewModel> GetUserByIdAsync(int Id);

@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using WardManagementSystem.Data.Models.Domain;
 using WardManagementSystem.Data.Models.ViewModels;
 using WardManagementSystem.Data.Repository;
+using static iText.StyledXmlParser.Jsoup.Select.Evaluator;
 
 namespace WardManagementSystem.Controllers
 {
@@ -19,6 +21,7 @@ namespace WardManagementSystem.Controllers
             return View();
         }
 
+        //All of the below is Employee Management Related
         [HttpGet]
         public async Task<IActionResult> ManageEmployees()
         {
@@ -48,6 +51,50 @@ namespace WardManagementSystem.Controllers
             await _adminRepository.AddUserDetailsAsync(UserID, user.FirstName, user.LastName, user.ContactNumber, user.Email, user.Address1, user.Address2, user.Role);
             return RedirectToAction("Dashboard");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> UpdateEmployee(int Id)
+        {
+            var person = await _adminRepository.GetUserByIdAsync(Id);
+            return View(person);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateEmployee(int UserID, string ContactNumber, string Role)
+        {
+
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View();
+                bool updateRecord = await _adminRepository.UpdateUserAsync(UserID, ContactNumber, Role);
+
+                if (updateRecord)
+                    TempData["msg"] = "Successful";
+                else
+                    TempData["msg"] = "Failed";
+            }
+
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Error!";
+            }
+            return RedirectToAction(nameof(ManageEmployees));
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteEmployee(int Id)
+        {
+            var deleteResult = await _adminRepository.DeleteUserAsync(Id);
+            return RedirectToAction(nameof(ManageEmployees));
+        }
+
+
+
+
+
+
 
         [HttpGet]
         public async Task<IActionResult> ManageWards()

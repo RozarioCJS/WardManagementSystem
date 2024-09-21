@@ -49,7 +49,15 @@ namespace WardManagementSystem.Data.Repository
 
         public async Task<bool> DeleteUserAsync(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await _db.SaveData("sp_DeleteUser", new { UserID = id });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         public async Task<IEnumerable<User>> GetAllUserAsync()
@@ -63,9 +71,18 @@ namespace WardManagementSystem.Data.Repository
             return result.FirstOrDefault();
         }
 
-        public async Task<bool> UpdateUserAsync(User person)
+        public async Task<bool> UpdateUserAsync(int UserID, string ContactNumber, string Role)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                await _db.SaveData("sp_UpdateUser", new { UserID, ContactNumber, Role });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 }

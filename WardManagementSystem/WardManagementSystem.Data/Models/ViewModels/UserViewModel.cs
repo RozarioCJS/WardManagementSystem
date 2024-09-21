@@ -18,7 +18,6 @@ namespace WardManagementSystem.Data.Models.ViewModels
         public string Role { get; set; }
 
         //Specific User (Role)
-        public int ID { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]

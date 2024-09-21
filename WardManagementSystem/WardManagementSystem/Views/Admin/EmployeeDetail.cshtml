@@ -3,6 +3,7 @@
     Layout = "~/Views/Shared/_layoutAdmin.cshtml";
 }
 @if (Model != null)
+
 {
     <style>
         .card {
@@ -79,13 +80,15 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="button-container">
-                                <form asp-action="UpdateEmployee" method="post">
+
+                                <form asp-action="UpdateEmployee" method="get">
                                     <input type="hidden" name="Id" value="@Model.UserID" />
-                                    <button class="btn btn-outline-secondary" id="ShowCustomAlert" type="submit">Edit</button>
+                                    <button class="btn btn-outline-secondary" type="submit">Edit</button>
                                 </form>
+
                                 <form asp-action="DeleteEmployee" method="post">
                                     <input type="hidden" name="Id" value="@Model.UserID" />
-                                    <button class="btn btn-outline-warning" id="ShowCustomAlert" type="submit">Delete</button>
+                                    <button class="btn btn-outline-danger" onclick="return window.confirm('Are you sure to delete this User?')" type="submit">Delete</button>
                                 </form>
                             </div>
                         </div>
@@ -95,7 +98,9 @@
         </div>
     </div>
 }
+
 else
+
 {
     <h1>Failed to load Model</h1>
 }
