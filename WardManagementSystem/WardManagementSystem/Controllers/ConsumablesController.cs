@@ -72,10 +72,11 @@ namespace WardManagementSystem.Controllers
             var model = new PurchaseOrderViewModel
             {
                 WardID = WardID,
-                WardName = "Ward A",
+                SupplierID = 1,
+                ConsumableManagerID = 1,
                 ConsumableOrders = new List<ConsumableOrder>
                 {
-                    new ConsumableOrder{ ConsumableID = 1001, ConsumableName = "Gloves"},
+                    new ConsumableOrder{ConsumableID = 1001, ConsumableName = "Gloves"},
                     new ConsumableOrder{ConsumableID = 1002, ConsumableName = "Masks"},
                     new ConsumableOrder{ConsumableID = 1003, ConsumableName = "Linen Savers"}
                 }

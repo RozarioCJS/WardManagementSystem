@@ -1,0 +1,101 @@
+﻿@model WardManagementSystem.Data.Models.ViewModels.UserViewModel
+@{
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+@if (Model != null)
+{
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+        }
+
+        .button-container button {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-image: url('~/snake_icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+        }
+    </style>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Employee Details</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="FirstName">First Name:</label>
+                                <input type="text" class="form-control" id="FirstName" value="@Model.FirstName" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="LastName">Last Name:</label>
+                                <input type="text" class="form-control" id="LastName" value="@Model.LastName" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="Role">Role:</label>
+                                <input type="text" class="form-control" id="Role" value="@Model.Role" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="ContactNumber">Contact Number:</label>
+                                <input type="text" class="form-control" id="ContactNumber" value="@Model.ContactNumber" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="Email">Email:</label>
+                                <input type="text" class="form-control" id="Email" value="@Model.Email" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="button-container">
+                                <form asp-action="UpdateEmployee" method="post">
+                                    <input type="hidden" name="Id" value="@Model.UserID" />
+                                    <button class="btn btn-outline-secondary" id="ShowCustomAlert" type="submit">Edit</button>
+                                </form>
+                                <form asp-action="DeleteEmployee" method="post">
+                                    <input type="hidden" name="Id" value="@Model.UserID" />
+                                    <button class="btn btn-outline-warning" id="ShowCustomAlert" type="submit">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <h1>Failed to load Model</h1>
+}

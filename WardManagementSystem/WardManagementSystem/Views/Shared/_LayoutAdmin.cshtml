@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SCManagement</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SCManagement.styles.css" asp-append-version="true" />
+</head>
+@{
+    int wardAId = 1002;
+
+    int wardBId = 1003;
+
+    int wardCId = 1004;
+}
+<body>
+    <div class="container-fluid d-flex flex-columnx vh-100">
+        <div class="row flex-grow-1">
+            <div class="bg-dark col-auto col-md-2 d-flex flex-column">
+                <ul class="nav nav-pills flex-column mt-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Admin" asp-action="Dashboard">
+                            <span class="fs-4 d-none d-sm-inline">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Admin" asp-action="ManageEmployees" asp-route-Id="@wardAId">
+                            <span class="fs-4 d-none d-sm-inline">Manage Employees</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Admin" asp-action="ManageWards" asp-route-Id="@wardBId">
+                            <span class="fs-4 d-none d-sm-inline">Manage Wards</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Admin" asp-action="ManageConsumables" asp-route-Id="@wardCId">
+                            </i><span class="fs-4 d-none d-sm-inline">Manage Consumables</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Admin" asp-action="ManageMedication" asp-route-Id="@wardCId">
+                            </i><span class="fs-4 d-none d-sm-inline">Manage Medication</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Admin" asp-action="ManageAllergies" asp-route-Id="@wardCId">
+                            </i><span class="fs-4 d-none d-sm-inline">Manage Allergies</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-controller="Admin" asp-action="ManageConditions" asp-route-Id="@wardCId">
+                            </i><span class="fs-4 d-none d-sm-inline">Manage Conditions</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+
+        </div>
+    </div>
+    <footer class="border-top footer text-muted bg-dark footer">
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

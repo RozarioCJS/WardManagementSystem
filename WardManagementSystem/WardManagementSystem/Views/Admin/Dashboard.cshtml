@@ -1,0 +1,67 @@
+﻿@{
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+<style>
+    .container {
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+        background-image: url('/snake_icon.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-wrap: wrap;
+    }
+    .card{
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        justify-content: space-evenly;
+        flex: 1 1 calc(33% - 20px);
+    }
+</style>
+<body>
+    <h1>Dashboard</h1>
+    <hr />
+    <div class="container">
+        <div class="card">
+            <div class="card-title  clickable-row" data-href="@Url.Action("ManageEmployees", "Admin")">
+                <h2>Manage Employees</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title  clickable-row" data-href="@Url.Action("ManageWards", "Admin")">
+                <h2>Manage Wards</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title  clickable-row" data-href="@Url.Action("ManageConsumables", "Admin")">
+                <h2>Manage Consumables</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title  clickable-row" data-href="@Url.Action("ManageMedications", "Admin")">
+                <h2>Manage Medication</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title  clickable-row" data-href="@Url.Action("ManageAllergies", "Admin")">
+                <h2>Manage Allergies</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title  clickable-row" data-href="@Url.Action("ManageConditions", "Admin")">
+                <h2>Manage Conditions</h2>
+            </div>
+        </div>
+
+        <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">
+            <h6>Back</h6>
+        </a>
+    </div>
+</body>
