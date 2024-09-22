@@ -225,8 +225,8 @@ namespace WardManagementSystem.Controllers
         [HttpGet]
         public async Task<IActionResult> ManageMedications()
         {
-            var GetCon = await _adminRepository.GetAllMedicationAsync();
-            return View(GetCon);
+            var GetMed = await _adminRepository.GetAllMedicationAsync();
+            return View(GetMed);
         }
 
         [HttpPost]
@@ -285,10 +285,70 @@ namespace WardManagementSystem.Controllers
             return RedirectToAction(nameof(ManageMedications));
         }
 
+        //AllergyManagement
+
         [HttpGet]
         public async Task<IActionResult> ManageAllergies()
         {
-            return View();
+            var GetAl = await _adminRepository.GetAllAllergiesAsync();
+            return View(GetAl);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateAllergy(int AllergyID, string AllergyName)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View();
+                bool updateRecord = await _adminRepository.UpdateAllergyAsync(AllergyID, AllergyName);
+
+                if (updateRecord)
+                    TempData["msg"] = "Successful";
+                else
+                    TempData["msg"] = "Failed";
+            }
+
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Error!";
+            }
+            return RedirectToAction(nameof(ManageAllergies));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddAllergy(Allergy allergy)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View(allergy);
+                bool addPerson = await _adminRepository.AddAllergyAsync(allergy);
+                if (addPerson)
+                {
+                    TempData["msg"] = "Sucessfully Added";
+                }
+                else
+                {
+                    TempData["msg"] = "Could not add";
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Something went wrong!";
+            }
+            return RedirectToAction(nameof(ManageAllergies));
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteAllergy(int Id)
+        {
+            var deleteResult = await _adminRepository.DeleteAllergyAsync(Id);
+            return RedirectToAction(nameof(ManageAllergies));
         }
         [HttpGet]
         public async Task<IActionResult> ManageConditions()

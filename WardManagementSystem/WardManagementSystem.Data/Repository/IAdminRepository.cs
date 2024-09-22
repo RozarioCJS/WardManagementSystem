@@ -47,5 +47,12 @@ namespace WardManagementSystem.Data.Repository
 
         Task<bool> DeleteMedicationAsync(int id);
 
+        //Allergy Management
+        Task<IEnumerable<Allergy>> GetAllAllergiesAsync();
+        Task<bool> UpdateAllergyAsync(int AllergyID, string AllergyName);
+        Task<bool> AddAllergyAsync(Allergy allergy);
+
+        Task<bool> DeleteAllergyAsync(int id);
+
     }
 }

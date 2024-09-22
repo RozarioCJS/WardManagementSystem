@@ -235,5 +235,50 @@ namespace WardManagementSystem.Data.Repository
             }
         }
 
+
+        //Allergy Management
+        public async Task<IEnumerable<Allergy>> GetAllAllergiesAsync()
+        {
+            return await _db.GetData<Allergy, dynamic>("sp_GetAllAllergies", new { });
+        }
+        public async Task<bool> UpdateAllergyAsync(int AllergyID, string AllergyName)
+        {
+            try
+            {
+
+                await _db.SaveData("sp_UpdateAllergy", new { AllergyID, AllergyName });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public async Task<bool> AddAllergyAsync(Allergy allergy)
+        {
+            try
+            {
+                await _db.SaveData("sp_AddAllergy", new { allergy.AllergyName });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteAllergyAsync(int id)
+        {
+            try
+            {
+                await _db.SaveData("sp_DeleteAllergy", new { AllergyID = id });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
     }
 }
