@@ -219,11 +219,72 @@ namespace WardManagementSystem.Controllers
             }
             return RedirectToAction(nameof(ManageConsumables));
         }
+
+
+        //Medication Management
         [HttpGet]
         public async Task<IActionResult> ManageMedications()
         {
-            return View();
+            var GetCon = await _adminRepository.GetAllMedicationAsync();
+            return View(GetCon);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateMedications(int MedicationID, string MedicationName)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View();
+                bool updateRecord = await _adminRepository.UpdateMedicationAsync(MedicationID, MedicationName);
+
+                if (updateRecord)
+                    TempData["msg"] = "Successful";
+                else
+                    TempData["msg"] = "Failed";
+            }
+
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Error!";
+            }
+            return RedirectToAction(nameof(ManageMedications));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddMedication(Medication medication)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View(medication);
+                bool addPerson = await _adminRepository.AddMedicationAsync(medication);
+                if (addPerson)
+                {
+                    TempData["msg"] = "Sucessfully Added";
+                }
+                else
+                {
+                    TempData["msg"] = "Could not add";
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Something went wrong!";
+            }
+            return RedirectToAction(nameof(ManageMedications));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteMedication(int Id)
+        {
+            var deleteResult = await _adminRepository.DeleteMedicationAsync(Id);
+            return RedirectToAction(nameof(ManageMedications));
+        }
+
         [HttpGet]
         public async Task<IActionResult> ManageAllergies()
         {

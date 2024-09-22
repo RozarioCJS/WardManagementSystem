@@ -190,5 +190,50 @@ namespace WardManagementSystem.Data.Repository
             }
         }
 
+        //Medication Management
+        public async Task<IEnumerable<Medication>> GetAllMedicationAsync()
+        {
+            return await _db.GetData<Medication, dynamic>("GetAllMedication", new { });
+        }
+
+        public async Task<bool> UpdateMedicationAsync(int MedicationID, string MedicationName)
+        {
+            try
+            {
+
+                await _db.SaveData("sp_UpdateMedication", new { MedicationID, MedicationName });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public async Task<bool> AddMedicationAsync(Medication medication)
+        {
+            try
+            {
+                await _db.SaveData("sp_AddMedication", new { medication.MedicationName , medication.MedicationType});
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteMedicationAsync(int id)
+        {
+            try
+            {
+                await _db.SaveData("sp_DeleteMedication", new { MedicationID = id });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
     }
 }

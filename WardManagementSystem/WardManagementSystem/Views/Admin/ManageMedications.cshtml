@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Ward>
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Medication>
 @{
     Layout = "~/Views/Shared/_layoutAdmin.cshtml";
 }
@@ -61,18 +61,18 @@
 <body>
     <h1>Dashboard</h1>
     <hr />
-    <a class="btn btn-outline-primary" onclick="showAddForm()">Add Ward</a>
+    <a class="btn btn-outline-primary" onclick="showAddForm()">Add Medication</a>
     <div class="container">
 
         @foreach (var item in Model)
         {
             <div class="card">
                 <div class="card-title">
-                    <h2>@item.WardName</h2>
-                    <input type="hidden" name="Id" value="@item.WardID" />
-                    <button class="btn btn-outline-secondary" type="submit" onclick="showUpdateForm('@item.WardID','@item.WardName')">Edit</button>
-                    <form asp-action="DeleteWard" method="post">
-                        <input type="hidden" name="Id" value="@item.WardID" />
+                    <h2>@item.MedicationName</h2>
+                    <input type="hidden" name="Id" value="@item.MedicationID" />
+                    <button class="btn btn-outline-secondary" type="submit" onclick="showUpdateForm('@item.MedicationID','@item.MedicationType','@item.MedicationName')">Edit</button>
+                    <form asp-action="DeleteMedication" method="post">
+                        <input type="hidden" name="Id" value="@item.MedicationID" />
                         <button class="btn btn-outline-danger" type="submit">Delete</button>
                     </form>
                 </div>
@@ -80,42 +80,46 @@
         }
         <!--Update Form Code-->
         <div class="update-form" id="updateForm" style="display:none;">
-            <h1>Update Ward @Model.First().WardName</h1>
-            <form method="post" asp-action="UpdateWard">
+            <h1>Update @Model.First().MedicationName</h1>
+            <form method="post" asp-action="UpdateMedications">
 
-                <label for="WardID">WardID:</label>
-                <input type="number" id="WardID" name="WardID" required readonly>
+                <label for="MedicationID">Medication ID:</label>
+                <input type="number" id="MedicationID" name="MedicationID" required readonly>
 
-                <label for="WardName">Ward Name:</label>
-                <input type="text" id="WardName" name="WardName" required>
+                <label for="MedicationType">Medication Type:</label>
+                <input type="text" id="MedicationType" name="MedicationType" required readonly>
+
+                <label for="MedicationName">Medication Name:</label>
+                <input type="text" id="MedicationName" name="MedicationName" required>
+
 
                 <div class="button-container">
                     <button class="btn btn-outline-primary" type="submit">Update Name</button>
                 </div>
-                <div class="button-container">
-                    <button class="btn btn-outline-primary" onclick="HideUpdateForm()" type="submit">Hide</button>
-                </div>
             </form>
+            <div class="button-container">
+                <button class="btn btn-outline-primary" onclick="HideUpdateForm()" type="submit">Hide</button>
+            </div>
         </div>
         <!--Add Form Code-->
         <div class="AddForm" id="AddForm" style="display:none;">
-            <h1>Add Ward</h1>
-            <form method="post" asp-action="AddWard">
-
-                <label for="WardName">Ward Name:</label>
-                <input type="text" id="WardName" name="WardName" required>
+            <h1>Add Medication</h1>
+            <form method="post" asp-action="AddMedication">
 
 
-                <label for="WardNumber">Ward Number:</label>
-                <input type="number" id="WardNumber" name="WardNumber" required>
+                <label for="MedicationType">Medication Type:</label>
+                <input type="text" id="MedicationType" name="MedicationType" required>
+
+                <label for="MedicationName">Medication Name:</label>
+                <input type="text" id="MedicationName" name="MedicationName" required>
 
                 <div class="button-container">
-                    <button class="btn btn-outline-primary" type="submit">Add Ward</button>
+                    <button class="btn btn-outline-primary" type="submit">Add Medication</button>
+                </div>
+                <div class="button-container">
+                    <button class="btn btn-outline-primary" onclick="HideAddForm()" type="submit">Hide</button>
                 </div>
             </form>
-            <div class="button-container">
-                <button class="btn btn-outline-primary" onclick="HideAddForm()" type="submit">Hide</button>
-            </div>
         </div>
         <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">
             <h6>Back</h6>
@@ -125,29 +129,33 @@
 </body>
 <script>
 
-    function showUpdateForm(WardID, WardName) {
+    function showUpdateForm(MedicationID, MedicationType ,MedicationName) {
 
         //shows the form
         var updateForm = document.getElementById("updateForm");
         updateForm.style.display = "block";
 
-        //puts the consumableID into the form
-        var wardIDInput = document.getElementById("WardID");
-        wardIDInput.value = WardID;
+        
+        var MedicationIDInput = document.getElementById("MedicationID");
+        MedicationIDInput.value = MedicationID;
 
-        var WardNameInput = document.getElementById("WardName");
-        WardNameInput.value = WardName;
+                var MedicationTypeInput = document.getElementById("MedicationType");
+        MedicationTypeInput.value = MedicationType;
+
+        var MedicationNameInput = document.getElementById("MedicationName");
+        MedicationNameInput.value = MedicationName;
+
     }
-        function showAddForm() {
+    function showAddForm() {
         //shows the form
         var updateForm = document.getElementById("AddForm");
         AddForm.style.display = "block";
     }
-    function HideAddForm(){
+    function HideAddForm() {
         var updateForm = document.getElementById("AddForm");
         AddForm.style.display = "none";
     }
-        function HideUpdateForm(){
+    function HideUpdateForm() {
         var updateForm = document.getElementById("updateForm");
         updateForm.style.display = "none";
     }
