@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Ward>
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Consumable>
 @{
     Layout = "~/Views/Shared/_layoutAdmin.cshtml";
 }
@@ -60,18 +60,18 @@
 <body>
     <h1>Dashboard</h1>
     <hr />
-    <a class="btn btn-outline-primary" onclick="showAddForm()">Add Ward</a>
+    <a class="btn btn-outline-primary" onclick="showAddForm()">Add Consumable</a>
     <div class="container">
 
         @foreach (var item in Model)
         {
             <div class="card">
                 <div class="card-title">
-                    <h2>@item.WardName</h2>
-                    <input type="hidden" name="Id" value="@item.WardID" />
-                    <button class="btn btn-outline-secondary" type="submit" onclick="showUpdateForm('@item.WardID','@item.WardName')">Edit</button>
-                    <form asp-action="DeleteWard" method="post">
-                        <input type="hidden" name="Id" value="@item.WardID" />
+                    <h2>@item.ConsumableName</h2>
+                    <input type="hidden" name="Id" value="@item.ConsumableID" />
+                    <button class="btn btn-outline-secondary" type="submit" onclick="showUpdateForm('@item.ConsumableID','@item.ConsumableName')">Edit</button>
+                    <form asp-action="DeleteConsumables" method="post">
+                        <input type="hidden" name="Id" value="@item.ConsumableID" />
                         <button class="btn btn-outline-danger" type="submit">Delete</button>
                     </form>
                 </div>
@@ -79,14 +79,14 @@
         }
         <!--Update Form Code-->
         <div class="update-form" id="updateForm" style="display:none;">
-            <h1>Update Ward @Model.First().WardName</h1>
-            <form method="post" asp-action="UpdateWard">
+            <h1>Update @Model.First().ConsumableName</h1>
+            <form method="post" asp-action="UpdateConsumables">
 
-                <label for="WardID">WardID:</label>
-                <input type="number" id="WardID" name="WardID" required readonly>
+                <label for="ConsumableID">ConsumableID:</label>
+                <input type="number" id="ConsumableID" name="ConsumableID" required readonly>
 
-                <label for="WardName">Ward Name:</label>
-                <input type="text" id="WardName" name="WardName" required>
+                <label for="ConsumableName">Consumable Name:</label>
+                <input type="text" id="ConsumableName" name="ConsumableName" required>
 
                 <div class="button-container">
                     <button class="btn btn-outline-primary" type="submit">Update Name</button>
@@ -98,18 +98,14 @@
         </div>
         <!--Add Form Code-->
         <div class="AddForm" id="AddForm" style="display:none;">
-            <h1>Add Ward</h1>
-            <form method="post" asp-action="AddWard">
+            <h1>Add Consumable</h1>
+            <form method="post" asp-action="AddConsumables">
 
-                <label for="WardName">Ward Name:</label>
-                <input type="text" id="WardName" name="WardName" required>
-
-
-                <label for="WardNumber">Ward Number:</label>
-                <input type="number" id="WardNumber" name="WardNumber" required>
+                <label for="ConsumableName">Consuamble Name:</label>
+                <input type="text" id="ConsumableName" name="ConsumableName" required>
 
                 <div class="button-container">
-                    <button class="btn btn-outline-primary" type="submit">Add Ward</button>
+                    <button class="btn btn-outline-primary" type="submit">Add Consumable</button>
                 </div>
                 <div class="button-container">
                     <button class="btn btn-outline-primary" onclick="HideAddForm()" type="submit">Hide</button>
@@ -124,29 +120,29 @@
 </body>
 <script>
 
-    function showUpdateForm(WardID, WardName) {
+    function showUpdateForm(ConsumableID, ConsumableName) {
 
         //shows the form
         var updateForm = document.getElementById("updateForm");
         updateForm.style.display = "block";
 
         //puts the consumableID into the form
-        var wardIDInput = document.getElementById("WardID");
-        wardIDInput.value = WardID;
+        var ConsumableIDInput = document.getElementById("ConsumableID");
+        ConsumableIDInput.value = ConsumableID;
 
-        var WardNameInput = document.getElementById("WardName");
-        WardNameInput.value = WardName;
+        var ConsumableNameInput = document.getElementById("ConsumableName");
+        ConsumableNameInput.value = ConsumableName;
     }
-        function showAddForm() {
+    function showAddForm() {
         //shows the form
         var updateForm = document.getElementById("AddForm");
         AddForm.style.display = "block";
     }
-    function HideAddForm(){
+    function HideAddForm() {
         var updateForm = document.getElementById("AddForm");
         AddForm.style.display = "none";
     }
-        function HideUpdateForm(){
+    function HideUpdateForm() {
         var updateForm = document.getElementById("updateForm");
         updateForm.style.display = "none";
     }

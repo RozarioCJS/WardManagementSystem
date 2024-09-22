@@ -28,5 +28,15 @@ namespace WardManagementSystem.Data.Repository
         Task<Ward> GetByIdAsync(int id);
 
         Task<IEnumerable<Ward>> GetAllWardAsync();
+
+
+        //Consumable Management
+        Task<IEnumerable<Consumable>> GetAllConsumablesAsync();
+        Task<Consumable> GetConsumableById(int id);
+        Task<bool> UpdateConsumableAsync(int ConsumableID, string ConsumableName);
+        Task<bool> AddConsumabledAsync(Consumable consumable);
+        
+        Task<bool> DeleteConsumableAsync(int id);
+
     }
 }

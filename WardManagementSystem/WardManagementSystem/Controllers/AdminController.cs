@@ -100,13 +100,6 @@ namespace WardManagementSystem.Controllers
             return View(GetUsers);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> UpdateWard(int Id)
-        {
-            var person = await _adminRepository.GetUserByIdAsync(Id);
-            return View(person);
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateWard(int WardID, string WardName)
@@ -162,10 +155,69 @@ namespace WardManagementSystem.Controllers
             return RedirectToAction(nameof(ManageWards));
         }
 
+        //Consumable Management Below
+
         [HttpGet]
         public async Task<IActionResult> ManageConsumables()
         {
-            return View();
+            var GetCon = await _adminRepository.GetAllConsumablesAsync();
+            return View(GetCon);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateConsumables(int ConsumableID, string ConsumableName)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View();
+                bool updateRecord = await _adminRepository.UpdateConsumableAsync(ConsumableID, ConsumableName);
+
+                if (updateRecord)
+                    TempData["msg"] = "Successful";
+                else
+                    TempData["msg"] = "Failed";
+            }
+
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Error!";
+            }
+            return RedirectToAction(nameof(ManageConsumables));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConsumables(int Id)
+        {
+            var deleteResult = await _adminRepository.DeleteConsumableAsync(Id);
+            return RedirectToAction(nameof(ManageConsumables));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddConsumables(Consumable consumable)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View(consumable);
+                bool addPerson = await _adminRepository.AddConsumabledAsync(consumable);
+                if (addPerson)
+                {
+                    TempData["msg"] = "Sucessfully Added";
+                }
+                else
+                {
+                    TempData["msg"] = "Could not add";
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Something went wrong!";
+            }
+            return RedirectToAction(nameof(ManageConsumables));
         }
         [HttpGet]
         public async Task<IActionResult> ManageMedications()
@@ -183,10 +235,5 @@ namespace WardManagementSystem.Controllers
             return View();
         }
 
-        [HttpGet]
-        public async Task<IActionResult> AddUser()
-        {
-            return View();  
-        }
     }
 }

@@ -93,10 +93,10 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-                await _db.SaveData("sp_AddWard", new { ward.WardName, ward.WardNumber});
+                await _db.SaveData("sp_AddWard", new { ward.WardName, ward.WardNumber });
                 return true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return false;
             }
@@ -139,6 +139,56 @@ namespace WardManagementSystem.Data.Repository
             return result.FirstOrDefault();
         }
 
+        //Consumable Management
+        public async Task<IEnumerable<Consumable>> GetAllConsumablesAsync()
+        {
+            return await _db.GetData<Consumable, dynamic>("sp_GetAllConsumables", new { });
+        }
+        public async Task<Consumable> GetConsumableById(int Id)
+        {
+            IEnumerable<Consumable> result = await _db.GetData<Consumable, dynamic>("sp_GetConsumablesByID", new { ConsumableID = Id });
+
+            return result.FirstOrDefault();
+        }
+
+        public async Task<bool> AddConsumabledAsync(Consumable consumable)
+        {
+            try
+            {
+                await _db.SaveData("sp_AddConsumable", new { consumable.ConsumableName});
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> UpdateConsumableAsync(int ConsumableID, string ConsumableName)
+        {
+            try
+            {
+
+                await _db.SaveData("sp_UpdateConsumable", new { ConsumableID, ConsumableName });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public async Task<bool> DeleteConsumableAsync(int id)
+        {
+            try
+            {
+                await _db.SaveData("sp_DeleteConsumable", new { ConsumableID = id });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
 
     }
 }
