@@ -132,7 +132,7 @@ namespace WardManagementSystem.Data.Repository
             return await _db.GetData<Ward, dynamic>("spGetWards", new { });
         }
 
-        public async Task<Ward> GetByIdAsync(int Id)
+        public async Task<Ward> GetWardByIdAsync(int Id)
         {
             IEnumerable<Ward> result = await _db.GetData<Ward, dynamic>("spGetWardsByID", new { UserID = Id });
 
@@ -155,7 +155,7 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-                await _db.SaveData("sp_AddConsumable", new { consumable.ConsumableName});
+                await _db.SaveData("sp_AddConsumable", new { consumable.ConsumableName });
                 return true;
             }
             catch (Exception ex)
@@ -213,7 +213,7 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-                await _db.SaveData("sp_AddMedication", new { medication.MedicationName , medication.MedicationType});
+                await _db.SaveData("sp_AddMedication", new { medication.MedicationName, medication.MedicationType });
                 return true;
             }
             catch (Exception ex)
@@ -234,7 +234,12 @@ namespace WardManagementSystem.Data.Repository
                 return false;
             }
         }
+        public async Task<Medication> GetMedicationByName(string name)
+        {
+            IEnumerable<Medication> result = await _db.GetData<Medication, dynamic>("sp_GetMedicationByName", new { MedicationName = name });
 
+            return result.FirstOrDefault();
+        }
 
         //Allergy Management
         public async Task<IEnumerable<Allergy>> GetAllAllergiesAsync()
@@ -278,6 +283,12 @@ namespace WardManagementSystem.Data.Repository
             {
                 return false;
             }
+        }
+        public async Task<Allergy> GetAllergyById(int Id)
+        {
+            IEnumerable<Allergy> result = await _db.GetData<Allergy, dynamic>("sp_GetAllergyById", new { AllergyID = Id });
+
+            return result.FirstOrDefault();
         }
 
     }

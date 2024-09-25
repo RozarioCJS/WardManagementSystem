@@ -129,6 +129,11 @@ namespace WardManagementSystem.Controllers
             var deleteResult = await _adminRepository.DeleteWardAsync(Id);
             return RedirectToAction(nameof(ManageWards));
         }
+        public async Task<IActionResult> GetWardById(int Id)
+        {
+            var GetWard = await _adminRepository.GetWardByIdAsync(Id);
+            return View(GetWard);
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -219,16 +224,30 @@ namespace WardManagementSystem.Controllers
             }
             return RedirectToAction(nameof(ManageConsumables));
         }
-
+        public async Task<IActionResult> GetConsumableById(int Id)
+        {
+            var GetCon = await _adminRepository.GetConsumableById(Id);
+            return View(GetCon);
+        }
 
         //Medication Management
         [HttpGet]
-        public async Task<IActionResult> ManageMedications()
+        public async Task<IActionResult> ManageMedications(string? name)
         {
+            if (!string.IsNullOrEmpty(name))
+            {
+                var GetCon = await _adminRepository.GetMedicationByName(name);
+                var medicationList = new List<Medication>();
+                if (GetCon != null)
+                {
+                    medicationList.Add(GetCon);
+                }
+                return View(medicationList);
+            }
             var GetMed = await _adminRepository.GetAllMedicationAsync();
             return View(GetMed);
-        }
 
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateMedications(int MedicationID, string MedicationName)
@@ -284,6 +303,7 @@ namespace WardManagementSystem.Controllers
             var deleteResult = await _adminRepository.DeleteMedicationAsync(Id);
             return RedirectToAction(nameof(ManageMedications));
         }
+
 
         //AllergyManagement
 

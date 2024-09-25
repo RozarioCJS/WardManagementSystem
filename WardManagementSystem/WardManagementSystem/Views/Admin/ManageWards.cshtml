@@ -80,7 +80,7 @@
         }
         <!--Update Form Code-->
         <div class="update-form" id="updateForm" style="display:none;">
-            <h1>Update Ward @Model.First().WardName</h1>
+            <h1>Update Ward</h1>
             <form method="post" asp-action="UpdateWard">
 
                 <label for="WardID">WardID:</label>
@@ -140,11 +140,11 @@
     }
         function showAddForm() {
         //shows the form
-        var updateForm = document.getElementById("AddForm");
+        var AddForm = document.getElementById("AddForm");
         AddForm.style.display = "block";
     }
     function HideAddForm(){
-        var updateForm = document.getElementById("AddForm");
+        var AddForm = document.getElementById("AddForm");
         AddForm.style.display = "none";
     }
         function HideUpdateForm(){

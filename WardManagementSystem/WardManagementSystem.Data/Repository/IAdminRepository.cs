@@ -26,7 +26,7 @@ namespace WardManagementSystem.Data.Repository
         Task<bool> UpdateWardAsync(int WardID, string WardName);
         Task<bool> DeleteWardAsync(int id);
 
-        Task<Ward> GetByIdAsync(int id);
+        Task<Ward> GetWardByIdAsync(int id);
 
         Task<IEnumerable<Ward>> GetAllWardAsync();
 
@@ -44,6 +44,7 @@ namespace WardManagementSystem.Data.Repository
         Task<IEnumerable<Medication>> GetAllMedicationAsync();
         Task<bool> UpdateMedicationAsync(int MedicationID, string MedicationName);
         Task<bool> AddMedicationAsync(Medication medication);
+        Task<Medication> GetMedicationByName(string name);
 
         Task<bool> DeleteMedicationAsync(int id);
 
@@ -53,6 +54,7 @@ namespace WardManagementSystem.Data.Repository
         Task<bool> AddAllergyAsync(Allergy allergy);
 
         Task<bool> DeleteAllergyAsync(int id);
+        Task<Allergy> GetAllergyById(int id);
 
     }
 }
