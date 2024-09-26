@@ -2,6 +2,7 @@
 using WardManagementSystem.Data.DataAccess;
 using WardManagementSystem.Data.Repository;
 using WardManagementSystem.Data.Models;
+using WardManagementSystem.Data.Models.ViewModels;
 
 namespace WardManagementSystem.Data.Repository
 {
@@ -39,11 +40,11 @@ namespace WardManagementSystem.Data.Repository
             }
         }
 
-        public async Task<IEnumerable<Schedule>> GetAllAsync()
-        {
-            string query = "sp_ViewAllSchedules";
-            return await _db.GetData<Schedule, dynamic>(query, new { });
-        }
+        //public async Task<IEnumerable<Schedule>> GetAllAsync()
+        //{
+        //    string query = "sp_ViewAllSchedules";
+        //    return await _db.GetData<Schedule, dynamic>(query, new { });
+        //}
 
         public async Task<Schedule> GetByIdAsync(int id)
         {
@@ -78,6 +79,24 @@ namespace WardManagementSystem.Data.Repository
         public async Task<IEnumerable<DoctorDashboardViewModel>> GetDashboardAsync(int DoctorID)
         {
             return await _db.GetData<DoctorDashboardViewModel, dynamic>("sp_DashboardSchedule", new { DoctorID = DoctorID });
+        }
+
+        public async Task<IEnumerable<ScheduleDisplayViewModel>> GetAllAsync()      //still have to code it in a way that uses DoctorID to only display specif doctor's schedule. Code to be updated in stored procedure as well!!
+        {
+            string query = "sp_ViewAllSchedulesVM";
+            return await _db.GetData<ScheduleDisplayViewModel, dynamic>(query, new { });
+        }
+
+        public async Task<IEnumerable<ScheduleDisplayViewModel>> GetAllPatientAsync(int PatientID)      //still have to code it in a way that uses DoctorID to only display specif doctor's schedule. Code to be updated in stored procedure as well!!
+        {
+            string query = "sp_ViewPatientSchedulesVM";
+            return await _db.GetData<ScheduleDisplayViewModel, dynamic>(query, new { PatientID = PatientID});
+        }
+
+        public async Task<IEnumerable<PatientComboViewModel>> GetPatientFullNameAsync()
+        {
+            var query = "sp_PatientComboBox";
+            return await _db.GetData<PatientComboViewModel, dynamic>(query, new { });
         }
     }
 }

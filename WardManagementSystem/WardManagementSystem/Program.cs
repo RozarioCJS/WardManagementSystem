@@ -17,6 +17,7 @@ builder.Services.AddTransient<IPatientInstructionRepo, PatientInstructionRepo>()
 builder.Services.AddTransient<IScriptRepo, ScriptRepo>();
 builder.Services.AddTransient<IScriptDetailRepo, ScriptDetailRepo>();
 builder.Services.AddTransient<IScheduleRepo, ScheduleRepo>();
+builder.Services.AddTransient<IPatientFileRepo, PatientFileRepo>();
 //Kenneth's Services
 builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddTransient<INurseRepository, NurseRepository>();
