@@ -17,6 +17,6 @@ namespace WardManagementSystem.Data.Repository
         Task<IEnumerable<PatientTreatmentViewModel>> DisplayAllPatientTreatmentAsync(int PatientID);
         Task<IEnumerable<PatientVitalsViewModel>> DisplayAllPatientVitalsAsync(int PatientID);
 
-        Task<IEnumerable<PatientComboViewModel>> GetPatientFullNameAsync();
+        Task<IEnumerable<PatientFullNameViewModel>> GetPatientFullNameAsync();
     }
 }

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using WardManagementSystem.Data.Models.Domain;
+using WardManagementSystem.Data.Models.ViewModels;
 using WardManagementSystem.Data.Repository;
 
 namespace WardManagementSystem.Controllers
@@ -29,6 +31,18 @@ namespace WardManagementSystem.Controllers
         //add
         public async Task<IActionResult> Add()
         {
+            //filling the drop down list
+            var patientFullName = await _patientInstructionRepo.GetPatientFullNameAsync();
+            ViewData["PatientFileFullNameViewModel"] = patientFullName;
+
+            List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
+            foreach (PatientFileFullNameViewModel p in patientFullName)        //iterating through the data to fill the list with patients
+            {
+                patients.Add(new SelectListItem { Value = p.PatientFileID.ToString(), Text = p.PatientName });
+            }
+            ViewBag.Patients = patients;        //Setting a ViewBag to contain the list of patients
+            var selectList = new SelectList(patients, "Value", "Text");
+            ViewBag.SelectList = selectList;
             return View();
         }
 

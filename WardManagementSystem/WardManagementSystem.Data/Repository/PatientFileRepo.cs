@@ -54,10 +54,10 @@ namespace WardManagementSystem.Data.Repository
             return await _db.GetData<PatientVitalsViewModel, dynamic>(query, new { PatientID = PatientID });
         }
 
-        public async Task<IEnumerable<PatientComboViewModel>> GetPatientFullNameAsync()
+        public async Task<IEnumerable<PatientFullNameViewModel>> GetPatientFullNameAsync()
         {
-            var query = "sp_PatientComboBox";
-            return await _db.GetData<PatientComboViewModel, dynamic>(query, new { });
+            var query = "sp_PatientFullName";
+            return await _db.GetData<PatientFullNameViewModel, dynamic>(query, new { });
         }
     }
 }

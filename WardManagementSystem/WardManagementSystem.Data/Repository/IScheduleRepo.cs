@@ -21,6 +21,6 @@ namespace WardManagementSystem.Data.Repository
         Task<IEnumerable<DoctorDashboardViewModel>> GetDashboardAsync(int DoctorID);    //Get the data for the scheduled today table
         Task<IEnumerable<ScheduleDisplayViewModel>> GetAllAsync();
         Task<IEnumerable<ScheduleDisplayViewModel>> GetAllPatientAsync(int PatientID); //Gets all the schedules for a specific patient
-        Task<IEnumerable<PatientComboViewModel>> GetPatientFullNameAsync();
+        Task<IEnumerable<PatientFullNameViewModel>> GetPatientFullNameAsync();
     }
 }

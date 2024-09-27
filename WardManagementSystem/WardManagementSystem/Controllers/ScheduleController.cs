@@ -52,7 +52,7 @@ namespace WardManagementSystem.Controllers
             ViewData["PatientComboViewModel"] = patientComboBox;
 
             List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
-            foreach (PatientComboViewModel p in patientComboBox)        //iterating through the data to fill the list with patients
+            foreach (PatientFullNameViewModel p in patientComboBox)        //iterating through the data to fill the list with patients
             {
                 patients.Add(new SelectListItem { Value = p.PatientID.ToString(), Text = p.PatientName });
             }
@@ -74,12 +74,25 @@ namespace WardManagementSystem.Controllers
         //add
         public async Task<IActionResult> Add()
         {
+            //filling the drop down list
+            var patientComboBox = await _scheduleRepo.GetPatientFullNameAsync();
+            ViewData["PatientComboViewModel"] = patientComboBox;
+
+            List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
+            foreach (PatientFullNameViewModel p in patientComboBox)        //iterating through the data to fill the list with patients
+            {
+                patients.Add(new SelectListItem { Value = p.PatientID.ToString(), Text = p.PatientName });
+            }
+            ViewBag.Patients = patients;        //Setting a ViewBag to contain the list of patients
+            var selectList = new SelectList(patients, "Value", "Text");
+            ViewBag.SelectList = selectList;
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Add(Schedule schedule)
         {
+            // inserting the record
             try
             {
                 if (!ModelState.IsValid)

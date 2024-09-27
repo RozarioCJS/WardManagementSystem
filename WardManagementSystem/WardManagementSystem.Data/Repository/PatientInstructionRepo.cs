@@ -1,6 +1,7 @@
 ﻿using WardManagementSystem.Data.Models.Domain;
 using WardManagementSystem.Data.DataAccess;
 using static iText.StyledXmlParser.Jsoup.Select.Evaluator;
+using WardManagementSystem.Data.Models.ViewModels;
 
 namespace WardManagementSystem.Data.Repository
 {
@@ -61,6 +62,12 @@ namespace WardManagementSystem.Data.Repository
             {
                 return false;
             }
+        }
+
+        public async Task<IEnumerable<PatientFileFullNameViewModel>> GetPatientFullNameAsync()
+        {
+            var query = "sp_PatientFullName_PatientFile";
+            return await _db.GetData<PatientFileFullNameViewModel, dynamic>(query, new { });
         }
     }
 }

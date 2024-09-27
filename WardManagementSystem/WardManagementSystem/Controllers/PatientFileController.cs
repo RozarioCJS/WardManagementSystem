@@ -40,12 +40,14 @@ namespace WardManagementSystem.Controllers
             ViewData["PatientVitalsViewModel"] = patientVitals;
             
 
+            //when displaying patient name and date by medication I want to sort it to display in order of name first and then date
+
             //Searching for patient to be displayed
             var patientComboBox = await _patientFileRepo.GetPatientFullNameAsync();
             ViewData["PatientComboViewModel"] = patientComboBox;
             
             List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
-            foreach (PatientComboViewModel p in patientComboBox)        //iterating through the data to fill the list with patients
+            foreach (PatientFullNameViewModel p in patientComboBox)        //iterating through the data to fill the list with patients
             {
                 patients.Add(new SelectListItem { Value = p.PatientID.ToString(), Text = p.PatientName });
             }
