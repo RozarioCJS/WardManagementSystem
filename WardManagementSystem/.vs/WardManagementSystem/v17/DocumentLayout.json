@@ -35,8 +35,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-09-20T10:19:45.172Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "WardManagementSystem\\Views\\PatientFile\\DisplayAll.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-27T09:55:01.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-27T09:55:01.682Z"
             },
             {
               "$type": "Document",
