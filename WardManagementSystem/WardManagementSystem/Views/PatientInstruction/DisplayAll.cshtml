@@ -5,12 +5,23 @@
 @{
     ViewData["Title"] = "DisplayAll";
 }
+<style>
+    a {
+        color: white;
+        text-decoration: none;
+    }
 
-<h1>DisplayAll</h1>
+    a:hover{
+        color: white;
+    }
+</style>
+<h1>Patient Instructions</h1>
 
-<p>
-    <a asp-action="Add">Create New</a>
-</p>
+<button type="button" class="btn btn-primary btn-sm"><a asp-action="Add">Create New Instruction</a></button>
+<button type="button" class="btn btn-primary btn-sm"><a asp-action="DisplayAll">View All Patient Instructions</a></button>
+
+<br />
+<hr />
 <table class="table">
     <thead>
         <tr>

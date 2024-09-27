@@ -10,15 +10,26 @@
     IEnumerable<PatientFullNameViewModel> patientComboViewModels = ViewData["PatientComboViewModel"] as IEnumerable<PatientFullNameViewModel>;
 }
 
-<h1>DisplayAll</h1>
+<style>
+    a {
+        color: white;
+        text-decoration: none;
+    }
 
-<p>
-    <a asp-action="Add">Create New</a>
-</p>
+    a:hover{
+        color: white;
+    }
+</style>
+<h1>Patient Schedules</h1>
+
+<button type="button" class="btn btn-primary btn-sm"><a asp-action="Add">Create New Schedule</a></button>
+<button type="button" class="btn btn-primary btn-sm"><a asp-action="DisplayAll">View All Schedules</a></button>
+
 
 @* Drop down list that displays patient name but has patientID as its value *@
 @using (Html.BeginForm("DisplayAll", "Schedule", FormMethod.Get))
 {
+    <label>Select Patient:</label>
     @Html.DropDownList("PatientID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
     <input type="submit" value="Search" class="btn btn-primary" />
 }
