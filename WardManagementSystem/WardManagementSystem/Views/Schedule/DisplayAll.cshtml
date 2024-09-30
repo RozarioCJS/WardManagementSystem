@@ -53,8 +53,7 @@
                 <tr>
                     <td>@scheduleDisplayViewModel.PatientFullName</td>
                     <td>
-                        @* @Html.DisplayFor(modelItem => item.Date.ToString("yyyy-MM-dd")) *@   @*Find a way to make this work*@
-                        @scheduleDisplayViewModel.Date
+                        @scheduleDisplayViewModel.Date.ToString("dd/MM/yyyy")
                     </td>
                     <td>@scheduleDisplayViewModel.Time</td>
                     <td>

@@ -51,6 +51,20 @@ namespace WardManagementSystem.Controllers
         //add
         public async Task<IActionResult> Add()
         {
+            //filling the drop down list with doctor names
+            var doctorFullName = await _visitRepo.GetDoctorFullNameAsync();
+            ViewData["DoctorFullNameViewModel"] = doctorFullName;
+
+            List<SelectListItem> doctors = new List<SelectListItem>();     //creating a list to store doctors
+            foreach (DoctorFullNameViewModel d in doctorFullName)        //iterating through the data to fill the list with doctors
+            {
+                doctors.Add(new SelectListItem { Value = d.DoctorID.ToString(), Text = d.DoctorName });     //doctor gets added to the list
+            }
+            ViewBag.Doctor = doctors;        //Setting a ViewBag to contain the list of doctors
+            var selectListDoctor = new SelectList(doctors, "Value", "Text");    //setting the format to be carrient to drop down list
+            ViewBag.SelectListDoctor = selectListDoctor;       //Stores the data with the correct format to be used in view with drop down list
+
+
             //filling the drop down list for patient name
             var patientFullName = await _visitRepo.GetPatientFileFullNameAsync();
             ViewData["PatientFileFullNameViewModel"] = patientFullName;

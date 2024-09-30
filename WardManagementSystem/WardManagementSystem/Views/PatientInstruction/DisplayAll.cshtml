@@ -51,7 +51,7 @@
                 <tr>
                     <td>@patientInstructionViewModel.PatientName</td>
                     <td>@patientInstructionViewModel.Instruction</td>
-                    <td>@patientInstructionViewModel.Date</td>
+                    <td>@patientInstructionViewModel.Date.ToString("dd/MM/yyyy")</td>
                     <td>
                             @Html.ActionLink("Edit", "Edit", new { id = patientInstructionViewModel.PatientInstructionID }) |
                             @Html.ActionLink("Delete", "Delete", new { id = patientInstructionViewModel.PatientInstructionID })

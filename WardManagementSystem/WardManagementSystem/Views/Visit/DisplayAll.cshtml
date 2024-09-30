@@ -52,7 +52,7 @@
                 <tr>
                     <td>@visitNoteViewModel.PatientName</td>
                     <td>@visitNoteViewModel.VisitNote</td>
-                    <td>@visitNoteViewModel.Date</td>
+                    <td>@visitNoteViewModel.Date.ToString("dd/MM/yyyy")</td>
                     <td>@visitNoteViewModel.DischargePatient</td>
                     <td>
                         @Html.ActionLink("Edit", "Edit", new { id = visitNoteViewModel.VisitID }) |
