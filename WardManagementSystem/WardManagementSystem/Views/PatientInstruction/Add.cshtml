@@ -67,8 +67,6 @@
                             <input asp-for="DoctorID" class="form-control" />
                             <span asp-validation-for="DoctorID" class="text-danger"></span>
                         </div>
-                    </div>
-                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label asp-for="Instruction" class="control-label"></label>
@@ -76,10 +74,16 @@
                                 <span asp-validation-for="Instruction" class="text-danger"></span>
                             </div>
                         </div>
-
-                        <div class="button-container">
-                            <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="button-container">
+                                <input type="submit" value="Create" class="btn btn-primary" />
+                            </div>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                 </div>
             </div>

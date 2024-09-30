@@ -1,11 +1,11 @@
-﻿@model WardManagementSystem.Data.Models.Domain.Script
+﻿@model WardManagementSystem.Data.Models.Domain.Visit
+
+@{
+    ViewData["Title"] = "Edit";
+}
 @{
     Layout = "~/Views/Shared/_LayoutDoctor.cshtml";
 }
-@{
-    ViewData["Title"] = "Add";
-}
-
 <style>
     .card {
         margin-bottom: 20px;
@@ -40,24 +40,28 @@
         color: white;
     }
 </style>
+<h1>Visit Notes</h1>
 
-<h1>Patient Script Medication</h1>
-
-<button type="button" class="btn btn-primary btn-sm"><a asp-action="Add">Create New Script</a></button>
-<button type="button" class="btn btn-primary btn-sm"><a asp-action="DisplayAll">View All Patient Scripts</a></button>
+<button type="button" class="btn btn-primary btn-sm"><a asp-action="Add">Create New Visit Note</a></button>
+<button type="button" class="btn btn-primary btn-sm"><a asp-action="DisplayAll">View All Visit Notes</a></button>
 
 <br />
 <hr />
 
-<form asp-action="Add">
+<form asp-action="Edit">
     <div class="container">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h2 class="card-title">Create Instruction</h2>
+                    <h2 class="card-title">Edit Visit Note</h2>
                 </div>
                 <div class="card-body">
                     <div class="row">
+                        <div class="col-md-4">
+                            <label asp-for="VisitID" class="control-label"></label>
+                            <input asp-for="VisitID" class="form-control" />
+                            <span asp-validation-for="VisitID" class="text-danger"></span>
+                        </div>
                         <div class="col-md-4">
                             <label asp-for="DoctorID" class="control-label"></label>
                             <input asp-for="DoctorID" class="form-control" />
@@ -66,22 +70,23 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label>Patient Name</label>
-                                @Html.DropDownList("PatientFileID", (SelectList)@ViewBag.PatientList, "-select-", htmlAttributes: new { @class = "form-control" })
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Medication Name</label>
-                                @Html.DropDownList("MedicationID", (SelectList)@ViewBag.MedicationList, "-select-", htmlAttributes: new { @class = "form-control" })
+                                @Html.DropDownList("PatientFileID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label asp-for="Dosage" class="control-label"></label>
-                                <input asp-for="Dosage" class="form-control" />
-                                <span asp-validation-for="Dosage" class="text-danger"></span>
+                                <label asp-for="VisitNote" class="control-label"></label>
+                                <input asp-for="VisitNote" class="form-control" />
+                                <span asp-validation-for="VisitNote" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" asp-for="DischargePatient" /> @Html.DisplayNameFor(model => model.DischargePatient)
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -90,7 +95,7 @@
                         <div class="col-md-4"></div>
                         <div class="col-md-4">
                             <div class="button-container">
-                                <input type="submit" value="Create" class="btn btn-primary" />
+                                <input type="submit" value="Edit" class="btn btn-primary" />
                             </div>
                         </div>
                         <div class="col-md-4"></div>
@@ -101,9 +106,9 @@
     </div>
 </form>
 
-@* <div>
+<div>
     <a asp-action="Index">Back to List</a>
-</div> *@
+</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

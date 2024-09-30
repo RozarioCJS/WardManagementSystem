@@ -69,5 +69,11 @@ namespace WardManagementSystem.Data.Repository
             var query = "sp_PatientFullName_PatientFile";
             return await _db.GetData<PatientFileFullNameViewModel, dynamic>(query, new { });
         }
+
+        public async Task<IEnumerable<PatientInstructionViewModel>> GetAllPatientNameAsync(int PatientFileID)
+        {
+            var query = "sp_PatientInstructionVM";
+            return await _db.GetData<PatientInstructionViewModel, dynamic>(query, new { PatientFileID = PatientFileID});
+        }
     }
 }

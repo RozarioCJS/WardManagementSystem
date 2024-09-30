@@ -6,12 +6,12 @@ using WardManagementSystem.Data.Repository;
 
 namespace WardManagementSystem.Controllers
 {
-    public class PatientInstructionController : Controller
+    public class VisitController : Controller
     {
-        private readonly IPatientInstructionRepo _patientInstructionRepo;
-        public PatientInstructionController(IPatientInstructionRepo instructionRepo)
+        private readonly IVisitRepo _visitRepo;
+        public VisitController(IVisitRepo visitRepo)
         {
-            _patientInstructionRepo = instructionRepo;
+            _visitRepo = visitRepo;
         }
 
         public IActionResult Index()
@@ -19,15 +19,14 @@ namespace WardManagementSystem.Controllers
             return View();
         }
 
-
         //Display all
         public async Task<IActionResult> DisplayAll(int PatientFileID)
         {
-            var patientInstructions = await _patientInstructionRepo.GetAllPatientNameAsync(PatientFileID);
-            ViewData["PatientInstructionViewModel"] = patientInstructions;
+            var patientVisits = await _visitRepo.GetAllAsync(PatientFileID);
+            ViewData["VisitNoteViewModel"] = patientVisits;
 
             //Searching for patient to be displayed
-            var patientComboBox = await _patientInstructionRepo.GetPatientFullNameAsync();
+            var patientComboBox = await _visitRepo.GetPatientFileFullNameAsync();
             ViewData["PatientFileComboViewModel"] = patientComboBox;
 
             List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
@@ -44,15 +43,16 @@ namespace WardManagementSystem.Controllers
                 return View();
             }
 
-            return View(patientInstructions.Where(x => x.PatientFileID == PatientFileID).Take(50));
+            return View(patientVisits.Where(x => x.PatientFileID == PatientFileID).Take(50));
         }
+
 
 
         //add
         public async Task<IActionResult> Add()
         {
-            //filling the drop down list
-            var patientFullName = await _patientInstructionRepo.GetPatientFullNameAsync();
+            //filling the drop down list for patient name
+            var patientFullName = await _visitRepo.GetPatientFileFullNameAsync();
             ViewData["PatientFileFullNameViewModel"] = patientFullName;
 
             List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
@@ -68,17 +68,18 @@ namespace WardManagementSystem.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(Patient_Instruction patient_instruction)
+        public async Task<IActionResult> Add(Visit visit)
         {
+            // inserting the record
             try
             {
                 if (!ModelState.IsValid)
                 {
-                    return View(patient_instruction);
+                    return View(visit);
                 }
 
-                bool addInstruction = await _patientInstructionRepo.AddAsync(patient_instruction);
-                if (addInstruction)
+                bool addVisit = await _visitRepo.AddAsync(visit);
+                if (addVisit)
                 {
                     TempData["msg"] = "Successfully Added!";
                 }
@@ -95,39 +96,11 @@ namespace WardManagementSystem.Controllers
             return RedirectToAction(nameof(DisplayAll));
         }
 
-        //Delete
-        public async Task<IActionResult> Delete(int id)
-        {
-            try
-            {
-                if (!ModelState.IsValid)
-                {
-                    return View(id);
-                }
-
-                bool deleteInstruction = await _patientInstructionRepo.DeleteAsync(id);
-                if (deleteInstruction)
-                {
-                    TempData["msg"] = "Successfully Deleted!";
-                }
-                else
-                {
-                    TempData["msg"] = "Could not delete.";
-                }
-            }
-            catch (Exception ex)
-            {
-                TempData["msg"] = "Something went wrong!";
-            }
-
-            return RedirectToAction(nameof(DisplayAll));
-        }
-
         //edit
         public async Task<IActionResult> Edit(int id)
         {
             //filling the drop down list
-            var patientFullName = await _patientInstructionRepo.GetPatientFullNameAsync();
+            var patientFullName = await _visitRepo.GetPatientFileFullNameAsync();
             ViewData["PatientFileFullNameViewModel"] = patientFullName;
 
             List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
@@ -139,28 +112,58 @@ namespace WardManagementSystem.Controllers
             var selectList = new SelectList(patients, "Value", "Text");
             ViewBag.SelectList = selectList;
 
-            var result = await _patientInstructionRepo.GetByIdAsync(id);
+            //filling rest of the controls
+            var result = await _visitRepo.GetByIdAsync(id);
             return View(result);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(Patient_Instruction patient_instruction)
+        public async Task<IActionResult> Edit(Visit visit)
         {
             try
             {
                 if (!ModelState.IsValid)
                 {
-                    return View(patient_instruction);
+                    return View(_visitRepo);
                 }
 
-                bool updateInstruction = await _patientInstructionRepo.UpdateAsync(patient_instruction);
-                if (updateInstruction)
+                bool updateVisit = await _visitRepo.UpdateAsync(visit);
+                if (updateVisit)
                 {
                     TempData["msg"] = "Successfully Updated!";
                 }
                 else
                 {
                     TempData["msg"] = "Could not update.";
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Something went wrong!";
+            }
+
+            return RedirectToAction(nameof(DisplayAll));
+        }
+
+
+        //Delete
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return View(id);
+                }
+
+                bool deleteVisitNote = await _visitRepo.DeleteAsync(id);
+                if (deleteVisitNote)
+                {
+                    TempData["msg"] = "Successfully Deleted!";
+                }
+                else
+                {
+                    TempData["msg"] = "Could not delete.";
                 }
             }
             catch (Exception ex)

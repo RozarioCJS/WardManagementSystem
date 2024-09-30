@@ -21,7 +21,7 @@
 <hr />
 <div class="container">
     <div class="card">
-        <div class="clickable-row" data-href="@Url.Action("DisplayAll", "Schedule")">
+        <div class="clickable-row" data-href="@Url.Action("Dashboard", "Schedule")">
             <div class="card-title">
                 <h2>Visits Scheduled Today</h2>
                 <h3>@scheduleCountViewModels.TodayCount</h3>
@@ -36,46 +36,29 @@
     </div>
 </div>
 
-
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
-            <th>
-                DoctorID
-            </th>
-            <th>
-                PatientName
-            </th>
-            <th>
-                Date
-            </th>
-            <th>
-                Time
-            </th>
-            <th></th>
+            <th scope="col">Patient Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
         </tr>
     </thead>
     <tbody>
-@* @foreach (var item in Model.DoctorDashboardViewModel) *@
-        @foreach (DoctorDashboardViewModel doctorDashboardViewModel in doctorDashboardViewModels)
+         @foreach (DoctorDashboardViewModel doctorDashboardViewModel in doctorDashboardViewModels)
         {
-        <tr>
-            <td>
-                    @doctorDashboardViewModel.DoctorID
-            </td>
-            <td>
+            <tr>
+                <td>
                     @doctorDashboardViewModel.PatientName
-            </td>
-            <td>
+                </td>
+                <td>
                     @doctorDashboardViewModel.Date
-            </td>
-            <td>
+                </td>
+                <td>
                     @doctorDashboardViewModel.Time
-            </td>
-            <td>
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+

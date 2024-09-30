@@ -16,5 +16,6 @@ namespace WardManagementSystem.Data.Repository
         Task<Patient_Instruction> GetByIdAsync(int id);
         Task<IEnumerable<Patient_Instruction>> GetAllAsync();
         Task<IEnumerable<PatientFileFullNameViewModel>> GetPatientFullNameAsync();
+        Task<IEnumerable<PatientInstructionViewModel>> GetAllPatientNameAsync(int PatientFileID);
     }
 }

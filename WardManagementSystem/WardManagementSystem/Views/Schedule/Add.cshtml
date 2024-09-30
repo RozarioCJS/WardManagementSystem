@@ -36,9 +36,9 @@
         text-decoration: none;
     }
 
-        a:hover {
-            color: white;
-        }
+    a:hover {
+       color: white;
+    }
 </style>
 <h1>Patient Schedules</h1>
 
@@ -68,24 +68,32 @@
                             <input asp-for="DoctorID" class="form-control" />
                             <span asp-validation-for="DoctorID" class="text-danger"></span>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label asp-for="Date" class="control-label"></label>
                                 <input type="Date" asp-for="Date" class="form-control" />
                                 <span asp-validation-for="Date" class="text-danger"></span>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label asp-for="Time" class="control-label"></label>
                                 <input asp-for="Time" class="form-control" />
                                 <span asp-validation-for="Time" class="text-danger"></span>
                             </div>
                         </div>
-
-                        <div class="button-container">
-                            <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="button-container">
+                                <input type="submit" value="Create" class="btn btn-primary" />
+                            </div>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                 </div>
             </div>

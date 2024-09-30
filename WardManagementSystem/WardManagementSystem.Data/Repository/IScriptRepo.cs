@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WardManagementSystem.Data.Models.Domain;
+using WardManagementSystem.Data.Models.ViewModels;
 
 namespace WardManagementSystem.Data.Repository
 {
@@ -14,5 +15,8 @@ namespace WardManagementSystem.Data.Repository
         Task<bool> DeleteAsync(int id);
         Task<Script> GetByIdAsync(int id);
         Task<IEnumerable<Script>> GetAllAsync();
+        Task<IEnumerable<PatientFileFullNameViewModel>> GetPatientFullNameAsync();  //for loading the patient name drop down list
+        Task<IEnumerable<MedicationNameViewModel>> GetMedicationNameAsync();    //for loading the medication drop down list
+        Task<IEnumerable<PatientScriptViewModel>> GetAllPatientAsync(int PatientFileID);
     }
 }

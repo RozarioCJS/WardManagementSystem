@@ -11,19 +11,19 @@
 }
 
 <style>
-    a {
+    a.link {
         color: white;
         text-decoration: none;
     }
 
-    a:hover{
+    a:hover.link {
         color: white;
     }
 </style>
 <h1>Patient Schedules</h1>
 
-<button type="button" class="btn btn-primary btn-sm"><a asp-action="Add">Create New Schedule</a></button>
-<button type="button" class="btn btn-primary btn-sm"><a asp-action="DisplayAll">View All Schedules</a></button>
+<button type="button" class="btn btn-primary btn-sm"><a class="link" asp-action="Add">Create New Schedule</a></button>
+<button type="button" class="btn btn-primary btn-sm"><a class="link" asp-action="DisplayAll">View All Schedules</a></button>
 
 
 @* Drop down list that displays patient name but has patientID as its value *@
@@ -36,42 +36,37 @@
 
 @if (scheduleDisplayViewModels != null && scheduleDisplayViewModels.Any())
 {
-    <table class="table">
+
+
+    <table class="table table-striped">
         <thead>
             <tr>
-                <th>
-                    PatientFullName
-                </th>
-                <th>
-                    Date
-                </th>
-                <th>
-                    Time
-                </th>
-                <th></th>
+                <th scope="col">Patient Full Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
             @foreach (ScheduleDisplayViewModel scheduleDisplayViewModel in scheduleDisplayViewModels)
             {
                 <tr>
+                    <td>@scheduleDisplayViewModel.PatientFullName</td>
                     <td>
-                            @scheduleDisplayViewModel.PatientFullName
-                    </td>
-                    <td> 
                         @* @Html.DisplayFor(modelItem => item.Date.ToString("yyyy-MM-dd")) *@   @*Find a way to make this work*@
-                             @scheduleDisplayViewModel.Date
+                        @scheduleDisplayViewModel.Date
                     </td>
+                    <td>@scheduleDisplayViewModel.Time</td>
                     <td>
-                            @scheduleDisplayViewModel.Time
+                        @Html.ActionLink("Edit", "Edit", new { id = scheduleDisplayViewModel.ScheduleID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = scheduleDisplayViewModel.ScheduleID })
                     </td>
-                    <td> 
-                        @* @Html.ActionLink("Edit", "Edit", new {  id = item.ScheduleID }) |
-                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = item.ScheduleID }) *@
-                     </td>
                 </tr>
             }
+
         </tbody>
-    </table> 
+    </table>
+} else
+{
+    <p>Please select a patient, or selected may not have any current records.</p>
 }

@@ -62,9 +62,7 @@ namespace WardManagementSystem.Controllers
 
             if (!String.IsNullOrWhiteSpace(PatientID.ToString()))       //Find a way to display all schedules if no patient is selected.
             {
-                //var allSchedules = await _scheduleRepo.GetAllAsync();
-                //ViewData["ScheduleDisplayViewModel"] = allSchedules;
-                return View(patientSchedules);
+                return View();
             }
 
             return View(patientSchedules.Where(x => x.PatientID == PatientID).Take(50));
@@ -152,6 +150,19 @@ namespace WardManagementSystem.Controllers
         //edit
         public async Task<IActionResult> Edit(int id)
         {
+            //Searching for patient to be displayed
+            var patientComboBox = await _scheduleRepo.GetPatientFullNameAsync();
+            ViewData["PatientComboViewModel"] = patientComboBox;
+
+            List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
+            foreach (PatientFullNameViewModel p in patientComboBox)        //iterating through the data to fill the list with patients
+            {
+                patients.Add(new SelectListItem { Value = p.PatientID.ToString(), Text = p.PatientName });
+            }
+            ViewBag.Patients = patients;        //Setting a ViewBag to contain the list of patients
+            var selectList = new SelectList(patients, "Value", "Text");
+            ViewBag.SelectList = selectList;
+
             var result = await _scheduleRepo.GetByIdAsync(id);
             return View(result);
         }
