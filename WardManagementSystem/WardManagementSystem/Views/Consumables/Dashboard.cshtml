@@ -24,26 +24,17 @@
     <h1>Dashboard</h1>
     <hr />
     <div class="container">
-        <div class="card">
-            <div class="card-title  clickable-row" data-href="@Url.Action("DetailsA", "Consumables", new { Id = 1002 })">
-                <h2>Ward A</h2>
+        @foreach (var item in Model)
+        {
+            <div class="card">
+                <div class="card-title  clickable-row" data-href="@Url.Action("Details", "Consumables", new { Id = item.WardID })">
+                    <h2>@item.WardName</h2>
+                </div>
             </div>
-        </div>
+        }
+    </div>
 
-        <div class="card">
-            <div class="card-title  clickable-row" data-href="@Url.Action("DetailsB", "Consumables", new { Id = 1003 })">
-                <h2>Ward B</h2>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-title  clickable-row" data-href="@Url.Action("DetailsC", "Consumables", new { Id = 1004 })">
-                <h2>Ward C</h2>
-            </div>
-        </div>
         <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">
             <h6>Back</h6>
         </a>
-    </div>
 </body>

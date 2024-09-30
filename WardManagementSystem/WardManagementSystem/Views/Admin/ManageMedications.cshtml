@@ -74,7 +74,6 @@
     </form>
 
     <div class="container">
-
         @foreach (var item in Model)
         {
             <div class="card">
@@ -89,9 +88,10 @@
                 </div>
             </div>
         }
+
         <!--Update Form Code-->
         <div class="update-form" id="updateForm" style="display:none;">
-            <h1>Update @Model.First().MedicationName</h1>
+            <h1>Update Medication</h1>
             <form method="post" asp-action="UpdateMedications">
 
                 <label for="MedicationID">Medication ID:</label>
@@ -112,6 +112,7 @@
                 <button class="btn btn-outline-primary" onclick="HideUpdateForm()" type="submit">Hide</button>
             </div>
         </div>
+
         <!--Add Form Code-->
         <div class="AddForm" id="AddForm" style="display:none;">
             <h1>Add Medication</h1>

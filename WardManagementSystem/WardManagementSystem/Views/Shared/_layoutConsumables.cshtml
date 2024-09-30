@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="~/SCManagement.styles.css" asp-append-version="true" />
 </head>
 @{
-    int wardAId = 1002;
+    int wardAId = 1;
 
-    int wardBId = 1003;
+    int wardBId = 2;
 
-    int wardCId = 1004;
+    int wardCId = 3;
 }
 <body>
     <div class="container-fluid d-flex flex-columnx vh-100">
@@ -26,17 +26,17 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" asp-controller="Consumables" asp-action="DetailsA" asp-route-Id="@wardAId">
+                        <a class="nav-link text-white" asp-controller="Consumables" asp-action="Details" asp-route-Id="@wardAId">
                             <span class="fs-4 d-none d-sm-inline">Ward A</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" asp-controller="Consumables" asp-action="DetailsB" asp-route-Id="@wardBId">
+                        <a class="nav-link text-white" asp-controller="Consumables" asp-action="Details" asp-route-Id="@wardBId">
                             <span class="fs-4 d-none d-sm-inline">Ward B</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" asp-controller="Consumables" asp-action="DetailsC" asp-route-Id="@wardCId">
+                        <a class="nav-link text-white" asp-controller="Consumables" asp-action="Details" asp-route-Id="@wardCId">
                             </i><span class="fs-4 d-none d-sm-inline">Ward C</span>
                         </a>
                     </li>

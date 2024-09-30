@@ -32,7 +32,7 @@ namespace WardManagementSystem.Data.Repository
             parameters.Add("@Role", Role);
             parameters.Add("@UserID", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-            await _db.SaveData("sp_AddUserAdmin", parameters);
+            await _db.SaveData("sp_AdminAddUser", parameters);
 
             return parameters.Get<int>("UserID");
 
@@ -129,7 +129,7 @@ namespace WardManagementSystem.Data.Repository
 
         public async Task<IEnumerable<Ward>> GetAllWardAsync()
         {
-            return await _db.GetData<Ward, dynamic>("spGetWards", new { });
+            return await _db.GetData<Ward, dynamic>("sp_GetWards", new { });
         }
 
         public async Task<Ward> GetWardByIdAsync(int Id)
@@ -193,7 +193,7 @@ namespace WardManagementSystem.Data.Repository
         //Medication Management
         public async Task<IEnumerable<Medication>> GetAllMedicationAsync()
         {
-            return await _db.GetData<Medication, dynamic>("GetAllMedication", new { });
+            return await _db.GetData<Medication, dynamic>("sp_GetAllMedication", new { });
         }
 
         public async Task<bool> UpdateMedicationAsync(int MedicationID, string MedicationName)
@@ -291,5 +291,49 @@ namespace WardManagementSystem.Data.Repository
             return result.FirstOrDefault();
         }
 
+
+        //Condition Management
+        public async Task<IEnumerable<Chronic_Condition>> GetAllConditionsAsync()
+        {
+            return await _db.GetData<Chronic_Condition, dynamic>("sp_GetAllConditions", new { });
+        }
+        public async Task<bool> UpdateConditionAsync(int ConditionID, string ConditionName)
+        {
+            try
+            {
+
+                await _db.SaveData("sp_UpdateCondition", new { ConditionID, ConditionName });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public async Task<bool> AddConditionAsync(Chronic_Condition condition)
+        {
+            try
+            {
+                await _db.SaveData("sp_AddCondition", new { condition.ConditionName });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteConditionAsync(int id)
+        {
+            try
+            {
+                await _db.SaveData("sp_DeleteCondition", new { ConditionID = id });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
     }
 }

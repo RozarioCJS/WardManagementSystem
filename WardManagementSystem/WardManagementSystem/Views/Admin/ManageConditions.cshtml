@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Allergy>
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Chronic_Condition>
 @{
     Layout = "~/Views/Shared/_layoutAdmin.cshtml";
 }
@@ -11,7 +11,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        flex-wrap: wrap;
     }
 
     .card {
@@ -19,7 +18,7 @@
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         justify-content: space-evenly;
-        flex: 1 1 calc(33% - 20px);
+        flex: 1;
     }
 
     .update-form {
@@ -59,20 +58,21 @@
         }
 </style>
 <body>
-    <h1>Dashboard</h1>
+    <h1>Manage Conditions</h1>
     <hr />
-    <a class="btn btn-outline-primary" onclick="showAddForm()">Add Allergy</a>
+    <a class="btn btn-outline-primary" onclick="showAddForm()">Add Condition</a>
+
     <div class="container">
 
         @foreach (var item in Model)
         {
             <div class="card">
                 <div class="card-title">
-                    <h2>@item.AllergyName</h2>
-                    <input type="hidden" name="Id" value="@item.AllergyID" />
-                    <button class="btn btn-outline-secondary" type="submit" onclick="showUpdateForm('@item.AllergyID','@item.AllergyName')">Edit</button>
-                    <form asp-action="DeleteAllergy" method="post">
-                        <input type="hidden" name="Id" value="@item.AllergyID" />
+                    <h2>@item.ConditionName</h2>
+                    <input type="hidden" name="Id" value="@item.ConditionID" />
+                    <button class="btn btn-outline-secondary" type="submit" onclick="showUpdateForm('@item.ConditionID','@item.ConditionName')">Edit</button>
+                    <form asp-action="DeleteCondition" method="post">
+                        <input type="hidden" name="Id" value="@item.ConditionID" />
                         <button class="btn btn-outline-danger" type="submit">Delete</button>
                     </form>
                 </div>
@@ -80,18 +80,17 @@
         }
         <!--Update Form Code-->
         <div class="update-form" id="updateForm" style="display:none;">
-            <h1>Update Allergy</h1>
-            <form method="post" asp-action="UpdateAllergy">
+            <h1>Update Condition</h1>
+            <form method="post" asp-action="UpdateCondition">
 
-                <label for="AllergyID">Allergy ID:</label>
-                <input type="number" id="AllergyID" name="AllergyID" required readonly>
+                <label for="ConditionID">ConditionID:</label>
+                <input type="number" id="ConditionID" name="ConditionID" required readonly>
 
-                <label for="AllergyName">Allergy Name:</label>
-                <input type="text" id="AllergyName" name="AllergyName" required>
-
+                <label for="ConditionName">Condition Name:</label>
+                <input type="text" id="ConditionName" name="ConditionName" required>
 
                 <div class="button-container">
-                    <button class="btn btn-outline-primary" type="submit">Update Name</button>
+                    <button class="btn btn-outline-primary" type="submit">Update Condition</button>
                 </div>
             </form>
             <div class="button-container">
@@ -100,14 +99,14 @@
         </div>
         <!--Add Form Code-->
         <div class="AddForm" id="AddForm" style="display:none;">
-            <h1>Add Allergy</h1>
-            <form method="post" asp-action="AddAllergy">
+            <h1>Add Condition</h1>
+            <form method="post" asp-action="AddCondition">
 
-                <label for="AllergyName">Allergy Name:</label>
-                <input type="text" id="AllergyName" name="AllergyName" required>
+                <label for="ConditionName">Condition Name:</label>
+                <input type="text" id="ConditionName" name="ConditionName" required>
 
                 <div class="button-container">
-                    <button class="btn btn-outline-primary" type="submit">Add Allergy</button>
+                    <button class="btn btn-outline-primary" type="submit">Add Condition</button>
                 </div>
                 <div class="button-container">
                     <button class="btn btn-outline-primary" onclick="HideAddForm()" type="submit">Hide</button>
@@ -122,19 +121,18 @@
 </body>
 <script>
 
-    function showUpdateForm(AllergyID, AllergyName) {
+    function showUpdateForm(ConditionID, ConditionName) {
 
         //shows the form
         var updateForm = document.getElementById("updateForm");
         updateForm.style.display = "block";
 
-        
-        var AllergyIDInput = document.getElementById("AllergyID");
-        AllergyIDInput.value = AllergyID;
+        //puts the ConditionID into the form
+        var ConditionIDInput = document.getElementById("ConditionID");
+        ConditionIDInput.value = ConditionID;
 
-        var AllergyNameInput = document.getElementById("AllergyName");
-        AllergyNameInput.value = AllergyName;
-
+        var ConditionNameInput = document.getElementById("ConditionName");
+        ConditionNameInput.value = ConditionName;
     }
     function showAddForm() {
         //shows the form

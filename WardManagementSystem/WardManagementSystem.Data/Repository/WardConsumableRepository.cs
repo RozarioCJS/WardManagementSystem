@@ -23,11 +23,11 @@ namespace WardManagementSystem.Data.Repository
 
         public async Task<IEnumerable<Ward>> GetAllAsync()
         {
-            return await _db.GetData<Ward, dynamic>("spGetWards", new { });
+            return await _db.GetData<Ward, dynamic>("sp_GetWards", new { });
         }
         public async Task<IEnumerable<WardConsumableStockViewModel>> GetByIdAsync(int Id)
         {
-            return await _db.GetData<WardConsumableStockViewModel, dynamic>("spGetWardConsumables", new { Id = Id });
+            return await _db.GetData<WardConsumableStockViewModel, dynamic>("sp_GetWardConsumables", new { Id = Id });
         }
         public async Task<bool> UpdateStockAsync(int WardID, int ConsumableID, int Quantity)
         {

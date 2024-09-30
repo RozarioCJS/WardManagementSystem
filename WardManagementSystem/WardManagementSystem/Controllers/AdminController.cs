@@ -370,11 +370,74 @@ namespace WardManagementSystem.Controllers
             var deleteResult = await _adminRepository.DeleteAllergyAsync(Id);
             return RedirectToAction(nameof(ManageAllergies));
         }
+
+
+        //ConditionManagement
+
         [HttpGet]
         public async Task<IActionResult> ManageConditions()
         {
-            return View();
+            var GetAl = await _adminRepository.GetAllConditionsAsync();
+            return View(GetAl);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateCondition(int ConditionID, string ConditionName)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View();
+                bool updateRecord = await _adminRepository.UpdateConditionAsync(ConditionID, ConditionName);
+
+                if (updateRecord)
+                    TempData["msg"] = "Successful";
+                else
+                    TempData["msg"] = "Failed";
+            }
+
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Error!";
+            }
+            return RedirectToAction(nameof(ManageConditions));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddCondition(Chronic_Condition condition)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return View(condition);
+                bool addPerson = await _adminRepository.AddConditionAsync(condition);
+                if (addPerson)
+                {
+                    TempData["msg"] = "Sucessfully Added";
+                }
+                else
+                {
+                    TempData["msg"] = "Could not add";
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["msg"] = "Something went wrong!";
+            }
+            return RedirectToAction(nameof(ManageConditions));
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteCondition(int Id)
+        {
+            var deleteResult = await _adminRepository.DeleteConditionAsync(Id);
+            return RedirectToAction(nameof(ManageConditions));
+        }
+
 
     }
 }

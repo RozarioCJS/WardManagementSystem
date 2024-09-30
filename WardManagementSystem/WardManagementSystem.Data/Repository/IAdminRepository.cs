@@ -56,5 +56,11 @@ namespace WardManagementSystem.Data.Repository
         Task<bool> DeleteAllergyAsync(int id);
         Task<Allergy> GetAllergyById(int id);
 
+        //Condition Management
+        Task<IEnumerable<Chronic_Condition>> GetAllConditionsAsync();
+        Task<bool> UpdateConditionAsync(int ConditionID, string ConditionName);
+        Task<bool> AddConditionAsync(Chronic_Condition condition);
+
+        Task<bool> DeleteConditionAsync(int id);
     }
 }
