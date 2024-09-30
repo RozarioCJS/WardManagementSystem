@@ -15,7 +15,6 @@ namespace WardManagementSystem.Data.Models.Domain
         public int PatientFileID { get; set; }
         public string VisitNote { get; set; }
         public DateTime Date { get; set; }
-        public DateTime Time { get; set; }
         public bool DischargePatient { get; set; }
     }
 }
