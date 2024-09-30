@@ -55,7 +55,7 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-                await _db.SaveData("sp_UpdateVisitNote", new {visit.VisitNote, visit.DischargePatient});
+                await _db.SaveData("sp_UpdateVisitNote", new { visit.VisitID, visit.VisitNote, visit.DischargePatient});
                 return true;
             }
             catch (Exception ex)
