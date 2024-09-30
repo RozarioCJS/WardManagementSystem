@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
+builder.Services.AddTransient<IAdminRepository, AdminRepository>();
 //Rozario's Services
 builder.Services.AddTransient<IScriptDetailsRepo, ScriptDetailsRepo>();
 builder.Services.AddTransient<IWardConsumableRepository, WardConsumableRepository>();

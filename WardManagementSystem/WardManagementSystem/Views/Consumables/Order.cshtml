@@ -54,6 +54,7 @@
         border-radius: 5px;
     }
 </style>
+
 <div class="container">
     <h1 class="text-lg-center">Purchase Page</h1>
 </div>
@@ -63,26 +64,25 @@
         <form asp-action="Order" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <input type="hidden" id="SupplierID" name="SupplierID" asp-for="SupplierID" class="form-control" value="1" required />
+                <input type="hidden" id="SupplierID" name="SupplierID" asp-for="SupplierID" class="form-control" value="@Model.SupplierID" />
             </div>
             <div class="form-group">
-                <input type="hidden" id="ConsumableManagerID" name="ConsumableManagerID" asp-for="ConsumableManagerID" class="form-control" value="1" required />
+                <input type="hidden" id="ConsumableManagerID" name="ConsumableManagerID" asp-for="ConsumableManagerID" class="form-control" value="@Model.ConsumableManagerID" />
             </div>
             <div class="form-group">
                 <label for="WardID">Ward ID</label>
                 <input type="hidden" id="WardID" name="WardID" asp-for="WardID" class="form-control" value="@Model.WardID" readonly />
             </div>
-
             @for (int i = 0; i < Model.ConsumableOrders.Count; i++)
             {
                 <div class="consumable-order form-group">
                     <label asp-for="ConsumableOrders[i].ConsumableName">Consumable Name</label>
                     <input asp-for="ConsumableOrders[i].ConsumableName" class="form-control" readonly />
+                        <input type="hidden" asp-for="ConsumableOrders[i].ConsumableID" />
                     <label asp-for="ConsumableOrders[i].Quantity">Quantity</label>
                     <input asp-for="ConsumableOrders[i].Quantity" class="form-control" />
                 </div>
             }
-
 
             <div class="button-container">
                 <button class="btn btn-outline-warning" type="submit">Place Order</button>

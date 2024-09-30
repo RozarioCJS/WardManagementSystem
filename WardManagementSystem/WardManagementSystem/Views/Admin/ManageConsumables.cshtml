@@ -1,0 +1,150 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Consumable>
+@{
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+<style>
+    .container {
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+        background-image: url('/snake_icon.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        justify-content: space-evenly;
+        flex: 1;
+    }
+
+    .update-form {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+        .update-form div {
+            margin-bottom: 10px;
+        }
+
+        .update-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+    .AddForm {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+        .AddForm div {
+            margin-bottom: 10px;
+        }
+
+        .AddForm label {
+            display: block;
+            margin-bottom: 5px;
+        }
+</style>
+<body>
+    <h1>Manage Consumables</h1>
+    <hr />
+    <a class="btn btn-outline-primary" onclick="showAddForm()">Add Consumable</a>
+
+    <div class="container">
+
+        @foreach (var item in Model)
+        {
+            <div class="card">
+                <div class="card-title">
+                    <h2>@item.ConsumableName</h2>
+                    <input type="hidden" name="Id" value="@item.ConsumableID" />
+                    <button class="btn btn-outline-secondary" type="submit" onclick="showUpdateForm('@item.ConsumableID','@item.ConsumableName')">Edit</button>
+                    <form asp-action="DeleteConsumables" method="post">
+                        <input type="hidden" name="Id" value="@item.ConsumableID" />
+                        <button class="btn btn-outline-danger" type="submit">Delete</button>
+                    </form>
+                </div>
+            </div>
+        }
+        <!--Update Form Code-->
+        <div class="update-form" id="updateForm" style="display:none;">
+            <h1>Update Consumable</h1>
+            <form method="post" asp-action="UpdateConsumables">
+
+                <label for="ConsumableID">ConsumableID:</label>
+                <input type="number" id="ConsumableID" name="ConsumableID" required readonly>
+
+                <label for="ConsumableName">Consumable Name:</label>
+                <input type="text" id="ConsumableName" name="ConsumableName" required>
+
+                <div class="button-container">
+                    <button class="btn btn-outline-primary" type="submit">Update Name</button>
+                </div>
+            </form>
+            <div class="button-container">
+                <button class="btn btn-outline-primary" onclick="HideUpdateForm()" type="submit">Hide</button>
+            </div>
+        </div>
+        <!--Add Form Code-->
+        <div class="AddForm" id="AddForm" style="display:none;">
+            <h1>Add Consumable</h1>
+            <form method="post" asp-action="AddConsumables">
+
+                <label for="ConsumableName">Consuamble Name:</label>
+                <input type="text" id="ConsumableName" name="ConsumableName" required>
+
+                <div class="button-container">
+                    <button class="btn btn-outline-primary" type="submit">Add Consumable</button>
+                </div>
+                <div class="button-container">
+                    <button class="btn btn-outline-primary" onclick="HideAddForm()" type="submit">Hide</button>
+                </div>
+            </form>
+        </div>
+        <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">
+            <h6>Back</h6>
+        </a>
+    </div>
+
+</body>
+<script>
+
+    function showUpdateForm(ConsumableID, ConsumableName) {
+
+        //shows the form
+        var updateForm = document.getElementById("updateForm");
+        updateForm.style.display = "block";
+
+        //puts the consumableID into the form
+        var ConsumableIDInput = document.getElementById("ConsumableID");
+        ConsumableIDInput.value = ConsumableID;
+
+        var ConsumableNameInput = document.getElementById("ConsumableName");
+        ConsumableNameInput.value = ConsumableName;
+    }
+    function showAddForm() {
+        //shows the form
+        var updateForm = document.getElementById("AddForm");
+        AddForm.style.display = "block";
+    }
+    function HideAddForm() {
+        var updateForm = document.getElementById("AddForm");
+        AddForm.style.display = "none";
+    }
+    function HideUpdateForm() {
+        var updateForm = document.getElementById("updateForm");
+        updateForm.style.display = "none";
+    }
+</script>

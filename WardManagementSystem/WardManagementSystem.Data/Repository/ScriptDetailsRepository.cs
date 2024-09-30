@@ -24,7 +24,7 @@ namespace WardManagementSystem.Data.Repository
                 {
                     Id = script.ScriptID,
                 };
-                await _db.SaveData("UpdateStatus", parameters);
+                await _db.SaveData("sp_UpdateScriptStatus", parameters);
                 return true;
             }
             catch (Exception ex)
@@ -52,16 +52,16 @@ namespace WardManagementSystem.Data.Repository
         }
         public async Task<ScriptDetailsViewModel> GetByIdAsync(int id)
         {
-            IEnumerable<ScriptDetailsViewModel> result = await _db.GetData<ScriptDetailsViewModel, dynamic>("DisplayNewScriptDetail", new { ID = id });
+            IEnumerable<ScriptDetailsViewModel> result = await _db.GetData<ScriptDetailsViewModel, dynamic>("sp_DisplayScriptDetail", new { ID = id });
             return result.FirstOrDefault();
         }
         public async Task<IEnumerable<ScriptListViewModel>> GetAllAsync(char status)
         {
-            return await _db.GetData<ScriptListViewModel, dynamic>("ListAllNewScripts", new { Status = status });
+            return await _db.GetData<ScriptListViewModel, dynamic>("sp_ListAllScripts", new { Status = status });
         }
         public async Task<IEnumerable<ScriptListViewModel>> GetByDateAsync(DateTime SearchDate)
         {
-            return await _db.GetData<ScriptListViewModel, dynamic>("SearchByDate", new { SearchDate = SearchDate });
+            return await _db.GetData<ScriptListViewModel, dynamic>("sp_SearchScriptByDate", new { SearchDate = SearchDate });
         }
     }
 }

@@ -23,11 +23,11 @@ namespace WardManagementSystem.Data.Repository
 
         public async Task<IEnumerable<Ward>> GetAllAsync()
         {
-            return await _db.GetData<Ward, dynamic>("spGetWards", new { });
+            return await _db.GetData<Ward, dynamic>("sp_GetWards", new { });
         }
         public async Task<IEnumerable<WardConsumableStockViewModel>> GetByIdAsync(int Id)
         {
-            return await _db.GetData<WardConsumableStockViewModel, dynamic>("spGetWardConsumables", new { Id = Id });
+            return await _db.GetData<WardConsumableStockViewModel, dynamic>("sp_GetWardConsumables", new { Id = Id });
         }
         public async Task<bool> UpdateStockAsync(int WardID, int ConsumableID, int Quantity)
         {
@@ -52,11 +52,11 @@ namespace WardManagementSystem.Data.Repository
             parameters.Add("@WardID", WardID);
             parameters.Add("@PurchaseOrderID", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-            await _db.SaveData("sp_AddPurchaseOrder", parameters );
+            await _db.SaveData("sp_AddPurchaseOrder", parameters);
 
             return parameters.Get<int>("@PurchaseOrderID");
         }
-        
+
         public async Task<bool> AddPurchaseOrderDetailAsync(int PurchaseOrderID, int ConsumableID, int Quantity)
         {
             try

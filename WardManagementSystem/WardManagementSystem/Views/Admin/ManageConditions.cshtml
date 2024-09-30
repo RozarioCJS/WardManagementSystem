@@ -1,0 +1,150 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Chronic_Condition>
+@{
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+<style>
+    .container {
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+        background-image: url('/snake_icon.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        justify-content: space-evenly;
+        flex: 1;
+    }
+
+    .update-form {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+        .update-form div {
+            margin-bottom: 10px;
+        }
+
+        .update-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+    .AddForm {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+        .AddForm div {
+            margin-bottom: 10px;
+        }
+
+        .AddForm label {
+            display: block;
+            margin-bottom: 5px;
+        }
+</style>
+<body>
+    <h1>Manage Conditions</h1>
+    <hr />
+    <a class="btn btn-outline-primary" onclick="showAddForm()">Add Condition</a>
+
+    <div class="container">
+
+        @foreach (var item in Model)
+        {
+            <div class="card">
+                <div class="card-title">
+                    <h2>@item.ConditionName</h2>
+                    <input type="hidden" name="Id" value="@item.ConditionID" />
+                    <button class="btn btn-outline-secondary" type="submit" onclick="showUpdateForm('@item.ConditionID','@item.ConditionName')">Edit</button>
+                    <form asp-action="DeleteCondition" method="post">
+                        <input type="hidden" name="Id" value="@item.ConditionID" />
+                        <button class="btn btn-outline-danger" type="submit">Delete</button>
+                    </form>
+                </div>
+            </div>
+        }
+        <!--Update Form Code-->
+        <div class="update-form" id="updateForm" style="display:none;">
+            <h1>Update Condition</h1>
+            <form method="post" asp-action="UpdateCondition">
+
+                <label for="ConditionID">ConditionID:</label>
+                <input type="number" id="ConditionID" name="ConditionID" required readonly>
+
+                <label for="ConditionName">Condition Name:</label>
+                <input type="text" id="ConditionName" name="ConditionName" required>
+
+                <div class="button-container">
+                    <button class="btn btn-outline-primary" type="submit">Update Condition</button>
+                </div>
+            </form>
+            <div class="button-container">
+                <button class="btn btn-outline-primary" onclick="HideUpdateForm()" type="submit">Hide</button>
+            </div>
+        </div>
+        <!--Add Form Code-->
+        <div class="AddForm" id="AddForm" style="display:none;">
+            <h1>Add Condition</h1>
+            <form method="post" asp-action="AddCondition">
+
+                <label for="ConditionName">Condition Name:</label>
+                <input type="text" id="ConditionName" name="ConditionName" required>
+
+                <div class="button-container">
+                    <button class="btn btn-outline-primary" type="submit">Add Condition</button>
+                </div>
+                <div class="button-container">
+                    <button class="btn btn-outline-primary" onclick="HideAddForm()" type="submit">Hide</button>
+                </div>
+            </form>
+        </div>
+        <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">
+            <h6>Back</h6>
+        </a>
+    </div>
+
+</body>
+<script>
+
+    function showUpdateForm(ConditionID, ConditionName) {
+
+        //shows the form
+        var updateForm = document.getElementById("updateForm");
+        updateForm.style.display = "block";
+
+        //puts the ConditionID into the form
+        var ConditionIDInput = document.getElementById("ConditionID");
+        ConditionIDInput.value = ConditionID;
+
+        var ConditionNameInput = document.getElementById("ConditionName");
+        ConditionNameInput.value = ConditionName;
+    }
+    function showAddForm() {
+        //shows the form
+        var updateForm = document.getElementById("AddForm");
+        AddForm.style.display = "block";
+    }
+    function HideAddForm() {
+        var updateForm = document.getElementById("AddForm");
+        AddForm.style.display = "none";
+    }
+    function HideUpdateForm() {
+        var updateForm = document.getElementById("updateForm");
+        updateForm.style.display = "none";
+    }
+</script>

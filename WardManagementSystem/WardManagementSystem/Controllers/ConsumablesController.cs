@@ -22,22 +22,10 @@ namespace WardManagementSystem.Controllers
         }
         [HttpGet]
 
-        public async Task<IActionResult> DetailsA(int Id)
+        public async Task<IActionResult> Details(int Id)
         {
             var wardConsumables = await _WCRepo.GetByIdAsync(Id);
             return View("Details", wardConsumables);
-        }
-        [HttpGet]
-        public async Task<IActionResult> DetailsB(int Id)
-        {
-            var wardconsume = await _WCRepo.GetByIdAsync(Id);
-            return View("Details", wardconsume);
-        }
-        [HttpGet]
-        public async Task<IActionResult> DetailsC(int Id)
-        {
-            var wardconsume = await _WCRepo.GetByIdAsync(Id);
-            return View("Details", wardconsume);
         }
 
         [HttpPost]
@@ -72,12 +60,13 @@ namespace WardManagementSystem.Controllers
             var model = new PurchaseOrderViewModel
             {
                 WardID = WardID,
-                WardName = "Ward A",
+                SupplierID = 1,
+                ConsumableManagerID = 2,
                 ConsumableOrders = new List<ConsumableOrder>
                 {
-                    new ConsumableOrder{ ConsumableID = 1001, ConsumableName = "Gloves"},
-                    new ConsumableOrder{ConsumableID = 1002, ConsumableName = "Masks"},
-                    new ConsumableOrder{ConsumableID = 1003, ConsumableName = "Linen Savers"}
+                    new ConsumableOrder{ConsumableID = 1, ConsumableName = "Gloves"},
+                    new ConsumableOrder{ConsumableID = 2, ConsumableName = "Needles"},
+                    new ConsumableOrder{ConsumableID = 3, ConsumableName = "Linen Savers"}
                 }
             };
             return View(model);
