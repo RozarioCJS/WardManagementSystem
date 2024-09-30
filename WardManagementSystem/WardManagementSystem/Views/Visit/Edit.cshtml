@@ -1,0 +1,115 @@
+﻿@model WardManagementSystem.Data.Models.Domain.Visit
+
+@{
+    ViewData["Title"] = "Edit";
+}
+@{
+    Layout = "~/Views/Shared/_LayoutDoctor.cshtml";
+}
+<style>
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .button-container button {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-image: url('~/snake_icon.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: white;
+    }
+</style>
+<h1>Visit Notes</h1>
+
+<button type="button" class="btn btn-primary btn-sm"><a asp-action="Add">Create New Visit Note</a></button>
+<button type="button" class="btn btn-primary btn-sm"><a asp-action="DisplayAll">View All Visit Notes</a></button>
+
+<br />
+<hr />
+
+<form asp-action="Edit">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Edit Visit Note</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label asp-for="VisitID" class="control-label"></label>
+                            <input asp-for="VisitID" class="form-control" />
+                            <span asp-validation-for="VisitID" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-4">
+                            <label asp-for="DoctorID" class="control-label"></label>
+                            <input asp-for="DoctorID" class="form-control" />
+                            <span asp-validation-for="DoctorID" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Patient Name</label>
+                                @Html.DropDownList("PatientFileID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="VisitNote" class="control-label"></label>
+                                <input asp-for="VisitNote" class="form-control" />
+                                <span asp-validation-for="VisitNote" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" asp-for="DischargePatient" /> @Html.DisplayNameFor(model => model.DischargePatient)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="button-container">
+                                <input type="submit" value="Edit" class="btn btn-primary" />
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

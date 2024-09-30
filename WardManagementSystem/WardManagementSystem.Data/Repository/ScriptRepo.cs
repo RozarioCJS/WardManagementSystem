@@ -1,6 +1,7 @@
 ﻿using WardManagementSystem.Data.Models.Domain;
 using WardManagementSystem.Data.DataAccess;
 using WardManagementSystem.Data.Repository;
+using WardManagementSystem.Data.Models.ViewModels;
 
 namespace WardManagementSystem.Data.Repository
 {
@@ -61,6 +62,24 @@ namespace WardManagementSystem.Data.Repository
             {
                 return false;
             }
+        }
+
+        public async Task<IEnumerable<PatientFileFullNameViewModel>> GetPatientFullNameAsync()
+        {
+            var query = "sp_PatientFullName_PatientFile";
+            return await _db.GetData<PatientFileFullNameViewModel, dynamic>(query, new { });
+        }
+
+        public async Task<IEnumerable<MedicationNameViewModel>> GetMedicationNameAsync()
+        {
+            var query = "sp_DisplayMedicationName";
+            return await _db.GetData<MedicationNameViewModel, dynamic>(query, new { });
+        }
+
+        public async Task<IEnumerable<PatientScriptViewModel>> GetAllPatientAsync(int PatientFileID)      //still have to code it in a way that uses DoctorID to only display specif doctor's schedule. Code to be updated in stored procedure as well!!
+        {
+            string query = "sp_PatientScriptVM";
+            return await _db.GetData<PatientScriptViewModel, dynamic>(query, new { PatientFileID = PatientFileID });
         }
     }
 }

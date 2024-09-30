@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WardManagementSystem.Data.Models.Domain;
+using WardManagementSystem.Data.Models.ViewModels;
 
 namespace WardManagementSystem.Data.Repository
 {

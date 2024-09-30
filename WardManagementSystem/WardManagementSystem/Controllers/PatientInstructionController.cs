@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using WardManagementSystem.Data.Models.Domain;
+using WardManagementSystem.Data.Models.ViewModels;
 using WardManagementSystem.Data.Repository;
 
 namespace WardManagementSystem.Controllers
@@ -19,16 +21,49 @@ namespace WardManagementSystem.Controllers
 
 
         //Display all
-        public async Task<IActionResult> DisplayAll()
+        public async Task<IActionResult> DisplayAll(int PatientFileID)
         {
-            var patientInstructions = await _patientInstructionRepo.GetAllAsync();
-            return View(patientInstructions);
+            var patientInstructions = await _patientInstructionRepo.GetAllPatientNameAsync(PatientFileID);
+            ViewData["PatientInstructionViewModel"] = patientInstructions;
+
+            //Searching for patient to be displayed
+            var patientComboBox = await _patientInstructionRepo.GetPatientFullNameAsync();
+            ViewData["PatientFileComboViewModel"] = patientComboBox;
+
+            List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
+            foreach (PatientFileFullNameViewModel p in patientComboBox)        //iterating through the data to fill the list with patients
+            {
+                patients.Add(new SelectListItem { Value = p.PatientFileID.ToString(), Text = p.PatientName });
+            }
+            ViewBag.Patients = patients;        //Setting a ViewBag to contain the list of patients
+            var selectList = new SelectList(patients, "Value", "Text");
+            ViewBag.SelectList = selectList;
+
+            if (!String.IsNullOrWhiteSpace(PatientFileID.ToString()))
+            {
+                return View();
+            }
+
+            return View(patientInstructions.Where(x => x.PatientFileID == PatientFileID).Take(50));
         }
 
 
         //add
         public async Task<IActionResult> Add()
         {
+            //filling the drop down list
+            var patientFullName = await _patientInstructionRepo.GetPatientFullNameAsync();
+            ViewData["PatientFileFullNameViewModel"] = patientFullName;
+
+            List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
+            foreach (PatientFileFullNameViewModel p in patientFullName)        //iterating through the data to fill the list with patients
+            {
+                patients.Add(new SelectListItem { Value = p.PatientFileID.ToString(), Text = p.PatientName });
+            }
+            ViewBag.Patients = patients;        //Setting a ViewBag to contain the list of patients
+            var selectList = new SelectList(patients, "Value", "Text");
+            ViewBag.SelectList = selectList;
+
             return View();
         }
 
@@ -63,9 +98,6 @@ namespace WardManagementSystem.Controllers
         //Delete
         public async Task<IActionResult> Delete(int id)
         {
-            //var employeeDelete = await _employeeRepository.DeleteAsync(id);
-            //return RedirectToAction(nameof(DisplayAll));
-
             try
             {
                 if (!ModelState.IsValid)
@@ -94,6 +126,19 @@ namespace WardManagementSystem.Controllers
         //edit
         public async Task<IActionResult> Edit(int id)
         {
+            //filling the drop down list
+            var patientFullName = await _patientInstructionRepo.GetPatientFullNameAsync();
+            ViewData["PatientFileFullNameViewModel"] = patientFullName;
+
+            List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
+            foreach (PatientFileFullNameViewModel p in patientFullName)        //iterating through the data to fill the list with patients
+            {
+                patients.Add(new SelectListItem { Value = p.PatientFileID.ToString(), Text = p.PatientName });
+            }
+            ViewBag.Patients = patients;        //Setting a ViewBag to contain the list of patients
+            var selectList = new SelectList(patients, "Value", "Text");
+            ViewBag.SelectList = selectList;
+
             var result = await _patientInstructionRepo.GetByIdAsync(id);
             return View(result);
         }

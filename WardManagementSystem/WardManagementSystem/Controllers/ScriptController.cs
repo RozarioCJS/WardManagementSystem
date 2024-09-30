@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using WardManagementSystem.Data.Models.Domain;
+using WardManagementSystem.Data.Models.ViewModels;
 using WardManagementSystem.Data.Repository;
 
 namespace WardManagementSystem.Controllers
@@ -19,16 +21,62 @@ namespace WardManagementSystem.Controllers
 
 
         //Display all
-        public async Task<IActionResult> DisplayAll()
+        public async Task<IActionResult> DisplayAll(int PatientFileID)
         {
-            var scripts = await _scriptRepo.GetAllAsync();
-            return View(scripts);
+            var scripts = await _scriptRepo.GetAllPatientAsync(PatientFileID);
+            ViewData["PatientScriptViewModel"] = scripts;
+
+            //Searching for patient to be displayed
+            var patientComboBox = await _scriptRepo.GetPatientFullNameAsync();
+            ViewData["PatientFileComboViewModel"] = patientComboBox;
+
+            List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
+            foreach (PatientFileFullNameViewModel p in patientComboBox)        //iterating through the data to fill the list with patients
+            {
+                patients.Add(new SelectListItem { Value = p.PatientFileID.ToString(), Text = p.PatientName });
+            }
+            ViewBag.Patients = patients;        //Setting a ViewBag to contain the list of patients
+            var selectList = new SelectList(patients, "Value", "Text");
+            ViewBag.SelectList = selectList;
+
+            if (!String.IsNullOrWhiteSpace(PatientFileID.ToString()))
+            {
+                return View();
+            }
+
+            return View(scripts.Where(x => x.PatientFileID == PatientFileID).Take(50));
         }
 
 
         //add
         public async Task<IActionResult> Add()
         {
+            //filling the drop down list (patient full name)
+            var patientFullName = await _scriptRepo.GetPatientFullNameAsync();
+            ViewData["PatientFileFullNameViewModel"] = patientFullName;
+
+            List<SelectListItem> patients = new List<SelectListItem>();     //creating a list to store patients
+            foreach (PatientFileFullNameViewModel p in patientFullName)        //iterating through the data to fill the list with patients
+            {
+                patients.Add(new SelectListItem { Value = p.PatientFileID.ToString(), Text = p.PatientName });
+            }
+            ViewBag.Patients = patients;        //Setting a ViewBag to contain the list of patients
+            var patientList = new SelectList(patients, "Value", "Text");
+            ViewBag.PatientList = patientList;
+
+            //filling the drop down list (medication name)
+            var medication = await _scriptRepo.GetMedicationNameAsync();
+            ViewData["MedicationNameViewModel"] = medication;
+
+            List<SelectListItem> medications = new List<SelectListItem>();     //creating a list to store patients
+            foreach (MedicationNameViewModel m in medication)        //iterating through the data to fill the list with patients
+            {
+                medications.Add(new SelectListItem { Value = m.MedicationID.ToString(), Text = m.MedicationName });
+            }
+            ViewBag.Medication = medications;        //Setting a ViewBag to contain the list of medications
+            var medicationList = new SelectList(medications, "Value", "Text");
+            ViewBag.MedicationList = medicationList;
+
             return View();
         }
 
@@ -91,6 +139,20 @@ namespace WardManagementSystem.Controllers
         //edit
         public async Task<IActionResult> Edit(int id)
         {
+            //filling the drop down list (medication name)
+            var medication = await _scriptRepo.GetMedicationNameAsync();
+            ViewData["MedicationNameViewModel"] = medication;
+
+            List<SelectListItem> medications = new List<SelectListItem>();     //creating a list to store patients
+            foreach (MedicationNameViewModel m in medication)        //iterating through the data to fill the list with patients
+            {
+                medications.Add(new SelectListItem { Value = m.MedicationID.ToString(), Text = m.MedicationName });
+            }
+            ViewBag.Medication = medications;        //Setting a ViewBag to contain the list of medications
+            var medicationList = new SelectList(medications, "Value", "Text");
+            ViewBag.MedicationList = medicationList;
+
+            //filling the relevant controls
             var result = await _scriptRepo.GetByIdAsync(id);
             return View(result);
         }

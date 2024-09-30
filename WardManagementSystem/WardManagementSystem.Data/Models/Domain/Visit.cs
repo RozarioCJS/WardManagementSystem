@@ -12,8 +12,10 @@ namespace WardManagementSystem.Data.Models.Domain
         [Key]
         public int VisitID { get; set; }
         public int DoctorID { get; set; }
-        public int PatientID { get; set; }
-        public string Date { get; set; } // same changes or review  as the previous model
-        public string Time { get; set; } // same change or review as date
+        public int PatientFileID { get; set; }
+        public string VisitNote { get; set; }
+        public DateTime Date { get; set; }
+        public DateTime Time { get; set; }
+        public bool DischargePatient { get; set; }
     }
 }
