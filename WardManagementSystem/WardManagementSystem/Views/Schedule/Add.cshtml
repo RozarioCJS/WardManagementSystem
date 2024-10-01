@@ -59,14 +59,15 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label>Patient Name</label>
-                                @Html.DropDownList("PatientID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
+                                <label>Doctor Name</label>
+                                @Html.DropDownList("DoctorID", (SelectList)@ViewBag.SelectListDoctor, "-select-", htmlAttributes: new { @class = "form-control" })
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <label asp-for="DoctorID" class="control-label"></label>
-                            <input asp-for="DoctorID" class="form-control" />
-                            <span asp-validation-for="DoctorID" class="text-danger"></span>
+                            <div class="form-group">
+                                <label>Patient Name</label>
+                                @Html.DropDownList("PatientID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
+                            </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">

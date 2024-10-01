@@ -55,13 +55,19 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-                await _db.SaveData("sp_UpdateScript", new { script.MedicationID, script.Dosage });
+                await _db.SaveData("sp_UpdateScript", new { script.ScriptID, script.MedicationID, script.Dosage });
                 return true;
             }
             catch (Exception ex)
             {
                 return false;
             }
+        }
+
+        public async Task<IEnumerable<DoctorFullNameViewModel>> GetDoctorFullNameAsync()
+        {
+            var query = "sp_DoctorFullName";
+            return await _db.GetData<DoctorFullNameViewModel, dynamic>(query, new { });
         }
 
         public async Task<IEnumerable<PatientFileFullNameViewModel>> GetPatientFullNameAsync()

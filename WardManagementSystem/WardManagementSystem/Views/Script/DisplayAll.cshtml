@@ -54,8 +54,7 @@
                 <tr>
                     <td>@patientScriptViewModel.PatientName</td>
                     <td>
-                        @* @Html.DisplayFor(modelItem => item.Date.ToString("yyyy-MM-dd")) *@   @*Find a way to make this work*@
-                        @patientScriptViewModel.Date
+                        @patientScriptViewModel.Date.ToString("dd/MM/yyyy")
                     </td>
                     <td>@patientScriptViewModel.MedicationName</td>
                     <td>@patientScriptViewModel.Dosage</td>

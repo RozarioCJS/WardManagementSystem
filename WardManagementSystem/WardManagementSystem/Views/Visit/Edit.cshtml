@@ -63,18 +63,11 @@
                             <span asp-validation-for="VisitID" class="text-danger"></span>
                         </div>
                         <div class="col-md-4">
-                            <label asp-for="DoctorID" class="control-label"></label>
-                            <input asp-for="DoctorID" class="form-control" />
-                            <span asp-validation-for="DoctorID" class="text-danger"></span>
-                        </div>
-                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>Patient Name</label>
                                 @Html.DropDownList("PatientFileID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label asp-for="VisitNote" class="control-label"></label>
@@ -82,6 +75,10 @@
                                 <span asp-validation-for="VisitNote" class="text-danger"></span>
                             </div>
                         </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-4"></div>
                         <div class="col-md-4">
                             <div class="form-group form-check">
                                 <label class="form-check-label">
@@ -89,6 +86,7 @@
                                 </label>
                             </div>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     <br />
                     <div class="row">

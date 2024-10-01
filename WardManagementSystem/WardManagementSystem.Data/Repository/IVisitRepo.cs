@@ -15,6 +15,7 @@ namespace WardManagementSystem.Data.Repository
         Task<bool> DeleteAsync(int id);
         Task<Visit> GetByIdAsync(int id);
         Task<IEnumerable<VisitNoteViewModel>> GetAllAsync(int PatientFileID);
+        Task<IEnumerable<DoctorFullNameViewModel>> GetDoctorFullNameAsync();        //used to fill drop down list with doctor name
         Task<IEnumerable<PatientFileFullNameViewModel>> GetPatientFileFullNameAsync();
     }
 }
