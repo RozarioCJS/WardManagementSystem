@@ -12,6 +12,10 @@ namespace WardManagementSystem.Controllers
         {
             _sisterNurseRepo = sisterNurseRepo;
         }
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
 
         public async Task<IActionResult> Add()
         {

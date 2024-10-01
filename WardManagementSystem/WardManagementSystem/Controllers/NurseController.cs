@@ -13,6 +13,10 @@ namespace WardManagementSystem.Controllers
         {
             _nurseRepo = nurseRepo;
         }
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
 
         // Display the form to add a new nurse
         public IActionResult Add()

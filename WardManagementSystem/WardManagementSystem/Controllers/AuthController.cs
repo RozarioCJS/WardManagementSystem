@@ -50,6 +50,14 @@ public class AuthController : Controller
             {
                 return RedirectToAction("Dashboard", "Schedule");
             }
+            else if (user.Role == "Consumable Manager")
+            {
+                return RedirectToAction("Dashboard", "Scripts");
+            }
+            else if (user.Role == "Script Manager")
+            {
+                return RedirectToAction("Dashboard", "Consumables");
+            }
         }
         ModelState.AddModelError("", "Invalid username or password.");
         return View();
