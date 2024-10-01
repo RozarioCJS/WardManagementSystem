@@ -17,12 +17,12 @@ namespace WardManagementSystem.Data.DataAccess
         {
             _config = config;
         }
-        public async Task<IEnumerable<T>> GetData<T, P>(string spName, P paramters, string connectionId = "Testconn")
+        public async Task<IEnumerable<T>> GetData<T, P>(string spName, P paramters, string connectionId = "connectionString")
         {
             using IDbConnection connection = new SqlConnection(_config.GetConnectionString(connectionId));
             return await connection.QueryAsync<T>(spName, paramters, commandType: CommandType.StoredProcedure);
         }
-        public async Task SaveData<P>(string spName, P paramters, string connectionId = "Testconn")
+        public async Task SaveData<P>(string spName, P paramters, string connectionId = "connectionString")
         {
             using IDbConnection connection = new SqlConnection(_config.GetConnectionString(connectionId));
             await connection.ExecuteAsync(spName, paramters, commandType: CommandType.StoredProcedure);

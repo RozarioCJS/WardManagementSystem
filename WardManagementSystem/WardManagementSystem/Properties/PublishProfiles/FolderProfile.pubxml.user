@@ -6,14 +6,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\Users\sodie\Desktop\Publish</_PublishTargetUrl>
-    <History>True|2024-09-06T11:45:27.6025464Z||;True|2024-09-06T13:44:33.7328376+02:00||;True|2024-09-06T13:38:19.7377545+02:00||;True|2024-09-06T13:33:55.3125408+02:00||;</History>
+    <History>True|2024-09-30T13:13:22.1555574Z||;True|2024-09-06T13:45:27.6025464+02:00||;True|2024-09-06T13:44:33.7328376+02:00||;True|2024-09-06T13:38:19.7377545+02:00||;True|2024-09-06T13:33:55.3125408+02:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
-  <ItemGroup>
-    <DestinationConnectionStrings Include="conn">
-      <Value>Data Source=soit-sql.mandela.ac.za%3bInitial Catalog=GRP-03-35%3bUser ID=GRP-03-35%3bPassword=grp-03-35-2024#%3bTrust Server Certificate=True</Value>
-    </DestinationConnectionStrings>
-  </ItemGroup>
   <ItemGroup>
     <File Include="Controllers/AccountController.cs">
       <publishTime>09/05/2024 19:53:47</publishTime>
@@ -387,5 +382,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="wwwroot/peaky-blinders-logo.png">
       <publishTime>09/05/2024 15:30:29</publishTime>
     </File>
+  </ItemGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Testconn">
+      <Value>Data Source=soit-sql.mandela.ac.za%3bInitial Catalog=GRP-03-35%3bUser ID=GRP-03-35%3bPassword=grp-03-35-2024#%3bTrust Server Certificate=True</Value>
+    </DestinationConnectionStrings>
   </ItemGroup>
 </Project>

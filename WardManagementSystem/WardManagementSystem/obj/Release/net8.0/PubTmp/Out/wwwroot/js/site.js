@@ -3,9 +3,15 @@ $(document).ready(function () {
     $(".clickable-row").click(function () {
         window.location = $(this).data("href");
     });
-    $("#ShowCustomAlert").click(function () {
-        $("#customAlert").toggle();
+    $("#ShowCustomAlert").click(function (e) {
+        e.preventDefault(); 
+        $("#customAlert").show(); 
+        setTimeout(function () {
+            $("#customAlert").hide();
+            $("#ShowCustomAlert").closest("form").submit(); 
+        }, 1000);
     });
+
     $("#customAlert").click(function () {
         $(this).hide();
     });

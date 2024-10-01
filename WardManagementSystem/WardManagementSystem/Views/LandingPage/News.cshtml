@@ -1,9 +1,85 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
 
-}
+@using WardManagementSystem.Data.Models.Domain
+@model IEnumerable<Article>
+
+
+<style>
+
+    .news-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px;
+        gap: 10px;
+    }
+
+    .article img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .article-details {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    .article-details span {
+        opacity: 70%;
+        letter-spacing: 2px;
+    }
+
+</style>
+
+
+
+
+<div class="container mt-5">
+    <!-- News Header Section -->
+    <section class="news-header text-center">
+        <h2>Latest News</h2>
+        <p class="lead my-4">Stay updated with the latest news from Peaky Blinders Medical Centre.</p>
+    </section>
+
+    <!-- News List Section -->
+        
+    <section class="news-container">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var article in Model)
+            {
+                <div class="article">
+                    <img src="@article.ImageUrl" alt="News Image">
+                    <div class="article-details">
+                        <span>Published on: @article.PublishedDate.ToString("yyyy-MM-dd")</span>
+                        <span> | By: @article.Author</span>
+                    </div>
+                    <div class="article-title">
+                        <h3>@article.Title</h3>
+                    </div>
+                    <div class="article-preview">
+                        <p>@article.Preview</p>
+                    </div>
+                    <button class="btn btn-primary">Read More</button>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No articles available at the moment.</p>
+        }
+    </section>
+
+    

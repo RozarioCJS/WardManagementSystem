@@ -1,0 +1,26 @@
+@model PatientCareSubsystem.UI.Models.LoginViewModel  // Ensure the correct namespace
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Login" method="post">
+    <div>
+        <label asp-for="Username"></label>
+        <input asp-for="Username" />
+    </div>
+    <div>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" />
+    </div>
+    <button type="submit">Login</button>
+</form>
+
+@if (ViewData.ModelState.ErrorCount > 0)
+{
+    <div>
+        <span style="color: red;">Invalid username or password.</span>
+    </div>
+}
