@@ -88,16 +88,16 @@ namespace WardManagementSystem.Controllers
                 bool updateRecord = await _SDRepo.UpdateAsync(scriptDetails);
                 if (updateRecord)
                 {
-                    TempData["msg"] = "Successfully Updated";
+                    TempData["msg"] = "Script Sent Successfully";
                 }
                 else
                 {
-                    TempData["msg"] = "Successfully failed";
+                    TempData["msg"] = "Script failed to Sent";
                 } 
             }
             catch (Exception ex)
             {
-                TempData["msg"] = "Successfully failed";
+                TempData["msg"] = "failed";
             }
             return RedirectToAction("Dashboard");
         }
@@ -113,16 +113,16 @@ namespace WardManagementSystem.Controllers
                 bool updateRecord = await _SDRepo.ReceivedScriptsAsync(scriptDetails);
                 if (updateRecord)
                 {
-                    TempData["msg"] = "Successfully Updated";
+                    TempData["msg"] = "Script Medication Received";
                 }
                 else
                 {
-                    TempData["msg"] = "Successfully failed";
+                    TempData["msg"] = "Script Status Updated failed";
                 }
             }
             catch (Exception ex)
             {
-                TempData["msg"] = "Successfully failed";
+                TempData["msg"] = "failed";
             }
             return RedirectToAction("Dashboard");
         }

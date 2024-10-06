@@ -152,14 +152,14 @@
                 <h1></h1>
                 <form method="post" asp-action="UpdateStock">
 
-                    <label for="consumable">Consumable:</label>
-                    <input type="text" id="consumable" name="consumable" required disabled>
+                    <label asp-for="@Model.First().ConsumableName">Consumable:</label>
+                    <input asp-for="@Model.First().ConsumableName" type="text" id="consumable" name="ConsumableName" readonly>
 
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" name="quantity" required>
+                    <label asp-for="@Model.First().Quantity">Quantity:</label>
+                    <input asp-for="@Model.First().Quantity" type="number" id="quantity" name="quantity" required>
 
-                    <input type="hidden" id="consumableID" name="consumableID" value="">
-                    <input type="hidden" name="WardID" value="@Model.First().WardID">
+                    <input asp-for="@Model.First().ConsumableID" type="hidden" id="consumableID" name="consumableID" value="">
+                    <input asp-for="@Model.First().WardID" type="hidden" name="WardID" value="@Model.First().WardID">
 
                     <div class="button-container">
                         <button class="btn btn-outline-primary" type="submit">Update Stock</button>

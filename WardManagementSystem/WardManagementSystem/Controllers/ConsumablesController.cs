@@ -36,20 +36,20 @@ namespace WardManagementSystem.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> UpdateStock(int WardID, int ConsumableID, int Quantity)
+        public async Task<IActionResult> UpdateStock(int WardID, int ConsumableID, int Quantity, string ConsumableName)
         {
             try
             {
                 bool updateConsuambles = await _WCRepo.UpdateStockAsync(WardID, ConsumableID, Quantity);
 
                 if (updateConsuambles)
-                    TempData["msg"] = "Successfully Updated";
+                    TempData["msg"] = $"Successfully Updated {ConsumableName}!";
                 else
-                    TempData["msg"] = "Unsuccessfully";
+                    TempData["msg"] = "Unsuccessful!";
             }
             catch (Exception ex)
             {
-                TempData["msg"] = "Unsuccessfull";
+                TempData["msg"] = "Unsuccessfull!";
             }
 
             return RedirectToAction(nameof(Dashboard));
@@ -75,15 +75,26 @@ namespace WardManagementSystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Order(PurchaseOrderViewModel purchaseorderviewmodel)
         {
+            bool POD = false;
+            bool PUWCS = false;
             if (ModelState.IsValid)
             {
                 var purchaseOrderID = await _WCRepo.AddPurchaseOrderAsync(purchaseorderviewmodel.SupplierID, purchaseorderviewmodel.ConsumableManagerID, purchaseorderviewmodel.WardID);
                 foreach (var order in purchaseorderviewmodel.ConsumableOrders)
                 {
-                    await _WCRepo.AddPurchaseOrderDetailAsync(purchaseOrderID, order.ConsumableID, order.Quantity);
-                    await _WCRepo.PurchaseUpdatetWardConsumableStock(purchaseorderviewmodel.WardID, order.ConsumableID, order.Quantity);
+                    POD = await _WCRepo.AddPurchaseOrderDetailAsync(purchaseOrderID, order.ConsumableID, order.Quantity);
+                    PUWCS = await _WCRepo.PurchaseUpdatetWardConsumableStock(purchaseorderviewmodel.WardID, order.ConsumableID, order.Quantity);
+                }
+                if (POD && PUWCS == true)
+                {
+                    TempData["msg"] = $"Purchase Order Placed Successfully OrderID:{purchaseOrderID}";
+                }
+                else
+                {
+                    TempData["msg"] = "Failed to Place Order!";
                 }
                 return RedirectToAction("Dashboard");
+
             }
             return View(purchaseorderviewmodel);
 

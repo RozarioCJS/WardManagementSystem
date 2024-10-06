@@ -12,7 +12,8 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    .card{
+
+    .card {
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -21,8 +22,16 @@
     }
 </style>
 <body>
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @TempData["msg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
     <h1>Dashboard</h1>
     <hr />
+
     <div class="container">
         @foreach (var item in Model)
         {
@@ -34,7 +43,7 @@
         }
     </div>
 
-        <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">
-            <h6>Back</h6>
-        </a>
+    <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">
+        <h6>Back</h6>
+    </a>
 </body>

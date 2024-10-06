@@ -52,11 +52,11 @@ public class AuthController : Controller
             }
             else if (user.Role == "Consumable Manager")
             {
-                return RedirectToAction("Dashboard", "Scripts");
+                return RedirectToAction("Dashboard", "Consumables");
             }
             else if (user.Role == "Script Manager")
             {
-                return RedirectToAction("Dashboard", "Consumables");
+                return RedirectToAction("Dashboard", "Scripts");
             }
         }
         ModelState.AddModelError("", "Invalid username or password.");
