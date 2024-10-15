@@ -59,12 +59,20 @@
         }
 </style>
 <body>
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @TempData["msg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
     <h1>Manage Wards</h1>
     <hr />
     <a class="btn btn-outline-primary" onclick="showAddForm()">Add Ward</a>
     <div class="container">
 
         @foreach (var item in Model)
+
         {
             <div class="card">
                 <div class="card-title">
@@ -138,16 +146,16 @@
         var WardNameInput = document.getElementById("WardName");
         WardNameInput.value = WardName;
     }
-        function showAddForm() {
+    function showAddForm() {
         //shows the form
         var AddForm = document.getElementById("AddForm");
         AddForm.style.display = "block";
     }
-    function HideAddForm(){
+    function HideAddForm() {
         var AddForm = document.getElementById("AddForm");
         AddForm.style.display = "none";
     }
-        function HideUpdateForm(){
+    function HideUpdateForm() {
         var updateForm = document.getElementById("updateForm");
         updateForm.style.display = "none";
     }

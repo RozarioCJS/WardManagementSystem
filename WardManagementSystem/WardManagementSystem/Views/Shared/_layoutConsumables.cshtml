@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿﻿<!--Allows the HttpContext to be used within the layout view-->
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    string LastName = HttpContextAccessor.HttpContext.Session.GetString("LastName");
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -11,7 +17,19 @@
 @{
     int wardAId = 1;
 
+
+
+
+
+
+
     int wardBId = 2;
+
+
+
+
+
+
 
     int wardCId = 3;
 }
@@ -39,6 +57,23 @@
                         <a class="nav-link text-white" asp-controller="Consumables" asp-action="Details" asp-route-Id="@wardCId">
                             </i><span class="fs-4 d-none d-sm-inline">Ward C</span>
                         </a>
+                    </li>
+                    <hr />
+                    <li class="nav-item">
+                        <p class="text-white">Welcome, Mr. @LastName</p>     <!--Displays doctors name throughout the different views of subsystem-->
+
+                        <span id="datetime" class="text-white"></span>
+
+                        <script>
+                            // create a function to update the date and time
+                            function updateDateTime() {
+                                const now = new Date();
+                                const currentDateTime = now.toLocaleString();       //get the current date and time
+                                document.querySelector('#datetime').textContent = currentDateTime;  // update the textContent property of the span element
+                            }
+                            // call the updateDateTime function
+                            setInterval(updateDateTime, 100);
+                        </script>
                     </li>
                 </ul>
             </div>

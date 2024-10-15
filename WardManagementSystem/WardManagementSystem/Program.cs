@@ -29,6 +29,10 @@ builder.Services.AddTransient<INurseRepository, NurseRepository>();
 builder.Services.AddTransient<ISisterNurseRepository, SisterNurseRepository>();
 builder.Services.AddTransient<INurseScheduleRepository, NurseScheduleRepository>();
 
+//To gain acces to HttpContext in the view
+builder.Services.AddHttpContextAccessor();
+
+
 // Session and Cache configuration
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>

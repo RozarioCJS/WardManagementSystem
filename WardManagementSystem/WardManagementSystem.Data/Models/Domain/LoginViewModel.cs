@@ -5,6 +5,9 @@ namespace PatientCareSubsystem.UI.Models
         public string Username { get; set; }
         public string Password { get; set; }
         public string Role { get; set; }
-        // Add any other properties if needed
+        public string LastName { get; set; }
+        public int DoctorID { get; set; }
+        public int ConsumableManagerID { get; set; }
+        public int PrescriptionManagerID { get; set; }
     }
 }

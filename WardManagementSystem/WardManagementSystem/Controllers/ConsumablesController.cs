@@ -18,7 +18,13 @@ namespace WardManagementSystem.Controllers
         public async Task<IActionResult> Dashboard()
         {
             var conWards = await _WCRepo.GetAllAsync();
-            return View(conWards);
+            var Lateorder = await _WCRepo.GetLatestPurchaseOrderAsync();
+            var viewModel = new ConsumablesDashboardViewModel
+            {
+                ConWards = conWards,
+                LateOrder = Lateorder
+            };
+            return View(viewModel);
         }
         [HttpGet]
 
@@ -55,21 +61,29 @@ namespace WardManagementSystem.Controllers
             return RedirectToAction(nameof(Dashboard));
         }
         [HttpGet]
-        public IActionResult Order(int WardID)
+        public async Task<IActionResult> Order(int WardID)
         {
-            var model = new PurchaseOrderViewModel
+            var consumableManagerID = HttpContext.Session.GetInt32("ConsumableManagerID");
+            if (consumableManagerID.HasValue)
             {
-                WardID = WardID,
-                SupplierID = 1,
-                ConsumableManagerID = 2,
-                ConsumableOrders = new List<ConsumableOrder>
+                var consumables = await _WCRepo.GetAllConsumablesAsync();
+                var model = new PurchaseOrderViewModel
                 {
-                    new ConsumableOrder{ConsumableID = 1, ConsumableName = "Gloves"},
-                    new ConsumableOrder{ConsumableID = 2, ConsumableName = "Needles"},
-                    new ConsumableOrder{ConsumableID = 3, ConsumableName = "Linen Savers"}
-                }
-            };
-            return View(model);
+                    WardID = WardID,
+                    SupplierID = 1,
+                    ConsumableManagerID = consumableManagerID.Value,
+                    ConsumableOrders = consumables.Select(c => new ConsumableOrder
+                    {
+                        ConsumableID = c.ConsumableID,
+                        ConsumableName = c.ConsumableName
+                    }).ToList()
+                };
+                return View(model);
+            }
+            else
+            {
+                return View();
+            }
         }
         [HttpPost]
         [ValidateAntiForgeryToken]

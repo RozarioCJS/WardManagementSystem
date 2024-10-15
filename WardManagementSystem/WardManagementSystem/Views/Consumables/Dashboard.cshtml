@@ -1,10 +1,12 @@
-﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Ward>
+﻿@model WardManagementSystem.Data.Models.ViewModels.ConsumablesDashboardViewModel
 @{
     Layout = "~/Views/Shared/_layoutConsumables.cshtml";
 }
+
 <style>
     .container {
         display: flex;
+        flex-wrap: wrap;
         align-items: flex-start;
         height: 100vh;
         background-image: url('/snake_icon.png');
@@ -19,8 +21,15 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         justify-content: space-evenly;
         flex: 1;
+        margin: 10px;
+    }
+
+    .latest-orders {
+        width: 100%;
+        margin-top: 20px;
     }
 </style>
+
 <body>
     @if (TempData["msg"] != null)
     {
@@ -33,7 +42,7 @@
     <hr />
 
     <div class="container">
-        @foreach (var item in Model)
+        @foreach (var item in Model.ConWards)
         {
             <div class="card">
                 <div class="card-title  clickable-row" data-href="@Url.Action("Details", "Consumables", new { Id = item.WardID })">
@@ -41,6 +50,31 @@
                 </div>
             </div>
         }
+
+        <div class="latest-orders">
+            <h2>Latest Purchase Orders</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Supplier Name</th>
+                        <th>Manager Last Name</th>
+                        <th>Consumable Name</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.LateOrder)
+                    {
+                        <tr>
+                            <td>@item.SupplierName</td>
+                            <td>@item.LastName</td>
+                            <td>@item.ConsumableName</td>
+                            <td>@item.Quantity</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">

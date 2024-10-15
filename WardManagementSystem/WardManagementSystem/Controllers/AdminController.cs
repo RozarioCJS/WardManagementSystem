@@ -111,7 +111,7 @@ namespace WardManagementSystem.Controllers
                 bool updateRecord = await _adminRepository.UpdateWardAsync(WardID, WardName);
 
                 if (updateRecord)
-                    TempData["msg"] = "Successful";
+                    TempData["msg"] = "Successfully Updated";
                 else
                     TempData["msg"] = "Failed";
             }
@@ -180,7 +180,7 @@ namespace WardManagementSystem.Controllers
                 bool updateRecord = await _adminRepository.UpdateConsumableAsync(ConsumableID, ConsumableName);
 
                 if (updateRecord)
-                    TempData["msg"] = "Successful";
+                    TempData["msg"] = "Successfully Updated";
                 else
                     TempData["msg"] = "Failed";
             }
@@ -259,9 +259,9 @@ namespace WardManagementSystem.Controllers
                 bool updateRecord = await _adminRepository.UpdateMedicationAsync(MedicationID, MedicationName);
 
                 if (updateRecord)
-                    TempData["msg"] = "Successful";
+                    TempData["msg"] = "Successfully Updated";
                 else
-                    TempData["msg"] = "Failed";
+                    TempData["msg"] = "Failed to add";
             }
 
             catch (Exception ex)
@@ -325,9 +325,9 @@ namespace WardManagementSystem.Controllers
                 bool updateRecord = await _adminRepository.UpdateAllergyAsync(AllergyID, AllergyName);
 
                 if (updateRecord)
-                    TempData["msg"] = "Successful";
+                    TempData["msg"] = "Successfully Updated";
                 else
-                    TempData["msg"] = "Failed";
+                    TempData["msg"] = "Failed to update";
             }
 
             catch (Exception ex)
@@ -392,7 +392,7 @@ namespace WardManagementSystem.Controllers
                 bool updateRecord = await _adminRepository.UpdateConditionAsync(ConditionID, ConditionName);
 
                 if (updateRecord)
-                    TempData["msg"] = "Successful";
+                    TempData["msg"] = "Successfully Updated";
                 else
                     TempData["msg"] = "Failed";
             }

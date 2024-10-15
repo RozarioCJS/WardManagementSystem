@@ -82,5 +82,13 @@ namespace WardManagementSystem.Data.Repository
                 return false;
             }
         }
+        public async Task<IEnumerable<LatestPurchaseOrder>> GetLatestPurchaseOrderAsync()
+        {
+            return await _db.GetData<LatestPurchaseOrder, dynamic>("sp_LatestPurchaseOrder", new { });
+        }
+        public async Task<IEnumerable<Consumable>> GetAllConsumablesAsync()
+        {
+            return await _db.GetData<Consumable, dynamic>("sp_GetAllConsumables", new { });
+        }
     }
 }
