@@ -61,7 +61,7 @@ public class AuthController : Controller
                 return RedirectToAction("Dashboard", "Scripts");
             }
         }
-        ModelState.AddModelError("", "Invalid username or password.");
+        TempData["msg"] = "Invalid UserName or Password";
         return View();
     }
 

@@ -8,7 +8,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
-        height: 100vh;
+        height: 90vh;
         background-image: url('/snake_icon.png');
         background-size: cover;
         background-repeat: no-repeat;
@@ -20,7 +20,7 @@
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         justify-content: space-evenly;
-        flex: 1;
+        flex: 1 1 200px;
         margin: 10px;
     }
 
@@ -29,6 +29,9 @@
         margin-top: 20px;
     }
 </style>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
     @if (TempData["msg"] != null)
@@ -75,9 +78,8 @@
                 </tbody>
             </table>
         </div>
+        <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">
+            <h6>Back</h6>
+        </a>
     </div>
-
-    <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">
-        <h6>Back</h6>
-    </a>
 </body>
