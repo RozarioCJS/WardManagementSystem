@@ -68,7 +68,9 @@ public class AuthController : Controller
         // Use Dapper to fetch user from the database and validate password
         using (var connection = new SqlConnection(connectionString))
         {
-            var sql = "SELECT * FROM [User] WHERE Username = @UserName AND Password = @Password";
+            var sql = "SELECT * " +
+                "FROM [User] " +
+                "WHERE Username = @UserName AND Password = @Password";
             var user = connection.QuerySingleOrDefault<LoginViewModel>(sql, new { UserName = username, Password = password });
             return user; // Ensure you securely handle passwords (use hashing)
         }

@@ -40,14 +40,14 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="FirstName">First Name:</label>
-                                <input type="text" class="form-control" id="FirstName" value="@Model.FirstName" readonly>
+                                <label asp-for="FirstName">First Name:</label>
+                                <input asp-for="FirstName" type="text" class="form-control" id="FirstName" value="@Model.FirstName" readonly>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="LastName">Last Name:</label>
-                                <input type="text" class="form-control" id="LastName" value="@Model.LastName" readonly>
+                                <label asp-for="LastName">Last Name:</label>
+                                <input asp-for="LastName" type="text" class="form-control" id="LastName" value="@Model.LastName" readonly>
                             </div>
                         </div>
                     </div>
@@ -55,24 +55,24 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="Role">Role:</label>
-                                <input type="text" class="form-control" id="Role" value="@Model.Role" readonly>
+                                <label asp-for="Role">Role:</label>
+                                <input asp-for="Role" type="text" class="form-control" id="Role" value="@Model.Role" readonly>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="ContactNumber">Contact Number:</label>
-                                <input type="text" class="form-control" id="ContactNumber" value="@Model.ContactNumber" readonly>
+                                <label asp-for="ContactNumber">Contact Number:</label>
+                                <input asp-for="ContactNumber" type="text" class="form-control" id="ContactNumber" value="@Model.ContactNumber" readonly>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="Email">Email:</label>
-                                <input type="text" class="form-control" id="Email" value="@Model.Email" readonly>
+                                <label asp-for="Email">Email:</label>
+                                <input asp-for="Email" type="text" class="form-control" id="Email" value="@Model.Email" readonly>
                             </div>
                         </div>
                     </div>
@@ -82,12 +82,12 @@
                             <div class="button-container">
 
                                 <form asp-action="UpdateEmployee" method="get">
-                                    <input type="hidden" name="Id" value="@Model.UserID" />
+                                    <input asp-for="UserID" type="hidden" name="Id" value="@Model.UserID" />
                                     <button class="btn btn-outline-secondary" type="submit">Edit</button>
                                 </form>
 
                                 <form asp-action="DeleteEmployee" method="post">
-                                    <input type="hidden" name="Id" value="@Model.UserID" />
+                                    <input asp-for="UserID" type="hidden" name="Id" value="@Model.UserID" />
                                     <button class="btn btn-outline-danger" onclick="return window.confirm('Are you sure to delete this User?')" type="submit">Delete</button>
                                 </form>
                             </div>
