@@ -34,8 +34,6 @@
 
 @if (patientInstructionViewModels != null && patientInstructionViewModels.Any())
 {
-
-
     <table class="table table-striped">
         <thead>
             <tr>
@@ -61,4 +59,39 @@
 
         </tbody>
     </table>
+}
+@* else
+{
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Patient Full Name</th>
+                    <th scope="col">Instruction</th>
+                    <th scope="col">Date</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (PatientInstructionViewModel patientInstructionViewModel in patientInstructionViewModels)
+            {
+                        <tr>
+                            <td>@patientInstructionViewModel.PatientName</td>
+                            <td>@patientInstructionViewModel.Instruction</td>
+                            <td>@patientInstructionViewModel.Date.ToString("dd/MM/yyyy")</td>
+                            <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = patientInstructionViewModel.PatientInstructionID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = patientInstructionViewModel.PatientInstructionID })
+                            </td>
+                        </tr>
+            }
+
+            </tbody>
+        </table>
+} *@
+
+@*Displays a browser alert to indicate if add the record was successfull or not*@
+@if(TempData["msg"] != null) { 
+    <script>
+        alert('@Html.Raw(TempData["msg"])')
+    </script>
 }

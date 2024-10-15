@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {}
+    "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
+    "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
+        "projectUniqueName": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
         "projectName": "WardManagementSystem.Data",
-        "projectPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
-        "packagesPath": "C:\\Users\\sodie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\obj\\",
+        "projectPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
+        "packagesPath": "C:\\Users\\naido\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sodie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\naido\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,21 +79,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {
+    "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
         "projectName": "WardManagementSystem",
-        "projectPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\sodie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\",
+        "projectPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\naido\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sodie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\naido\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,8 +108,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
-                "projectPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj"
+              "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
+                "projectPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj"
               }
             }
           }
@@ -173,7 +173,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

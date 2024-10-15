@@ -19,11 +19,11 @@ namespace WardManagementSystem.Data.Repository
             _db = db;
         }
 
-        public async Task<bool> AddAsync(Visit visit)
+        public async Task<bool> AddAsync(Visit visit, int DoctorID)
         {
             try
             {
-                await _db.SaveData("sp_CreateVisitNote", new { visit.DoctorID, visit.PatientFileID, visit.VisitNote, visit.DischargePatient });
+                await _db.SaveData("sp_CreateVisitNote", new { DoctorID, visit.PatientFileID, visit.VisitNote, visit.DischargePatient });
                 return true;
             }
             catch (Exception ex)
@@ -77,10 +77,10 @@ namespace WardManagementSystem.Data.Repository
             return await _db.GetData<PatientFileFullNameViewModel, dynamic>(query, new { });
         }
 
-        public async Task<IEnumerable<VisitNoteViewModel>> GetAllAsync(int PatientFileID)
+        public async Task<IEnumerable<VisitNoteViewModel>> GetAllAsync(int PatientFileID, int DoctorID)
         {
             string query = "sp_DisplayVisitVM";
-            return await _db.GetData<VisitNoteViewModel, dynamic>(query, new { PatientFileID = PatientFileID});
+            return await _db.GetData<VisitNoteViewModel, dynamic>(query, new { PatientFileID = PatientFileID, DoctorID = DoctorID});
         }
     }
 }

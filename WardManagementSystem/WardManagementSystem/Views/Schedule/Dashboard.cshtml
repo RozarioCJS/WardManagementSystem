@@ -1,4 +1,5 @@
 ﻿@using WardManagementSystem.Data.Models
+@using WardManagementSystem.Data.Models.Domain
 @* @model ScheduleDashboardView *@
 
 @{
@@ -14,10 +15,10 @@
 
     IEnumerable<DoctorDashboardViewModel> doctorDashboardViewModels = ViewData["DoctorDashboardViewModel"] as IEnumerable<DoctorDashboardViewModel>;
     ScheduleCountViewModel scheduleCountViewModels = ViewData["ScheduleCountViewModel"] as ScheduleCountViewModel;
+    // IEnumerable<LoginViewModel> loginViewModels = ViewData["Doctor"] as LoginViewModel;
 }
 
 <h1>Dashboard</h1>
-
 <hr />
 <div class="container">
     <div class="card">
