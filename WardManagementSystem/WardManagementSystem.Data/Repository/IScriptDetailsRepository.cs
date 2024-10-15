@@ -13,6 +13,7 @@ namespace WardManagementSystem.Data.Repository
         Task<bool> UpdateAsync(Script Script);
         Task<bool> ReceivedScriptsAsync(Script Script);
         Task<ScriptDetailsViewModel> GetByIdAsync(int id);
+        Task<ScriptDetailsViewModel> GetByIdAsyncNew(int id);
         Task<IEnumerable<ScriptListViewModel>> GetAllAsync(char status);
         Task<IEnumerable<ScriptListViewModel>> GetByDateAsync(DateTime SearchDate);
     }

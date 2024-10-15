@@ -81,6 +81,12 @@ namespace WardManagementSystem.Data.Models.Services
                     .SetTextAlignment(TextAlignment.LEFT)
                     .SetFontSize(12));
 
+                document.Add(new Paragraph("Script Manager:")
+                    .SetTextAlignment(TextAlignment.LEFT)
+                    .SetFontSize(20));
+                document.Add(new Paragraph($"Name: {ScriptDetailsViewModel.ScriptManagerName}")
+                    .SetTextAlignment(TextAlignment.LEFT)
+                    .SetFontSize(12));
                 document.Close();
 
                 return stream.ToArray();

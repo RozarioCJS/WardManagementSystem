@@ -63,7 +63,7 @@ namespace WardManagementSystem.Controllers
         // returns the details of each script based on Id
         public async Task<IActionResult> DetailsN(int id)
         {
-            var script = await _SDRepo.GetByIdAsync(id);
+            var script = await _SDRepo.GetByIdAsyncNew(id);
             return View(script);
         }
         public async Task<IActionResult> DetailsP(int id)
@@ -82,9 +82,10 @@ namespace WardManagementSystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SendScript(int Id)
         {
+            var prescriptionManagerID = HttpContext.Session.GetInt32("PrescriptionManagerID");
             try
             {
-                var scriptDetails = new Script { ScriptID = Id };
+                var scriptDetails = new Script { ScriptID = Id, PrescriptionManagerID = prescriptionManagerID };
                 bool updateRecord = await _SDRepo.UpdateAsync(scriptDetails);
                 if (updateRecord)
                 {
@@ -107,9 +108,10 @@ namespace WardManagementSystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ReceivedScripts(int Id)
         {
+            var prescriptionManagerID = HttpContext.Session.GetInt32("PrescriptionManagerID");
             try
             {
-                var scriptDetails = new Script { ScriptID = Id };
+                var scriptDetails = new Script { ScriptID = Id, PrescriptionManagerID = prescriptionManagerID };
                 bool updateRecord = await _SDRepo.ReceivedScriptsAsync(scriptDetails);
                 if (updateRecord)
                 {

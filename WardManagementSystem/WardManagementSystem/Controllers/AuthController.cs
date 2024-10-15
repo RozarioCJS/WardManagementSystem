@@ -32,8 +32,9 @@ public class AuthController : Controller
             // Store user info in session or authentication cookie
             HttpContext.Session.SetString("UserRole", user.Role); // Assuming user has a Role property
             HttpContext.Session.SetString("UserName", user.Username);
-            HttpContext.Session.SetInt32("ConsumableManagerID", user.ConsumableManagerID);        //store the ConsumableManagerID to use in different controllers
             HttpContext.Session.SetString("LastName", user.LastName);
+            HttpContext.Session.SetInt32("ConsumableManagerID", user.ConsumableManagerID);
+            HttpContext.Session.SetInt32("PrescriptionManagerID", user.PrescriptionManagerID);
 
             // Redirect to the respective dashboard
             if (user.Role == "Nurse")

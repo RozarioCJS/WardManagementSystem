@@ -23,6 +23,7 @@ namespace WardManagementSystem.Data.Repository
                 var parameters = new
                 {
                     Id = script.ScriptID,
+                    PrescriptionManagerID = script.PrescriptionManagerID,
                 };
                 await _db.SaveData("sp_UpdateScriptStatus", parameters);
                 return true;
@@ -40,6 +41,7 @@ namespace WardManagementSystem.Data.Repository
                 var parameters = new
                 {
                     Id = script.ScriptID,
+                    PrescriptionManagerID = script.PrescriptionManagerID,
                 };
                 await _db.SaveData("sp_ReceivedScripts", parameters);
                 return true;
@@ -49,6 +51,11 @@ namespace WardManagementSystem.Data.Repository
                 Console.WriteLine("Update failed for ScriptDetailID: " + script.ScriptID + " Error: " + ex.Message);
                 return false;
             }
+        }
+        public async Task<ScriptDetailsViewModel> GetByIdAsyncNew(int id)
+        {
+            IEnumerable<ScriptDetailsViewModel> result = await _db.GetData<ScriptDetailsViewModel, dynamic>("sp_DisplayNewScriptDetail", new { ID = id });
+            return result.FirstOrDefault();
         }
         public async Task<ScriptDetailsViewModel> GetByIdAsync(int id)
         {

@@ -15,5 +15,7 @@ namespace WardManagementSystem.Data.Models
         public char Status { get; set; }
         public string medicationName { get; set; }
         public int Dosage { get; set; }
+        public int? PrescriptionManagerID { get; set; }
+        public string ScriptManagerName { get; set; }
     }
 }

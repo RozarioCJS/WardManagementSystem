@@ -37,14 +37,14 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="Doctor">Doctor:</label>
-                                <input type="text" class="form-control" id="Doctor" value="@Model.FirstName" readonly>
+                                <label asp-for="FirstName">Doctor:</label>
+                                <input asp-for="FirstName" type="text" class="form-control" id="FirstName" value="@Model.FirstName" readonly>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="Date">Date:</label>
-                                <input type="text" class="form-control" id="Date" value="@Model.Date.ToString("yyyy-MM-dd")" readonly>
+                                <label asp-for="Date">Date:</label>
+                                <input asp-for="Date" type="text" class="form-control" id="Date" value="@Model.Date.ToString("yyyy-MM-dd")" readonly>
                             </div>
                         </div>
                     </div>
@@ -52,24 +52,32 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="PatientName">Patient Name:</label>
-                                <input type="text" class="form-control" id="PatientName" value="@Model.PatientName" readonly>
+                                <label asp-for="PatientName">Patient Name:</label>
+                                <input asp-for="PatientName" type="text" class="form-control" id="PatientName" value="@Model.PatientName" readonly>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="Status">Status:</label>
-                                <input type="text" class="form-control" id="Status" value="@Model.Status" readonly>
+                                <label asp-for="Status">Status:</label>
+                                <input asp-for="Status" type="text" class="form-control" id="Status" value="@Model.Status" readonly>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="Medication">Medication:</label>
-                                <input type="text" class="form-control" id="Medication" value="@Model.medicationName @Model.Dosage mg" readonly>
+                                <label asp-for="medicationName">Medication:</label>
+                                <input asp-for="medicationName" type="text" class="form-control" id="medicationName" value="@Model.medicationName @Model.Dosage mg" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label asp-for="ScriptManagerName">Script Manager:</label>
+                                <input asp-for="ScriptManagerName" type="text" class="form-control" id="ScriptManagerName" value="@Model.ScriptManagerName" readonly>
                             </div>
                         </div>
                     </div>

@@ -70,7 +70,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label asp-for="medicationName">Medication:</label>
-                                <input type="text" class="form-control" id="Medication" value="@Model.medicationName @Model.Dosage mg" readonly>
+                                <input asp-for="medicationName" type="text" class="form-control" id="Medication" value="@Model.medicationName @Model.Dosage mg" readonly>
                             </div>
                         </div>
                     </div>
@@ -82,11 +82,6 @@
                                     <input type="hidden" name="Id" value="@Model.ScriptID" />
                                     <button class="btn btn-outline-primary" id="ShowCustomAlert" type="submit">Send</button>
                                 </form>
-                            </div>
-
-                            <div id="customAlert" style="display: none;">
-                                <span class="closebtn">&times;</span>
-                                <strong>Script Sent Successfully</strong>
                             </div>
                         </div>
                     </div>
