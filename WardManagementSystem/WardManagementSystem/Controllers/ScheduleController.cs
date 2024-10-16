@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.Design;
 using WardManagementSystem.Data.Models;
@@ -24,10 +25,13 @@ namespace WardManagementSystem.Controllers
 
         public async Task<IActionResult> Dashboard()            //should be Dashboard(int DoctorID)
         {
-            //retrieve data from database
-            var todayCount = await _scheduleRepo.GetAllTodayAsync(1);           //GetAllTodayAsync(DoctorID)
-            var totalCount = await _scheduleRepo.GetAllTotalAsync(1);
-            var schedules = await _scheduleRepo.GetDashboardAsync(1);
+
+            var temp = HttpContext.Session.GetString("DoctorID");
+            int doctorID = int.Parse(temp);
+            
+            var todayCount = await _scheduleRepo.GetAllTodayAsync(doctorID);           //GetAllTodayAsync(DoctorID)
+            var totalCount = await _scheduleRepo.GetAllTotalAsync(doctorID);           //TempData receives data from the AuthController when authenticating user
+            var schedules = await _scheduleRepo.GetDashboardAsync(doctorID);
 
             //using ViewData to store the different data for different ViewModels
             ViewData["DoctorDashboardViewModel"] = schedules;
@@ -44,7 +48,10 @@ namespace WardManagementSystem.Controllers
         //Display all
         public async Task<IActionResult> DisplayAll(int PatientID)
         {
-            var patientSchedules = await _scheduleRepo.GetAllPatientAsync(PatientID);
+            var temp = HttpContext.Session.GetString("DoctorID");
+            int doctorID = int.Parse(temp);
+
+            var patientSchedules = await _scheduleRepo.GetAllPatientAsync(PatientID, doctorID);
             ViewData["ScheduleDisplayViewModel"] = patientSchedules;
 
             //Searching for patient to be displayed
@@ -72,18 +79,18 @@ namespace WardManagementSystem.Controllers
         //add
         public async Task<IActionResult> Add()
         {
-            //filling the drop down list with doctor names
-            var doctorFullName = await _scheduleRepo.GetDoctorFullNameAsync();
-            ViewData["DoctorFullNameViewModel"] = doctorFullName;
+            ////filling the drop down list with doctor names
+            //var doctorFullName = await _scheduleRepo.GetDoctorFullNameAsync();
+            //ViewData["DoctorFullNameViewModel"] = doctorFullName;
 
-            List<SelectListItem> doctors = new List<SelectListItem>();     //creating a list to store doctors
-            foreach (DoctorFullNameViewModel d in doctorFullName)        //iterating through the data to fill the list with doctors
-            {
-                doctors.Add(new SelectListItem { Value = d.DoctorID.ToString(), Text = d.DoctorName });     //doctor gets added to the list
-            }
-            ViewBag.Doctor = doctors;        //Setting a ViewBag to contain the list of doctors
-            var selectListDoctor = new SelectList(doctors, "Value", "Text");    //setting the format to be carrient to drop down list
-            ViewBag.SelectListDoctor = selectListDoctor;       //Stores the data with the correct format to be used in view with drop down list
+            //List<SelectListItem> doctors = new List<SelectListItem>();     //creating a list to store doctors
+            //foreach (DoctorFullNameViewModel d in doctorFullName)        //iterating through the data to fill the list with doctors
+            //{
+            //    doctors.Add(new SelectListItem { Value = d.DoctorID.ToString(), Text = d.DoctorName });     //doctor gets added to the list
+            //}
+            //ViewBag.Doctor = doctors;        //Setting a ViewBag to contain the list of doctors
+            //var selectListDoctor = new SelectList(doctors, "Value", "Text");    //setting the format to be carrient to drop down list
+            //ViewBag.SelectListDoctor = selectListDoctor;       //Stores the data with the correct format to be used in view with drop down list
 
 
             //filling the drop down list
@@ -104,6 +111,10 @@ namespace WardManagementSystem.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(Schedule schedule)
         {
+            //Retrieving DoctorID from session
+            var temp = HttpContext.Session.GetString("DoctorID");
+            int doctorID = int.Parse(temp);
+
             // inserting the record
             try
             {
@@ -112,7 +123,7 @@ namespace WardManagementSystem.Controllers
                     return View(schedule);
                 }
 
-                bool addSchedule = await _scheduleRepo.AddAsync(schedule);
+                bool addSchedule = await _scheduleRepo.AddAsync(schedule, doctorID);
                 if (addSchedule)
                 {
                     TempData["msg"] = "Successfully Added!";

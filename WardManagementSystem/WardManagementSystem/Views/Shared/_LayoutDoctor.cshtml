@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿<!--Allows the HttpContext to be used within the layout view-->
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    string LastName = HttpContextAccessor.HttpContext.Session.GetString("LastName");
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -44,6 +51,25 @@
                             <i class=""></i><span class="fs-4 d-none d-sm-inline">Visit Notes</span>
                         </a>
                     </li>
+                
+                <hr />
+                 class="nav nav-pills flex-column mt-4"">
+                    <li class="nav-item">
+                        <p style="color: white;">Welcome, Dr. @LastName</p>     <!--Displays doctors name throughout the different views of subsystem-->
+
+                        <span id="datetime" style="color: white; font-size: 10px;"></span>
+
+                        <script>
+                            // create a function to update the date and time
+                            function updateDateTime() {
+                                const now = new Date();
+                                const currentDateTime = now.toLocaleString();       //get the current date and time
+                                document.querySelector('#datetime').textContent = currentDateTime;  // update the textContent property of the span element
+                            }
+                            // call the updateDateTime function
+                            setInterval(updateDateTime, 100);
+                        </script>
+                    </li>
                 </ul>
             </div>
 
@@ -67,4 +93,3 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-

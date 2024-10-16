@@ -14,11 +14,11 @@ namespace WardManagementSystem.Data.Repository
             _db = db;
         }
 
-        public async Task<bool> AddAsync(Schedule schedule)
+        public async Task<bool> AddAsync(Schedule schedule, int DoctorID)
         {
             try
             {
-                await _db.SaveData("sp_CreateSchedule", new { schedule.PatientID, schedule.DoctorID, schedule.Date, schedule.Time });
+                await _db.SaveData("sp_CreateSchedule", new { schedule.PatientID, DoctorID, schedule.Date, schedule.Time });
                 return true;
             }
             catch (Exception ex)
@@ -56,7 +56,7 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-                await _db.SaveData("sp_UpdateSchedule", schedule);
+                await _db.SaveData("sp_UpdateSchedule", new {schedule.ScheduleID, schedule.PatientID, schedule.Date, schedule.Time});
                 return true;
             }
             catch (Exception ex)
@@ -87,10 +87,10 @@ namespace WardManagementSystem.Data.Repository
             return await _db.GetData<ScheduleDisplayViewModel, dynamic>(query, new { });
         }
 
-        public async Task<IEnumerable<ScheduleDisplayViewModel>> GetAllPatientAsync(int PatientID)      //still have to code it in a way that uses DoctorID to only display specif doctor's schedule. Code to be updated in stored procedure as well!!
+        public async Task<IEnumerable<ScheduleDisplayViewModel>> GetAllPatientAsync(int PatientID, int DoctorID)      //still have to code it in a way that uses DoctorID to only display specif doctor's schedule. Code to be updated in stored procedure as well!!
         {
             string query = "sp_ViewPatientSchedulesVM";
-            return await _db.GetData<ScheduleDisplayViewModel, dynamic>(query, new { PatientID = PatientID});
+            return await _db.GetData<ScheduleDisplayViewModel, dynamic>(query, new { PatientID = PatientID, DoctorID = DoctorID});
         }
 
         public async Task<IEnumerable<DoctorFullNameViewModel>> GetDoctorFullNameAsync()

@@ -66,204 +66,213 @@
 @* @Html.DropDownList("PatientID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
 <input type="submit" value="Search" class="btn btn-primary" /> *@
 
-<h3>Patient History</h3>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Patient Full Name
-            </th>
-            <th>
-                Arrival Date
-            </th>
-            <th>
-                Bed ID
-            </th>
-            <th>
-                Ward ID
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (PatientFileViewModel patientFileViewModel in patientFileViewModels)
-    {
-        <tr>
-            <td>
-                @patientFileViewModel.PatientFullName
-            </td>
-            <td>
-                    @patientFileViewModel.ArrivalDate.ToString("dd/MM/yyyy")
-            </td>
-            <td>
-                @patientFileViewModel.BedID
-            </td>
-            <td>
-                @patientFileViewModel.WardID
-            </td>
-        </tr>
+@if (patientFileViewModels != null && patientFileViewModels.Any())
+{
+    <h3>Patient History</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Patient Full Name
+                </th>
+                <th>
+                    Arrival Date
+                </th>
+                <th>
+                    Bed ID
+                </th>
+                <th>
+                    Ward ID
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (PatientFileViewModel patientFileViewModel in patientFileViewModels)
+            {
+                <tr>
+                    <td>
+                        @patientFileViewModel.PatientFullName
+                    </td>
+                    <td>
+                        @patientFileViewModel.ArrivalDate.ToString("dd/MM/yyyy")
+                    </td>
+                    <td>
+                        @patientFileViewModel.BedID
+                    </td>
+                    <td>
+                        @patientFileViewModel.WardID
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <br />
+    <br />
+
+    <div class="row">
+        <div class="column">
+            <h3>Patient Chronic Conditions:</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Chronic Condition
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (PatientChronicConditionViewModel patientChronicConditionViewModel in patientChronicConditionViewModels)
+                    {
+                        <tr>
+                            <td>
+                                @patientChronicConditionViewModel.ConditionName
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="column">
+            <h3>Patient Medication:</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Medication Name
+                        </th>
+                        <th>
+                            Medication Type
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (PatientMedicationViewModel patientMedicationViewModel in patientMedicationViewModels)
+                    {
+                        <tr>
+                            <td>
+                                @patientMedicationViewModel.MedicationName
+                            </td>
+                            <td>
+                                @patientMedicationViewModel.MedicationType
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="column">
+            <h3>Patient Allergy:</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Allergy Name
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (PatientAllergyViewModel patientAllergyViewModel in patientAllergyViewModels)
+                    {
+                        <tr>
+                            <td>
+                                @patientAllergyViewModel.AllergyName
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="column">
+            <h3>Patient Treatment:</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Treatment Name
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Time
+                        </th>
+                        <th>
+                            Surgary
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (PatientTreatmentViewModel patientTreatmentViewModel in patientTreatmentViewModels)
+                    {
+                        <tr>
+                            <td>
+                                @patientTreatmentViewModel.TreatmentName
+                            </td>
+                            <td>
+                                @patientTreatmentViewModel.Date
+                            </td>
+                            <td>
+                                @patientTreatmentViewModel.Time
+                            </td>
+                            <td>
+                                @patientTreatmentViewModel.SurgaryRoom
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="column">
+            <h3>Patient Vitals:</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Vital Name
+                        </th>
+                        <th>
+                            Value
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Time
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (PatientVitalsViewModel patientVitalsViewModel in patientVitalsViewModels)
+                    {
+                        <tr>
+                            <td>
+                                @patientVitalsViewModel.VitalName
+                            </td>
+                            <td>
+                                @patientVitalsViewModel.PatientVitalsValue
+                            </td>
+                            <td>
+                                @patientVitalsViewModel.Date
+                            </td>
+                            <td>
+                                @patientVitalsViewModel.Time
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
 }
-    </tbody>
-</table>
-<br />
-<br />
-
-<div class="row">
-    <div class="column">
-        <h3>Patient Chronic Conditions:</h3>
-        <table class="table" >
-            <thead>
-                <tr>
-                    <th>
-                        Chronic Condition
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (PatientChronicConditionViewModel patientChronicConditionViewModel in patientChronicConditionViewModels)
-                {
-                    <tr>
-                        <td>
-                            @patientChronicConditionViewModel.ConditionName
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-    <div class="column">
-        <h3>Patient Medication:</h3>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        Medication Name
-                    </th>
-                    <th>
-                        Medication Type
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (PatientMedicationViewModel patientMedicationViewModel in patientMedicationViewModels)
-                {
-                    <tr>
-                        <td>
-                            @patientMedicationViewModel.MedicationName
-                        </td>
-                        <td>
-                            @patientMedicationViewModel.MedicationType
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-    <div class="column">
-        <h3>Patient Allergy:</h3>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        Allergy Name
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (PatientAllergyViewModel patientAllergyViewModel in patientAllergyViewModels)
-                {
-                    <tr>
-                        <td>
-                            @patientAllergyViewModel.AllergyName
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-</div>
+else
+{
+    <p>There is no records available for the current patient</p>
+}
 
 
-
-<div class="row">
-    <div class="column">
-        <h3>Patient Treatment:</h3>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        Treatment Name
-                    </th>
-                    <th>
-                        Date
-                    </th>
-                    <th>
-                        Time
-                    </th>
-                    <th>
-                        Surgary
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (PatientTreatmentViewModel patientTreatmentViewModel in patientTreatmentViewModels)
-                {
-                    <tr>
-                        <td>
-                            @patientTreatmentViewModel.TreatmentName
-                        </td>
-                        <td>
-                            @patientTreatmentViewModel.Date
-                        </td>
-                        <td>
-                            @patientTreatmentViewModel.Time
-                        </td>
-                        <td>
-                            @patientTreatmentViewModel.SurgaryRoom
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-    <div class="column">
-        <h3>Patient Vitals:</h3>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        Vital Name
-                    </th>
-                    <th>
-                        Value
-                    </th>
-                    <th>
-                        Date
-                    </th>
-                    <th>
-                        Time
-                    </th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (PatientVitalsViewModel patientVitalsViewModel in patientVitalsViewModels)
-                {
-                    <tr>
-                        <td>
-                            @patientVitalsViewModel.VitalName
-                        </td>
-                        <td>
-                            @patientVitalsViewModel.PatientVitalsValue
-                        </td>
-                        <td>
-                            @patientVitalsViewModel.Date
-                        </td>
-                        <td>
-                            @patientVitalsViewModel.Time
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-</div>

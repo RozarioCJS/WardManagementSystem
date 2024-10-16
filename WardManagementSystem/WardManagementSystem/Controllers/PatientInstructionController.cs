@@ -23,10 +23,14 @@ namespace WardManagementSystem.Controllers
         //Display all
         public async Task<IActionResult> DisplayAll(int PatientFileID)
         {
-            var patientInstructions = await _patientInstructionRepo.GetAllPatientNameAsync(PatientFileID);
+            var temp = HttpContext.Session.GetString("DoctorID");   //retrieving doctorID from session.
+            int doctorID = int.Parse(temp);
+
+            //Filling viewdata for displaying specific patient's instructions
+            var patientInstructions = await _patientInstructionRepo.GetAllPatientNameAsync(PatientFileID, doctorID);
             ViewData["PatientInstructionViewModel"] = patientInstructions;
 
-            //Searching for patient to be displayed
+            //Filling the drop down list with patient names
             var patientComboBox = await _patientInstructionRepo.GetPatientFullNameAsync();
             ViewData["PatientFileComboViewModel"] = patientComboBox;
 
@@ -51,18 +55,18 @@ namespace WardManagementSystem.Controllers
         //add
         public async Task<IActionResult> Add()
         {
-            //filling the drop down list with doctor names
-            var doctorFullName = await _patientInstructionRepo.GetDoctorFullNameAsync();
-            ViewData["DoctorFullNameViewModel"] = doctorFullName;
+            ////filling the drop down list with doctor names
+            //var doctorFullName = await _patientInstructionRepo.GetDoctorFullNameAsync();
+            //ViewData["DoctorFullNameViewModel"] = doctorFullName;
 
-            List<SelectListItem> doctors = new List<SelectListItem>();     //creating a list to store doctors
-            foreach (DoctorFullNameViewModel d in doctorFullName)        //iterating through the data to fill the list with doctors
-            {
-                doctors.Add(new SelectListItem { Value = d.DoctorID.ToString(), Text = d.DoctorName });     //doctor gets added to the list
-            }
-            ViewBag.Doctor = doctors;        //Setting a ViewBag to contain the list of doctors
-            var selectListDoctor = new SelectList(doctors, "Value", "Text");    //setting the format to be carrient to drop down list
-            ViewBag.SelectListDoctor = selectListDoctor;       //Stores the data with the correct format to be used in view with drop down list
+            //List<SelectListItem> doctors = new List<SelectListItem>();     //creating a list to store doctors
+            //foreach (DoctorFullNameViewModel d in doctorFullName)        //iterating through the data to fill the list with doctors
+            //{
+            //    doctors.Add(new SelectListItem { Value = d.DoctorID.ToString(), Text = d.DoctorName });     //doctor gets added to the list
+            //}
+            //ViewBag.Doctor = doctors;        //Setting a ViewBag to contain the list of doctors
+            //var selectListDoctor = new SelectList(doctors, "Value", "Text");    //setting the format to be carrient to drop down list
+            //ViewBag.SelectListDoctor = selectListDoctor;       //Stores the data with the correct format to be used in view with drop down list
 
 
             //filling the drop down list with patient names
@@ -84,6 +88,9 @@ namespace WardManagementSystem.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(Patient_Instruction patient_instruction)
         {
+            var temp = HttpContext.Session.GetString("DoctorID");
+            int doctorID = int.Parse(temp);
+
             try
             {
                 if (!ModelState.IsValid)
@@ -91,7 +98,8 @@ namespace WardManagementSystem.Controllers
                     return View(patient_instruction);
                 }
 
-                bool addInstruction = await _patientInstructionRepo.AddAsync(patient_instruction);
+                bool addInstruction = await _patientInstructionRepo.AddAsync(patient_instruction, doctorID);
+
                 if (addInstruction)
                 {
                     TempData["msg"] = "Successfully Added!";
@@ -106,6 +114,12 @@ namespace WardManagementSystem.Controllers
                 TempData["msg"] = "Something went wrong!";
             }
 
+            //return RedirectToRoute(new
+            //{
+            //    controller = "PatientInstruction",
+            //    action = "DisplayAll",
+            //    id = patient_instruction.PatientFileID
+            //});
             return RedirectToAction(nameof(DisplayAll));
         }
 

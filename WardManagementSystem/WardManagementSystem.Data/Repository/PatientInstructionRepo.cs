@@ -13,11 +13,11 @@ namespace WardManagementSystem.Data.Repository
             _db = db;
         }
 
-        public async Task<bool> AddAsync(Patient_Instruction patient_instruction)
+        public async Task<bool> AddAsync(Patient_Instruction patient_instruction, int DoctorID)
         {
             try
             {
-                await _db.SaveData("sp_CreatePatientInstruction", new { patient_instruction.PatientFileID, patient_instruction.DoctorID, patient_instruction.Instruction });
+                await _db.SaveData("sp_CreatePatientInstruction", new { patient_instruction.PatientFileID, DoctorID, patient_instruction.Instruction });
                 return true;
             }
             catch (Exception ex)
@@ -77,10 +77,10 @@ namespace WardManagementSystem.Data.Repository
         }
 
 
-        public async Task<IEnumerable<PatientInstructionViewModel>> GetAllPatientNameAsync(int PatientFileID)
+        public async Task<IEnumerable<PatientInstructionViewModel>> GetAllPatientNameAsync(int PatientFileID, int DoctorID)
         {
             var query = "sp_PatientInstructionVM";
-            return await _db.GetData<PatientInstructionViewModel, dynamic>(query, new { PatientFileID = PatientFileID});
+            return await _db.GetData<PatientInstructionViewModel, dynamic>(query, new { PatientFileID = PatientFileID, DoctorID = DoctorID});
         }
     }
 }
