@@ -55,31 +55,30 @@
             <h3>@scheduleCountViewModels.TotalCount</h3>
         </div>
     </div>
-</div>
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th scope="col">Patient Name</th>
-            <th scope="col">Date</th>
-            <th scope="col">Time</th>
-        </tr>
-    </thead>
-    <tbody>
-         @foreach (DoctorDashboardViewModel doctorDashboardViewModel in doctorDashboardViewModels)
-        {
+    <table class="table table-striped">
+        <thead>
             <tr>
-                <td>
-                    @doctorDashboardViewModel.PatientName
-                </td>
-                <td>
-                    @doctorDashboardViewModel.Date.ToString("dd/MM/yyyy")
-                </td>
-                <td>
-                    @doctorDashboardViewModel.Time
-                </td>
+                <th scope="col">Patient Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (DoctorDashboardViewModel doctorDashboardViewModel in doctorDashboardViewModels)
+            {
+                <tr>
+                    <td>
+                        @doctorDashboardViewModel.PatientName
+                    </td>
+                    <td>
+                        @doctorDashboardViewModel.Date.ToString("dd/MM/yyyy")
+                    </td>
+                    <td>
+                        @doctorDashboardViewModel.Time
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 
+</div>
