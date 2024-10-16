@@ -62,9 +62,13 @@ namespace WardManagementSystem.Data.Repository
             IEnumerable<ScriptDetailsViewModel> result = await _db.GetData<ScriptDetailsViewModel, dynamic>("sp_DisplayScriptDetail", new { ID = id });
             return result.FirstOrDefault();
         }
-        public async Task<IEnumerable<ScriptListViewModel>> GetAllAsync(char status)
+        public async Task<IEnumerable<ScriptListViewModel>> GetAllAsyncNew(char status)
         {
-            return await _db.GetData<ScriptListViewModel, dynamic>("sp_ListAllScripts", new { Status = status });
+            return await _db.GetData<ScriptListViewModel, dynamic>("sp_ListAllScriptsNew", new { Status = status });
+        }
+        public async Task<IEnumerable<ScriptListViewModel>> GetAllAsync(char status, int ID)
+        {
+            return await _db.GetData<ScriptListViewModel, dynamic>("sp_ListAllScriptspr", new { Status = status, PrescriptionManagerID = ID });
         }
         public async Task<IEnumerable<ScriptListViewModel>> GetByDateAsync(DateTime SearchDate)
         {

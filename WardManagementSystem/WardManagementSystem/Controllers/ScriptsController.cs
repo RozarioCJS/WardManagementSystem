@@ -3,6 +3,7 @@ using WardManagementSystem.Data.Models.Domain;
 using WardManagementSystem.Data.Models;
 using WardManagementSystem.Data.Repository;
 using WardManagementSystem.Data.Models.Services;
+using static iText.StyledXmlParser.Jsoup.Select.Evaluator;
 
 namespace WardManagementSystem.Controllers
 {
@@ -24,9 +25,10 @@ namespace WardManagementSystem.Controllers
         public async Task<IActionResult> Dashboard()
         {
             //returns count for all scripts based on status
-            var newcount = await _SDRepo.GetAllAsync('N');
-            var processedcount = await _SDRepo.GetAllAsync('P');
-            var receivedcount = await _SDRepo.GetAllAsync('R');
+            var prescriptionManagerID = HttpContext.Session.GetInt32("PrescriptionManagerID");
+            var newcount = await _SDRepo.GetAllAsyncNew('N');
+            var processedcount = await _SDRepo.GetAllAsync('P',prescriptionManagerID.Value);
+            var receivedcount = await _SDRepo.GetAllAsync('R',prescriptionManagerID.Value);
 
             var viewModel = new ScriptStatusCountViewModel
             {
@@ -39,11 +41,12 @@ namespace WardManagementSystem.Controllers
         // returns a list of scripts based on the Status
         public async Task<IActionResult> DisplayScriptListN()
         {
-            var scriptDetails = await _SDRepo.GetAllAsync('N');
+            var scriptDetails = await _SDRepo.GetAllAsyncNew('N');
             return View(scriptDetails);
         }
         public async Task<IActionResult> DisplayScriptListP(DateTime? searchDate = null)
         {
+            var prescriptionManagerID = HttpContext.Session.GetInt32("PrescriptionManagerID");
             if (searchDate.HasValue)
             {
                 var scriptDetails = await _SDRepo.GetByDateAsync(searchDate.Value);
@@ -51,13 +54,14 @@ namespace WardManagementSystem.Controllers
             }
             else
             {
-                var scriptDetails = await _SDRepo.GetAllAsync('P');
+                var scriptDetails = await _SDRepo.GetAllAsync('P', prescriptionManagerID.Value);
                 return View(scriptDetails);
             }
         }
         public async Task<IActionResult> DisplayScriptListR()
         {
-            var scriptDetails = await _SDRepo.GetAllAsync('R');
+            var prescriptionManagerID = HttpContext.Session.GetInt32("PrescriptionManagerID");
+            var scriptDetails = await _SDRepo.GetAllAsync('R', prescriptionManagerID.Value);
             return View(scriptDetails);
         }
         // returns the details of each script based on Id
