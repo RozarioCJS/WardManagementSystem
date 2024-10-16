@@ -14,6 +14,16 @@ namespace WardManagementSystem.Controllers
         {
             _WCRepo = WCRepo;
         }
+        public async Task<IActionResult> layoutConsumables()
+        {
+            var conWards = await _WCRepo.GetAllAsync();
+            var viewModel = new ConsumablesDashboardViewModel
+            {
+                ConWards = conWards,
+            };
+            return View(viewModel);
+        }
+
         [HttpGet]
         public async Task<IActionResult> Dashboard()
         {
