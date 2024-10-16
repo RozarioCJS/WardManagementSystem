@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WardManagementSystem.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f1899e4992ad506aae75cb698f0f199e3719da7")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4b9c3ce132de53fd36be6c22d69a61e9a141de1")]
->>>>>>> DOCTOR_PATIENT
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4fba53a8b000a6b4c1228f082d1f6ee32967290")]
 [assembly: System.Reflection.AssemblyProductAttribute("WardManagementSystem.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WardManagementSystem.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

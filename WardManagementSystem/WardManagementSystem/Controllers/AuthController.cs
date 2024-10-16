@@ -35,14 +35,10 @@ public class AuthController : Controller
             // Store user info in session or authentication cookie
             HttpContext.Session.SetString("UserRole", user.Role); // Assuming user has a Role property
             HttpContext.Session.SetString("UserName", user.Username);
-<<<<<<< HEAD
             HttpContext.Session.SetString("LastName", user.LastName);
             HttpContext.Session.SetInt32("ConsumableManagerID", user.ConsumableManagerID);
             HttpContext.Session.SetInt32("PrescriptionManagerID", user.PrescriptionManagerID);
-=======
-            HttpContext.Session.SetString("DoctorID", user.DoctorID.ToString());        //store the DoctorID to use in different controllers
-            HttpContext.Session.SetString("LastName", user.LastName);       //store the doctors last name to display in nav. bar
->>>>>>> DOCTOR_PATIENT
+            HttpContext.Session.SetString("DoctorID", user.DoctorID.ToString());
 
             // Redirect to the respective dashboard
             if (user.Role == "Nurse")
@@ -80,14 +76,8 @@ public class AuthController : Controller
         // Use Dapper to fetch user from the database and validate password
         using (var connection = new SqlConnection(connectionString))
         {
-<<<<<<< HEAD
             var sql = "SELECT u.UserName, u.Password, u.Role, d.DoctorID,cm.ConsumableManagerID, sm.PrescriptionManagerID, d.LastName, cm.LastName, sm.LastName FROM [User] AS u LEFT JOIN [DOCTOR] AS d ON u.UserID = d.UserID LEFT JOIN Consumable_Manager AS cm ON u.UserID = cm.UserID LEFT JOIN Prescription_Manager AS sm ON u.UserID = sm.UserID WHERE Username = @UserName AND Password = @Password";
             var user = connection.QuerySingleOrDefault<LoginViewModel>(sql, new { UserName = username, Password = password });
-=======
-            //trying to get doctorID and LastName as well to be stored it in Session.
-            var sql = "SELECT u.UserName, u.Password, u.Role, d.DoctorID, d.LastName FROM [User] AS u LEFT JOIN [DOCTOR] AS d ON u.UserID = d.UserID WHERE Username = @UserName AND Password = @Password";
-            var user = connection.QuerySingleOrDefault<LoginViewModel>(sql, new { UserName = username, Password = password }); 
->>>>>>> DOCTOR_PATIENT
             return user; // Ensure you securely handle passwords (use hashing)
         }
     }
