@@ -37,7 +37,6 @@ namespace WardManagementSystem.Controllers
             return View(viewModel);
         }
         [HttpGet]
-
         public async Task<IActionResult> Details(int Id)
         {
             var wardConsumables = await _WCRepo.GetByIdAsync(Id);

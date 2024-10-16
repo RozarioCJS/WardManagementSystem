@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\shared\\_layoutdoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\shared\\_layoutdoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\schedule\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\schedule\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,44 +38,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_LayoutDoctor.cshtml",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_LayoutDoctor.cshtml",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Shared\\_LayoutDoctor.cshtml",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_LayoutDoctor.cshtml",
-              "RelativeToolTip": "WardManagementSystem\\Views\\Shared\\_LayoutDoctor.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAE4AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T10:17:00.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "WardManagementSystem\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "WardManagementSystem\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-16T10:07:49.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Schedule\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Schedule\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Schedule\\Dashboard.cshtml",
-              "RelativeToolTip": "WardManagementSystem\\Views\\Schedule\\Dashboard.cshtml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAwFMAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T10:07:37.731Z",
-              "EditorCaption": ""
             }
           ]
         }

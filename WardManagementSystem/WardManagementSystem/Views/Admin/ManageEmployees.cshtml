@@ -3,8 +3,11 @@
     Layout = "~/Views/Shared/_layoutAdmin.cshtml";
 }
 <style>
-    body {
-        background-image: url('~/snake_icon.png');
+    .container {
+        display: flex;
+        align-items: flex-start;
+        height: 90vh;
+        background-image: url('/snake_icon.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -12,9 +15,6 @@
 </style>
 <body>
     @if (TempData["msg"] != null)
-
-
-
     {
         <div class="alert alert-info alert-dismissible fade show" role="alert">
             @TempData["msg"]
@@ -23,24 +23,26 @@
     }
     <h1>Employees</h1>
     <a asp-action="AddEmployee" class="btn btn-outline-primary">Add Employee</a>
-
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>UserName</th>
-                <th>Role</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr class="clickable-row" data-href="@Url.Action("EmployeeDetail", "Admin", new { id = item.UserID })">
-                    <td>@item.UserID</td>
-                    <td>@item.UserName</td>
-                    <td>@item.Role</td>
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>UserName</th>
+                    <th>Role</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="clickable-row" data-href="@Url.Action("EmployeeDetail", "Admin", new { id = item.UserID })">
+                        <td>@item.UserID</td>
+                        <td>@item.UserName</td>
+                        <td>@item.Role</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
 </body>

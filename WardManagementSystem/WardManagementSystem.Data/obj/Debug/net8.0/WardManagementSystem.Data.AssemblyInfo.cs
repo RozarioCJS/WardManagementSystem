@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WardManagementSystem.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a0f22827d585cd9e477be8a3c40a009c64eafe6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24b348bd08b3f9e2cec2735c6cd0db80b46bc55f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WardManagementSystem.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WardManagementSystem.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
