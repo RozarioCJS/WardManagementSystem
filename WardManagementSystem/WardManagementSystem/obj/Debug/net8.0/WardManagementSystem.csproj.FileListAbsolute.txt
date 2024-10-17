@@ -965,3 +965,5 @@ C:\Users\sodie\Desktop\WardSystem\WardManagementSystem\WardManagementSystem\Ward
 C:\Users\sodie\Desktop\WardSystem\WardManagementSystem\WardManagementSystem\WardManagementSystem\obj\Debug\net8.0\WardManagementSystem.pdb
 C:\Users\sodie\Desktop\WardSystem\WardManagementSystem\WardManagementSystem\WardManagementSystem\obj\Debug\net8.0\WardManagementSystem.genruntimeconfig.cache
 C:\Users\sodie\Desktop\WardSystem\WardManagementSystem\WardManagementSystem\WardManagementSystem\obj\Debug\net8.0\ref\WardManagementSystem.dll
+C:\Users\naido\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\naido\Desktop\WardManagementSystem\WardManagementSystem\WardManagementSystem\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

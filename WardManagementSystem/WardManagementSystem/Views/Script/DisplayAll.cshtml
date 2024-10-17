@@ -11,6 +11,12 @@
 }
 
 <style>
+    body {
+        background-image: url('/snake_icon.png');
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        background-position: right;
+    }
     a.link {
         color: white;
         text-decoration: none;
@@ -24,52 +30,54 @@
 
 <button type="button" class="btn btn-primary btn-sm"><a class="link" asp-action="Add">Create New Script</a></button>
 <button type="button" class="btn btn-primary btn-sm"><a class="link" asp-action="DisplayAll">View All Patient Scripts</a></button>
+<hr />
+
+<body>
+    @* Drop down list that displays patient name but has patientID as its value *@
+    @using (Html.BeginForm("DisplayAll", "Script", FormMethod.Get))
+    {
+        <label>Select Patient:</label>
+        @Html.DropDownList("PatientFileID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
+        <input type="submit" value="Search" class="btn btn-primary" />
+    }
+
+    @if (patientScriptViewModels != null && patientScriptViewModels.Any())
+    {
 
 
-@* Drop down list that displays patient name but has patientID as its value *@
-@using (Html.BeginForm("DisplayAll", "Script", FormMethod.Get))
-{
-    <label>Select Patient:</label>
-    @Html.DropDownList("PatientFileID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
-    <input type="submit" value="Search" class="btn btn-primary" />
-}
-
-@if (patientScriptViewModels != null && patientScriptViewModels.Any())
-{
-
-
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">Patient Full Name</th>
-                <th scope="col">Date</th>
-                <th scope="col">Medication Name</th>
-                <th scope="col">Dosage</th>
-                <th scope="col"></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (PatientScriptViewModel patientScriptViewModel in patientScriptViewModels)
-            {
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <td>@patientScriptViewModel.PatientName</td>
-                    <td>
-                        @patientScriptViewModel.Date.ToString("dd/MM/yyyy")
-                    </td>
-                    <td>@patientScriptViewModel.MedicationName</td>
-                    <td>@patientScriptViewModel.Dosage</td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = patientScriptViewModel.ScriptID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = patientScriptViewModel.ScriptID })
-                    </td>
+                    <th scope="col">Patient Full Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Medication Name</th>
+                    <th scope="col">Dosage</th>
+                    <th scope="col"></th>
                 </tr>
-            }
+            </thead>
+            <tbody>
+                @foreach (PatientScriptViewModel patientScriptViewModel in patientScriptViewModels)
+                {
+                    <tr>
+                        <td>@patientScriptViewModel.PatientName</td>
+                        <td>
+                            @patientScriptViewModel.Date.ToString("dd/MM/yyyy")
+                        </td>
+                        <td>@patientScriptViewModel.MedicationName</td>
+                        <td>@patientScriptViewModel.Dosage</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = patientScriptViewModel.ScriptID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = patientScriptViewModel.ScriptID })
+                        </td>
+                    </tr>
+                }
 
-        </tbody>
-    </table>
-}
-else
-{
-    <p>Please select a patient, or selected may not have any current records.</p>
-}
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Please select a patient, or selected may not have any current records.</p>
+    }
+</body>
 

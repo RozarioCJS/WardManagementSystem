@@ -13,11 +13,11 @@ namespace WardManagementSystem.Data.Repository
             _db = db;
         }
 
-        public async Task<bool> AddAsync(Script script)
+        public async Task<bool> AddAsync(Script script, int DoctorID)
         {
             try
             {
-                await _db.SaveData("sp_CreateScript", new { script.DoctorID, script.PatientFileID, script.MedicationID, script.Dosage });          // Date to current date and Status field will be to 'N' in stored procedure
+                await _db.SaveData("sp_CreateScript", new { DoctorID, script.PatientFileID, script.MedicationID, script.Dosage });          // Date to current date and Status field will be to 'N' in stored procedure
                 return true;
             }
             catch (Exception ex)
@@ -82,10 +82,10 @@ namespace WardManagementSystem.Data.Repository
             return await _db.GetData<MedicationNameViewModel, dynamic>(query, new { });
         }
 
-        public async Task<IEnumerable<PatientScriptViewModel>> GetAllPatientAsync(int PatientFileID)      //still have to code it in a way that uses DoctorID to only display specif doctor's schedule. Code to be updated in stored procedure as well!!
+        public async Task<IEnumerable<PatientScriptViewModel>> GetAllPatientAsync(int PatientFileID, int DoctorID) 
         {
             string query = "sp_PatientScriptVM";
-            return await _db.GetData<PatientScriptViewModel, dynamic>(query, new { PatientFileID = PatientFileID });
+            return await _db.GetData<PatientScriptViewModel, dynamic>(query, new { PatientFileID = PatientFileID, DoctorID = DoctorID });
         }
     }
 }

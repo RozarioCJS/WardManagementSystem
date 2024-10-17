@@ -10,7 +10,7 @@ namespace WardManagementSystem.Data.Repository
 {
     public interface IScriptRepo
     {
-        Task<bool> AddAsync(Script script);
+        Task<bool> AddAsync(Script script, int DoctorID);
         Task<bool> UpdateAsync(Script script);
         Task<bool> DeleteAsync(int id);
         Task<Script> GetByIdAsync(int id);
@@ -18,6 +18,6 @@ namespace WardManagementSystem.Data.Repository
         Task<IEnumerable<DoctorFullNameViewModel>> GetDoctorFullNameAsync();        //used to fill drop down list with doctor name
         Task<IEnumerable<PatientFileFullNameViewModel>> GetPatientFullNameAsync();  //for loading the patient name drop down list
         Task<IEnumerable<MedicationNameViewModel>> GetMedicationNameAsync();    //for loading the medication drop down list
-        Task<IEnumerable<PatientScriptViewModel>> GetAllPatientAsync(int PatientFileID);
+        Task<IEnumerable<PatientScriptViewModel>> GetAllPatientAsync(int PatientFileID, int DoctorID);
     }
 }
