@@ -122,11 +122,11 @@
                             <span class="amount">Amount: @item.Quantity</span>
                         </div>
                         @{
-                            if (item.Quantity == 50)
+                            if (item.Quantity >= 45 && item.Quantity <= 55)
                             {
                                 <span class="status status-okay">Okay</span>
                             }
-                            else if (item.Quantity < 50)
+                            else if (item.Quantity < 55)
                             {
                                 <span class="status status-low">Low</span>
                             }
