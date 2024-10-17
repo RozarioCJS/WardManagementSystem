@@ -6118,19 +6118,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sodie\\.nuget\\packages\\": {}
+    "C:\\Users\\naido\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
+      "projectUniqueName": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
       "projectName": "WardManagementSystem.Data",
-      "projectPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
-      "packagesPath": "C:\\Users\\sodie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\obj\\",
+      "projectPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
+      "packagesPath": "C:\\Users\\naido\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sodie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\naido\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6198,13 +6198,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
