@@ -14,15 +14,6 @@ namespace WardManagementSystem.Controllers
         {
             _WCRepo = WCRepo;
         }
-        public async Task<IActionResult> layoutConsumables()
-        {
-            var conWards = await _WCRepo.GetAllAsync();
-            var viewModel = new ConsumablesDashboardViewModel
-            {
-                ConWards = conWards,
-            };
-            return View(viewModel);
-        }
 
         [HttpGet]
         public async Task<IActionResult> Dashboard()
@@ -84,7 +75,8 @@ namespace WardManagementSystem.Controllers
                     ConsumableOrders = consumables.Select(c => new ConsumableOrder
                     {
                         ConsumableID = c.ConsumableID,
-                        ConsumableName = c.ConsumableName
+                        ConsumableName = c.ConsumableName,
+                        Quantity = null
                     }).ToList()
                 };
                 return View(model);
@@ -100,13 +92,26 @@ namespace WardManagementSystem.Controllers
         {
             bool POD = false;
             bool PUWCS = false;
+            int Q = 0;
             if (ModelState.IsValid)
             {
-                var purchaseOrderID = await _WCRepo.AddPurchaseOrderAsync(purchaseorderviewmodel.SupplierID, purchaseorderviewmodel.ConsumableManagerID, purchaseorderviewmodel.WardID);
+                foreach (var QCheck in purchaseorderviewmodel.ConsumableOrders)
+                {
+                    if(QCheck.Quantity == 0)
+                    {
+                        Q++;
+                    }
+                }
+                if(Q == 3)
+                {
+                    TempData["msg"] = "No Quantity entered";
+                    return View();
+                }
+                    var purchaseOrderID = await _WCRepo.AddPurchaseOrderAsync(purchaseorderviewmodel.SupplierID, purchaseorderviewmodel.ConsumableManagerID, purchaseorderviewmodel.WardID);
                 foreach (var order in purchaseorderviewmodel.ConsumableOrders)
                 {
-                    POD = await _WCRepo.AddPurchaseOrderDetailAsync(purchaseOrderID, order.ConsumableID, order.Quantity);
-                    PUWCS = await _WCRepo.PurchaseUpdatetWardConsumableStock(purchaseorderviewmodel.WardID, order.ConsumableID, order.Quantity);
+                    POD = await _WCRepo.AddPurchaseOrderDetailAsync(purchaseOrderID, order.ConsumableID, order.Quantity ?? 0);
+                    PUWCS = await _WCRepo.PurchaseUpdatetWardConsumableStock(purchaseorderviewmodel.WardID, order.ConsumableID, order.Quantity ?? 0);
                 }
                 if (POD && PUWCS == true)
                 {
