@@ -81,13 +81,13 @@ namespace WardManagementSystem.Data.Repository
             return await _db.GetData<DoctorDashboardViewModel, dynamic>("sp_DashboardSchedule", new { DoctorID = DoctorID });
         }
 
-        public async Task<IEnumerable<ScheduleDisplayViewModel>> GetAllAsync()      //still have to code it in a way that uses DoctorID to only display specif doctor's schedule. Code to be updated in stored procedure as well!!
+        public async Task<IEnumerable<ScheduleDisplayViewModel>> GetAllAsync()      // Code to be updated in stored procedure as well!!
         {
             string query = "sp_ViewAllSchedulesVM";
             return await _db.GetData<ScheduleDisplayViewModel, dynamic>(query, new { });
         }
 
-        public async Task<IEnumerable<ScheduleDisplayViewModel>> GetAllPatientAsync(int PatientID, int DoctorID)      //still have to code it in a way that uses DoctorID to only display specif doctor's schedule. Code to be updated in stored procedure as well!!
+        public async Task<IEnumerable<ScheduleDisplayViewModel>> GetAllPatientAsync(int PatientID, int DoctorID)      //Code to be updated in stored procedure as well!!
         {
             string query = "sp_ViewPatientSchedulesVM";
             return await _db.GetData<ScheduleDisplayViewModel, dynamic>(query, new { PatientID = PatientID, DoctorID = DoctorID});
