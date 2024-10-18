@@ -91,8 +91,7 @@
               "RelativeToolTip": "WardManagementSystem.Data\\Repository\\IAdmissionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:43:00.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:43:00.562Z"
             },
             {
               "$type": "Document",
@@ -104,8 +103,7 @@
               "RelativeToolTip": "WardManagementSystem.Data\\Repository\\IAdminRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:43:10.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:43:10.944Z"
             },
             {
               "$type": "Document",
@@ -117,8 +115,7 @@
               "RelativeToolTip": "WardManagementSystem\\Controllers\\BedsController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:41:59.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:41:59.735Z"
             },
             {
               "$type": "Document",
@@ -130,8 +127,7 @@
               "RelativeToolTip": "WardManagementSystem\\Controllers\\AdmissionContoller.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:41:58.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:41:58.853Z"
             },
             {
               "$type": "Document",
@@ -143,8 +139,7 @@
               "RelativeToolTip": "WardManagementSystem\\Controllers\\ConsumablesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:41:09.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:41:09.445Z"
             },
             {
               "$type": "Document",
@@ -156,8 +151,7 @@
               "RelativeToolTip": "WardManagementSystem\\Controllers\\ScriptsController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowCIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:38:24.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T16:38:24.728Z"
             }
           ]
         }
