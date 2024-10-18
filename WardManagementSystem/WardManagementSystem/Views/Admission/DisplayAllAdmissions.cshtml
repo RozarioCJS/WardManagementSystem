@@ -1,4 +1,5 @@
-﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Admission>
+﻿@model IEnumerable<WardManagementSystem.Data.Models.ViewModels.AdmissionsViewModel>
+
 @{
     Layout = "~/Views/Shared/_LayoutWardAdmin.cshtml";
 }
@@ -21,10 +22,10 @@
         @foreach (var admission in Model)
         {
             <tr>
-                <td>@admission.FirstName</td>
-                <td>@admission.AdmissionDate.ToString("yyyy-MM-dd")</td>
+                <td>@admission.PatientFullName</td>
+                <td>@admission.AdmissionDate</td>
                 <td>@admission.AdmissionReason</td>
-                <td>@admission.DoctorName</td>
+                <td>@admission.DoctorFullName</td>
                 <td>@admission.WardName</td>
                 <td>@admission.AdmissionStatus</td>
                 <td>
