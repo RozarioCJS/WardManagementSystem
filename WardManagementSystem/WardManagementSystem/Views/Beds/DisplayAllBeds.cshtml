@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Beds>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Bed List</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Patient ID</th>
+            <th>Ward ID</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var bed in Model)
+        {
+            <tr>
+                <td>@bed.PatientId</td>
+                <td>@bed.WardId</td>
+                <td>@(bed.Status ? "Occupied" : "Available")</td>
+                <td>
+                    <a asp-action="UpdateBeds" asp-route-id="@bed.BedId" class="btn btn-primary">Edit</a>
+                    <form asp-action="DeleteBeds" asp-route-id="@bed.BedId" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

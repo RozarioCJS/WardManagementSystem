@@ -1,0 +1,50 @@
+﻿@model WardManagementSystem.Data.Models.Domain.PatientFolder
+
+@{
+    ViewData["Title"] = "Add Patient Folder";
+}
+
+<h2>Add Patient Folder</h2>
+
+<form asp-action="AddPatientFolder" method="post">
+    <div class="form-group">
+        <label asp-for="PatientID"></label>
+        <input asp-for="PatientID" class="form-control" />
+        <span asp-validation-for="PatientID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ArrivalDate"></label>
+        <input asp-for="ArrivalDate" class="form-control" type="date" />
+        <span asp-validation-for="ArrivalDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="BedID"></label>
+        <input asp-for="BedID" class="form-control" />
+        <span asp-validation-for="BedID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AdmissionStatus"></label>
+        <input asp-for="AdmissionStatus" class="form-control" />
+        <span asp-validation-for="AdmissionStatus" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DoctorName"></label>
+        <input asp-for="DoctorName" class="form-control" />
+        <span asp-validation-for="DoctorName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="WardID"></label>
+        <input asp-for="WardID" class="form-control" />
+        <span asp-validation-for="WardID" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+<a asp-action="DisplayAll" class="btn btn-secondary">Back to List</a>
+

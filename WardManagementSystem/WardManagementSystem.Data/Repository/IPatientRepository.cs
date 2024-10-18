@@ -1,4 +1,5 @@
 ﻿using WardManagementSystem.Data.Models.Domain;
+using WardManagementSystem.Data.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,9 @@ namespace WardManagementSystem.Data.Repository
     {
         Task<IEnumerable<Patient>> GetAllPatientsAsync();  
         Task<Patient> GetPatientByIdAsync(int id);  
-        Task<int> AddPatientAsync(Patient patient);  
-        Task<int> UpdatePatientAsync(Patient patient);  
-        Task<int> DeletePatientAsync(int id); 
+        Task<bool> AddPatientAsync(Patient patient);  
+        Task<bool> UpdatePatientAsync(Patient patient);  
+        Task<bool> DeletePatientAsync(int id);
+        Task<IEnumerable<PatientsDisplayViewModel>> GetPatientInfo();
     }
 }

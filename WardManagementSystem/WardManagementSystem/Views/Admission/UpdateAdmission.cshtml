@@ -1,0 +1,50 @@
+﻿@model WardManagementSystem.Data.Models.ViewModels.AdmissionsViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Update Admission</h2>
+
+<form asp-action="UpdateAdmission" method="post">
+    <input type="hidden" asp-for="AdmissionID" />
+
+    <div class="form-group">
+        <label asp-for="PatientFullName"></label>
+        <input asp-for="PatientFullName" class="form-control" />
+        <span asp-validation-for="PatientFullName" class="text-danger"></span>
+    </div>
+n
+    <div class="form-group">
+        <label asp-for="AdmissionDate"></label>
+        <input asp-for="AdmissionDate" class="form-control" type="date" />
+        <span asp-validation-for="AdmissionDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AdmissionReason"></label>
+        <textarea asp-for="AdmissionReason" class="form-control"></textarea>
+        <span asp-validation-for="AdmissionReason" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="WardName"></label>
+        <input asp-for="WardName" class="form-control" />
+        <span asp-validation-for="WardName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DoctorFullName"></label>
+        <input asp-for="DoctorFullName" class="form-control" />
+        <span asp-validation-for="DoctorFullName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AdmissionStatus"></label>
+        <input asp-for="AdmissionStatus" class="form-control" />
+        <span asp-validation-for="AdmissionStatus" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+

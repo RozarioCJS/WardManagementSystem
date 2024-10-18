@@ -66,8 +66,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlRW1wbG95ZWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Admission/AddAdmission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaXNzaW9uXEFkZEFkbWlzc2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Admission/DisplayAllAdmissions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaXNzaW9uXERpc3BsYXlBbGxBZG1pc3Npb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Admission/UpdateAdmission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaXNzaW9uXFVwZGF0ZUFkbWlzc2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Beds/AddBeds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVkc1xBZGRCZWRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Beds/DisplayAllBeds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVkc1xEaXNwbGF5QWxsQmVkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Beds/UpdateBeds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVkc1xVcGRhdGVCZWRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Consumables/Dashboard.cshtml]
@@ -154,6 +178,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEZpbGVcRGlzcGxheUFsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/PatientFolder/AddPatientFolder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEZvbGRlclxBZGRQYXRpZW50Rm9sZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/PatientFolder/DisplayAllPatientFolder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEZvbGRlclxEaXNwbGF5QWxsUGF0aWVudEZvbGRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/PatientFolder/UpdatePatientFolder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEZvbGRlclxVcGRhdGVQYXRpZW50Rm9sZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/PatientInstruction/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEluc3RydWN0aW9uXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -168,6 +204,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/PatientInstruction/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudEluc3RydWN0aW9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Patients/AddPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcQWRkUGF0aWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Patients/DeletePatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRGVsZXRlUGF0aWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Patients/DisplayAllPatients.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRGlzcGxheUFsbFBhdGllbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Patients/UpdatePatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcVXBkYXRlUGF0aWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Schedule/Add.cshtml]
@@ -278,15 +330,11 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< HEAD
-[C:/Users/naido/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Visit/Delete.cshtml]
+[C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Visit/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/naido/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Visit/DisplayAll.cshtml]
-=======
 [C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Visit/DisplayAll.cshtml]
->>>>>>> facd682d39e9341b3e5db61403d021874ce4b688
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRcRGlzcGxheUFsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 

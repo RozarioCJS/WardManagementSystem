@@ -18,6 +18,8 @@ namespace WardManagementSystem.Controllers
         [HttpGet]
         public async Task<IActionResult> Dashboard()
         {
+            var temp = HttpContext.Session.GetString("ConsumableManagerID");
+            int CMID = int.Parse(temp);
             var conWards = await _WCRepo.GetAllAsync();
             var Lateorder = await _WCRepo.GetLatestPurchaseOrderAsync();
             var viewModel = new ConsumablesDashboardViewModel

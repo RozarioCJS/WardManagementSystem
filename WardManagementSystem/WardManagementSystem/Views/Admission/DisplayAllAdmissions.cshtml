@@ -1,0 +1,40 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.Admission>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Admissions List</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Patient ID</th>
+            <th>Admission Date</th>
+            <th>Admission Reason</th>
+            <th>Doctor ID</th>
+            <th>Ward Admin ID</th>
+            <th>Admission Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var admission in Model)
+        {
+            <tr>
+                <td>@admission.FirstName</td>
+                <td>@admission.AdmissionDate.ToString("yyyy-MM-dd")</td>
+                <td>@admission.AdmissionReason</td>
+                <td>@admission.DoctorName</td>
+                <td>@admission.WardName</td>
+                <td>@admission.AdmissionStatus</td>
+                <td>
+                    <a asp-action="UpdateAdmission" asp-route-id="@admission.AdmissionID" class="btn btn-primary">Edit</a>
+                    <form asp-action="DeleteAdmission" asp-route-id="@admission.AdmissionID" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

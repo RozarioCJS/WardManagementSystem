@@ -1,0 +1,60 @@
+﻿@model WardManagementSystem.Data.Models.Domain.Admission
+
+@{
+    ViewData["Title"] = "Add Admission";
+}
+
+<h2>Add Admission</h2>
+
+<form asp-action="AddAdmission" method="post">
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AdmissionDate"></label>
+        <input asp-for="AdmissionDate" class="form-control" type="date" />
+        <span asp-validation-for="AdmissionDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AdmissionReason"></label>
+        <input asp-for="AdmissionReason" class="form-control" />
+        <span asp-validation-for="AdmissionReason" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="WardName"></label>
+        <input asp-for="WardName" class="form-control" />
+        <span asp-validation-for="WardName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DoctorName"></label>
+        <input asp-for="DoctorName" class="form-control" />
+        <span asp-validation-for="DoctorName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AdmissionStatus"></label>
+        <select asp-for="AdmissionStatus" class="form-control">
+            <option value="Admitted">Admitted</option>
+            <option value="Discharged">Discharged</option>
+            <option value="Pending">Pending</option>
+        </select>
+        <span asp-validation-for="AdmissionStatus" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<a asp-action="DisplayAllAdmissions" class="btn btn-secondary">Back to List</a>
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["msg"]
+    </div>
+}

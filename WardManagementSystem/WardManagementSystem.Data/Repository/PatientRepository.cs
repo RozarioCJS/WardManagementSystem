@@ -1,6 +1,7 @@
 ﻿using WardManagementSystem.Data.DataAccess;
 using WardManagementSystem.Data.Repository;
 using WardManagementSystem.Data.Models.Domain;
+using WardManagementSystem.Data.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,39 +12,70 @@ namespace WardManagementSystem.Data.Repository
 {
     public class PatientRepository : IPatientRepository
     {
-        private readonly ISqlDataAccess _dataAccess;
+        private readonly ISqlDataAccess _db;
 
-        public PatientRepository(ISqlDataAccess dataAccess)
+        public PatientRepository(ISqlDataAccess db)
         {
-            _dataAccess = dataAccess;
+            _db = db;
         }
         public async Task<bool> AddPatientAsync(Patient patients)
         {
-            throw new NotImplementedException();
+
+            try
+            {
+                await _db.SaveData("sp_InsertPatient", new { patients});
+                return true;
+            }
+
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
-        public Task<int> DeletePatientAsync(int id)
+        public async Task<bool> DeletePatientAsync(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await _db.SaveData("sp_DeletePatient", new { PatientID = id });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
-        public Task<IEnumerable<Patient>> GetAllPatientsAsync()
+        public async Task<IEnumerable<Patient>> GetAllPatientsAsync()
         {
-            throw new NotImplementedException();
+            string query = "sp_GetPatientDetails";
+            return await _db.GetData<Patient, dynamic>(query, new { });
         }
 
-        public Task<Patient> GetPatientByIdAsync(int id)
+        public async Task<Patient> GetPatientByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            IEnumerable<Patient> result = await _db.GetData<Patient, dynamic>("sp_GetPatientDetails", new { PatientID = id });
+            return result.FirstOrDefault();
         }
 
-        public Task<int> UpdatePatientAsync(Patient patient)
+        public async Task<IEnumerable<PatientsDisplayViewModel>> GetPatientInfo()
         {
-            throw new NotImplementedException();
+            string query = "sp_PatientsDisplayViewModel";
+            return await _db.GetData<PatientsDisplayViewModel, dynamic>(query, new { });
         }
 
-        Task<int> IPatientRepository.AddPatientAsync(Patient patient)
+        public async Task<bool> UpdatePatientAsync(Patient patient)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                await _db.SaveData("sp_UpdatePatient", patient);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
+
     }
 }

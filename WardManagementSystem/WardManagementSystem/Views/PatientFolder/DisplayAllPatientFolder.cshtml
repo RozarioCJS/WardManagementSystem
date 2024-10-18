@@ -1,0 +1,42 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.Domain.PatientFolder>
+
+@{
+    ViewData["Title"] = "All Patient Folders";
+}
+
+<h2>All Patient Folders</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Patient ID</th>
+            <th>Arrival Date</th>
+            <th>Bed ID</th>
+            <th>Status</th>
+            <th>Doctor ID</th>
+            <th>Ward ID</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var folder in Model)
+        {
+            <tr>
+                <td>@folder.PatientID</td>
+                <td>@folder.ArrivalDate.ToString("MM/dd/yyyy")</td>
+                <td>@folder.BedID</td>
+                <td>@folder.AdmissionStatus</td>
+                <td>@folder.DoctorName</td>
+                <td>@folder.WardID</td>
+                <td>
+                    <a asp-action="UpdatePatientFolder" asp-route-id="@folder.PatientFileID" class="btn btn-primary">Edit</a>
+                    <form asp-action="DeletePatientFolder" asp-route-id="@folder.PatientFileID" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Index" class="btn btn-secondary">Back to Home</a>

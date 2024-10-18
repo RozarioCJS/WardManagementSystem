@@ -1,0 +1,32 @@
+﻿@model WardManagementSystem.Data.Models.Domain.Beds
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add New Bed</h2>
+
+<form asp-action="AddBeds" method="post">
+    <div class="form-group">
+        <label asp-for="PatientId"></label>
+        <input asp-for="PatientId" class="form-control" />
+        <span asp-validation-for="PatientId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="WardId"></label>
+        <input asp-for="WardId" class="form-control" />
+        <span asp-validation-for="WardId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Status"></label>
+        <select asp-for="Status" class="form-control">
+            <option value="true">Occupied</option>
+            <option value="false">Available</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
