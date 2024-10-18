@@ -12,6 +12,6 @@ namespace WardManagementSystem.Data.Models.ViewModels
         public string PatientFullName { get; set; }
         public DateTime ArrivalDate { get; set; }
         public int BedID { get; set; }
-        public int WardID { get; set; }
+        public string WardName { get; set; }
     }
 }
