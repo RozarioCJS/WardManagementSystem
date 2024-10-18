@@ -1,6 +1,15 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\",
+<<<<<<< HEAD
+=======
+  "Documents": [],
+=======
+  "WorkspaceRootPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\",
+<<<<<<< HEAD
+  "Documents": [],
+=======
+>>>>>>> 1610675deeabfc491373c1b0eae5754a7270a0b9
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\naido\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\patientinstruction\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -23,6 +32,11 @@
       "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\visit\\displayall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
+<<<<<<< HEAD
+=======
+>>>>>>> facd682d39e9341b3e5db61403d021874ce4b688
+>>>>>>> d6dada5ba9ba5731bccc78d27a7a486a1f6137de
+>>>>>>> 1610675deeabfc491373c1b0eae5754a7270a0b9
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,7 +44,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 10,
+=======
+<<<<<<< HEAD
+          "SelectedChildIndex": -1,
+=======
+<<<<<<< HEAD
+          "SelectedChildIndex": -1,
+=======
+          "SelectedChildIndex": 9,
+>>>>>>> facd682d39e9341b3e5db61403d021874ce4b688
+>>>>>>> d6dada5ba9ba5731bccc78d27a7a486a1f6137de
+>>>>>>> 1610675deeabfc491373c1b0eae5754a7270a0b9
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,6 +89,7 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+<<<<<<< HEAD
             },
             {
               "$type": "Bookmark",
@@ -132,6 +159,8 @@
               "ViewState": "AgIAAGMAAAAAAAAAAAAAAGsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-18T10:10:08.983Z"
+=======
+>>>>>>> 1610675deeabfc491373c1b0eae5754a7270a0b9
             }
           ]
         }

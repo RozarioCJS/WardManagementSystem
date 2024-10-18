@@ -49,7 +49,15 @@ namespace WardManagementSystem.Controllers
         public async Task<IActionResult> AddEmployee(UserViewModel user)
         {
             var UserID = await _adminRepository.AddUserAsync(user.UserName, user.Password, user.Role);
-            await _adminRepository.AddUserDetailsAsync(UserID, user.FirstName, user.LastName, user.ContactNumber, user.Email, user.Address1, user.Address2, user.Role);
+            bool added = await _adminRepository.AddUserDetailsAsync(UserID, user.FirstName, user.LastName, user.ContactNumber, user.Email, user.Address1, user.Address2, user.Role);
+            if (added)
+            {
+                TempData["msg"] = "Successful";
+            }
+            else
+            {
+                TempData["msg"] = "Failed";
+            }
             return RedirectToAction("Dashboard");
         }
 
@@ -72,9 +80,14 @@ namespace WardManagementSystem.Controllers
                 bool updateRecord = await _adminRepository.UpdateUserAsync(UserID, ContactNumber, Role);
 
                 if (updateRecord)
+                {
                     TempData["msg"] = "Successful";
+                }
                 else
+                {
                     TempData["msg"] = "Failed";
+                }
+                    
             }
 
             catch (Exception ex)
