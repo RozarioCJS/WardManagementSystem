@@ -11,6 +11,12 @@
 }
 
 <style>
+    body {
+        background-image: url('/snake_icon.png');
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        background-position: right;
+    }
     a.link {
         color: white;
         text-decoration: none;
@@ -24,48 +30,51 @@
 
 <button type="button" class="btn btn-primary btn-sm"><a class="link" asp-action="Add">Create New Schedule</a></button>
 <button type="button" class="btn btn-primary btn-sm"><a class="link" asp-action="DisplayAll">View All Schedules</a></button>
+<hr />
+
+<body>
+    @* Drop down list that displays patient name but has patientID as its value *@
+    @using (Html.BeginForm("DisplayAll", "Schedule", FormMethod.Get))
+    {
+        <label>Select Patient:</label>
+        @Html.DropDownList("PatientID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
+        <input type="submit" value="Search" class="btn btn-primary" />
+    }
+
+    @if (scheduleDisplayViewModels != null && scheduleDisplayViewModels.Any())
+    {
 
 
-@* Drop down list that displays patient name but has patientID as its value *@
-@using (Html.BeginForm("DisplayAll", "Schedule", FormMethod.Get))
-{
-    <label>Select Patient:</label>
-    @Html.DropDownList("PatientID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
-    <input type="submit" value="Search" class="btn btn-primary" />
-}
-
-@if (scheduleDisplayViewModels != null && scheduleDisplayViewModels.Any())
-{
-
-
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">Patient Full Name</th>
-                <th scope="col">Date</th>
-                <th scope="col">Time</th>
-                <th scope="col"></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (ScheduleDisplayViewModel scheduleDisplayViewModel in scheduleDisplayViewModels)
-            {
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <td>@scheduleDisplayViewModel.PatientFullName</td>
-                    <td>
-                        @scheduleDisplayViewModel.Date.ToString("dd/MM/yyyy")
-                    </td>
-                    <td>@scheduleDisplayViewModel.Time</td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = scheduleDisplayViewModel.ScheduleID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = scheduleDisplayViewModel.ScheduleID })
-                    </td>
+                    <th scope="col">Patient Full Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                    <th scope="col"></th>
                 </tr>
-            }
+            </thead>
+            <tbody>
+                @foreach (ScheduleDisplayViewModel scheduleDisplayViewModel in scheduleDisplayViewModels)
+                {
+                    <tr>
+                        <td>@scheduleDisplayViewModel.PatientFullName</td>
+                        <td>
+                            @scheduleDisplayViewModel.Date.ToString("dd/MM/yyyy")
+                        </td>
+                        <td>@scheduleDisplayViewModel.Time</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = scheduleDisplayViewModel.ScheduleID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = scheduleDisplayViewModel.ScheduleID })
+                        </td>
+                    </tr>
+                }
 
-        </tbody>
-    </table>
-} else
-{
-    <p>Please select a patient, or selected may not have any current records.</p>
-}
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Please select a patient, or selected may not have any current records.</p>
+    }
+</body>

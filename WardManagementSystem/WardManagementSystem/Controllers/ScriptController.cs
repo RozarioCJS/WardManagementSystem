@@ -23,7 +23,10 @@ namespace WardManagementSystem.Controllers
         //Display all
         public async Task<IActionResult> DisplayAll(int PatientFileID)
         {
-            var scripts = await _scriptRepo.GetAllPatientAsync(PatientFileID);
+            var temp = HttpContext.Session.GetString("DoctorID");   //retrieving doctorID from session.
+            int doctorID = int.Parse(temp);
+
+            var scripts = await _scriptRepo.GetAllPatientAsync(PatientFileID, doctorID);
             ViewData["PatientScriptViewModel"] = scripts;
 
             //Searching for patient to be displayed
@@ -51,20 +54,6 @@ namespace WardManagementSystem.Controllers
         //add
         public async Task<IActionResult> Add()
         {
-            //filling the drop down list with doctor names
-            var doctorFullName = await _scriptRepo.GetDoctorFullNameAsync();
-            ViewData["DoctorFullNameViewModel"] = doctorFullName;
-
-            List<SelectListItem> doctors = new List<SelectListItem>();     //creating a list to store doctors
-            foreach (DoctorFullNameViewModel d in doctorFullName)        //iterating through the data to fill the list with doctors
-            {
-                doctors.Add(new SelectListItem { Value = d.DoctorID.ToString(), Text = d.DoctorName });     //doctor gets added to the list
-            }
-            ViewBag.Doctor = doctors;        //Setting a ViewBag to contain the list of doctors
-            var selectListDoctor = new SelectList(doctors, "Value", "Text");    //setting the format to be carrient to drop down list
-            ViewBag.SelectListDoctor = selectListDoctor;       //Stores the data with the correct format to be used in view with drop down list
-
-
             //filling the drop down list (patient full name)
             var patientFullName = await _scriptRepo.GetPatientFullNameAsync();
             ViewData["PatientFileFullNameViewModel"] = patientFullName;
@@ -97,6 +86,9 @@ namespace WardManagementSystem.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(Script script)
         {
+            var temp = HttpContext.Session.GetString("DoctorID");
+            int doctorID = int.Parse(temp);
+
             try
             {
                 if (!ModelState.IsValid)
@@ -104,7 +96,7 @@ namespace WardManagementSystem.Controllers
                     return View(script);
                 }
 
-                bool addScript = await _scriptRepo.AddAsync(script);
+                bool addScript = await _scriptRepo.AddAsync(script, doctorID);
                 if (addScript)
                 {
                     TempData["msg"] = "Successfully Added!";

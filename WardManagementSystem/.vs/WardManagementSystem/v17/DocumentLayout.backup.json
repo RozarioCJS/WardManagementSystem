@@ -1,5 +1,9 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "WorkspaceRootPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\",
+  "Documents": [],
+=======
   "WorkspaceRootPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\",
   "Documents": [
     {
@@ -7,6 +11,7 @@
       "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
+>>>>>>> facd682d39e9341b3e5db61403d021874ce4b688
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +19,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 7,
+=======
+<<<<<<< HEAD
+          "SelectedChildIndex": -1,
+=======
+          "SelectedChildIndex": 9,
+>>>>>>> facd682d39e9341b3e5db61403d021874ce4b688
+>>>>>>> d6dada5ba9ba5731bccc78d27a7a486a1f6137de
           "Children": [
             {
               "$type": "Bookmark",

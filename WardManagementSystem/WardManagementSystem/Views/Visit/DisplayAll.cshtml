@@ -10,6 +10,12 @@
     IEnumerable<PatientFileFullNameViewModel> patientComboViewModels = ViewData["PatientComboViewModel"] as IEnumerable<PatientFileFullNameViewModel>;
 }
 <style>
+    body {
+        background-image: url('/snake_icon.png');
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        background-position: right;
+    }
     a.link {
         color: white;
         text-decoration: none;
@@ -23,45 +29,46 @@
 
 <button type="button" class="btn btn-primary btn-sm"><a class="link" asp-action="Add">Create New Visit Note</a></button>
 <button type="button" class="btn btn-primary btn-sm"><a class="link" asp-action="DisplayAll">View All Visit Notes</a></button>
-
-@* Drop down list that displays patient name but has patientID as its value *@
-@using (Html.BeginForm("DisplayAll", "Visit", FormMethod.Get))
-{
-    <label>Select Patient:</label>
-    @Html.DropDownList("PatientFileID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
-    <input type="submit" value="Search" class="btn btn-primary" />
-}
-
-@if (visitNoteViewModels != null && visitNoteViewModels.Any())
-{
+<hr />
 
 
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">Patient Full Name</th>
-                <th scope="col">Date</th>
-                <th scope="col">Visit Note</th>
-                <th scope="col">Ready For Discharge</th>
-                <th scope="col"></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (VisitNoteViewModel visitNoteViewModel in visitNoteViewModels)
-            {
+<body>
+    @* Drop down list that displays patient name but has patientID as its value *@
+    @using (Html.BeginForm("DisplayAll", "Visit", FormMethod.Get))
+    {
+        <label>Select Patient:</label>
+        @Html.DropDownList("PatientFileID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
+        <input type="submit" value="Search" class="btn btn-primary" />
+    }
+
+    @if (visitNoteViewModels != null && visitNoteViewModels.Any())
+    {
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <td>@visitNoteViewModel.PatientName</td>
-                    <td>@visitNoteViewModel.Date.ToString("dd/MM/yyyy")</td>
-                    <td>@visitNoteViewModel.VisitNote</td>
-                    <td>@visitNoteViewModel.DischargePatient</td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = visitNoteViewModel.VisitID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = visitNoteViewModel.VisitID })
-                    </td>
+                    <th scope="col">Patient Full Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Visit Note</th>
+                    <th scope="col">Ready For Discharge</th>
+                    <th scope="col"></th>
                 </tr>
-            }
-
-        </tbody>
-    </table>
-}
+            </thead>
+            <tbody>
+                @foreach (VisitNoteViewModel visitNoteViewModel in visitNoteViewModels)
+                {
+                    <tr>
+                        <td>@visitNoteViewModel.PatientName</td>
+                        <td>@visitNoteViewModel.Date.ToString("dd/MM/yyyy")</td>
+                        <td>@visitNoteViewModel.VisitNote</td>
+                        <td>@visitNoteViewModel.DischargePatient</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = visitNoteViewModel.VisitID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = visitNoteViewModel.VisitID })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</body>
 

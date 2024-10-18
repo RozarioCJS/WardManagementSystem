@@ -278,7 +278,15 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
+[C:/Users/naido/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Visit/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/naido/Desktop/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Visit/DisplayAll.cshtml]
+=======
 [C:/Users/sodie/Desktop/WardSystem/WardManagementSystem/WardManagementSystem/WardManagementSystem/Views/Visit/DisplayAll.cshtml]
+>>>>>>> facd682d39e9341b3e5db61403d021874ce4b688
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRcRGlzcGxheUFsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
