@@ -96,11 +96,13 @@
     </tbody>
     </table>
     } *@
-</body>
 
-@*Displays a browser alert to indicate if add the record was successfull or not*@
-@if(TempData["msg"] != null) { 
-    <script>
-        alert('@Html.Raw(TempData["msg"])')
-    </script>
-}
+    @if (TempData["msg"] != null)
+
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @TempData["msg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+</body>

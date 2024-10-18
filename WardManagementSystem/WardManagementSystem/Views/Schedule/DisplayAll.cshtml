@@ -77,4 +77,14 @@
     {
         <p>Please select a patient, or selected may not have any current records.</p>
     }
+
+    @if (TempData["msg"] != null)
+
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @TempData["msg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
 </body>
