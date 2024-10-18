@@ -28,7 +28,12 @@ builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddTransient<INurseRepository, NurseRepository>();
 builder.Services.AddTransient<ISisterNurseRepository, SisterNurseRepository>();
 builder.Services.AddTransient<INurseScheduleRepository, NurseScheduleRepository>();
-
+//Ayden's Services
+builder.Services.AddTransient<IBedsRepository, BedsRepository>();
+builder.Services.AddTransient<IAdmissionRepository, AdmissionRepository>();
+builder.Services.AddTransient<IPatientFolderRepository, PatientFolderRepository>();
+builder.Services.AddTransient<IPatientRepository, PatientRepository>();
+builder.Services.AddTransient<IWardRepository, WardRepository>();
 //To gain acces to HttpContext in the view
 builder.Services.AddHttpContextAccessor();
 
