@@ -56,7 +56,6 @@ public class AuthController : Controller
             }
             else if (user.Role == "Doctor")
             {
-                
                 return RedirectToAction("Dashboard", "Schedule");
             }
             else if (user.Role == "Consumable Manager")
@@ -66,6 +65,10 @@ public class AuthController : Controller
             else if (user.Role == "Script Manager")
             {
                 return RedirectToAction("Dashboard", "Scripts");
+            }
+            else if (user.Role == "Ward Admin")
+            {
+                return RedirectToAction("AddPatient", "Patients");
             }
         }
         TempData["msg"] = "Invalid UserName or Password";
@@ -77,7 +80,7 @@ public class AuthController : Controller
         // Use Dapper to fetch user from the database and validate password
         using (var connection = new SqlConnection(connectionString))
         {
-            var sql = "SELECT u.UserName, u.Password, u.Role, d.DoctorID,cm.ConsumableManagerID, sm.PrescriptionManagerID, a.AdminID, d.LastName, cm.LastName, sm.LastName, a.LastName FROM [User] AS u LEFT JOIN [DOCTOR] AS d ON u.UserID = d.UserID LEFT JOIN Consumable_Manager AS cm ON u.UserID = cm.UserID LEFT JOIN Prescription_Manager AS sm ON u.UserID = sm.UserID LEFT JOIN Admin AS a ON u.UserID = a.UserID WHERE Username = @UserName AND Password = @Password";
+            var sql = "SELECT u.UserName, u.Password, u.Role, d.DoctorID,cm.ConsumableManagerID, sm.PrescriptionManagerID, a.AdminID, d.LastName, cm.LastName, sm.LastName, a.LastName, wa.LastName FROM [User] AS u LEFT JOIN [DOCTOR] AS d ON u.UserID = d.UserID LEFT JOIN Consumable_Manager AS cm ON u.UserID = cm.UserID LEFT JOIN Prescription_Manager AS sm ON u.UserID = sm.UserID LEFT JOIN Admin AS a ON u.UserID = a.UserID LEFT JOIN Ward_Administrator AS wa ON u.UserID = wa.UserID WHERE Username = @UserName AND Password = @Password";
             var user = connection.QuerySingleOrDefault<LoginViewModel>(sql, new { UserName = username, Password = password });
             return user; // Ensure you securely handle passwords (use hashing)
         }
