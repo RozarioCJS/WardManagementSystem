@@ -63,12 +63,6 @@
                     </div>
                     <div class="card-body">
                         <div class="row">
-                            @* <div class="col-md-4">
-                            <div class="form-group">
-                            <label>Doctor Name</label>
-                            @Html.DropDownList("DoctorID", (SelectList)@ViewBag.SelectListDoctor, "-select-", htmlAttributes: new { @class = "form-control" })
-                            </div>
-                            </div> *@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Patient Name</label>
@@ -82,10 +76,6 @@
                                     <span asp-validation-for="VisitNote" class="text-danger"></span>
                                 </div>
                             </div>
-                        </div>
-                        <br />
-                        <div class="row">
-                            <div class="col-md-4"></div>
                             <div class="col-md-4">
                                 <div class="form-group form-check">
                                     <label class="form-check-label">
@@ -93,8 +83,8 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-md-4"></div>
                         </div>
+                        <br />
                         <br />
                         <div class="row">
                             <div class="col-md-4"></div>
