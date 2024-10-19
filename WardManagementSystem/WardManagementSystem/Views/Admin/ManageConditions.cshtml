@@ -81,7 +81,7 @@
                     <button class="btn btn-outline-secondary" type="submit" onclick="showUpdateForm('@item.ConditionID','@item.ConditionName')">Edit</button>
                     <form asp-action="DeleteCondition" method="post">
                         <input type="hidden" name="Id" value="@item.ConditionID" />
-                        <button class="btn btn-outline-danger" type="submit">Delete</button>
+                        <button class="btn btn-outline-danger" onclick="return window.confirm('Are you sure to delete this User?')" type="submit">Delete</button>
                     </form>
                 </div>
             </div>

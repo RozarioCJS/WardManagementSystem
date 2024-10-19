@@ -11,6 +11,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        flex-wrap: wrap;
     }
 
     .card {
@@ -59,9 +60,6 @@
 </style>
 <body>
     @if (TempData["msg"] != null)
-
-
-
     {
         <div class="alert alert-info alert-dismissible fade show" role="alert">
             @TempData["msg"]
@@ -83,7 +81,7 @@
                     <button class="btn btn-outline-secondary" type="submit" onclick="showUpdateForm('@item.ConsumableID','@item.ConsumableName')">Edit</button>
                     <form asp-action="DeleteConsumables" method="post">
                         <input type="hidden" name="Id" value="@item.ConsumableID" />
-                        <button class="btn btn-outline-danger" type="submit">Delete</button>
+                        <button class="btn btn-outline-danger" onclick="return window.confirm('Are you sure to delete this User?')" type="submit">Delete</button>
                     </form>
                 </div>
             </div>
