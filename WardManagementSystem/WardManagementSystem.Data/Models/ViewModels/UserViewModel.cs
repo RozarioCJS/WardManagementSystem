@@ -23,7 +23,6 @@ namespace WardManagementSystem.Data.Models.ViewModels
         [Required]
         public string LastName { get; set; }
         [Required]
-        [RegularExpression(@"^\+?[1-9]\d{1,14}$")]
         public string ContactNumber { get; set; }
         [Required]
         [RegularExpression(@"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$")]
