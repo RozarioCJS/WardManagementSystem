@@ -13,6 +13,7 @@ namespace WardManagementSystem.Data.Models.Domain
         public int PatientInstructionID { get; set; }
         public int PatientFileID { get; set; }
         public int DoctorID { get; set; }
+        [StringLength(250)]
         public string Instruction { get; set; }
     }
 }

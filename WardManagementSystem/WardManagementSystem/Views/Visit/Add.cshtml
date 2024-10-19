@@ -72,15 +72,15 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label asp-for="VisitNote" class="control-label"></label>
-                                    <input asp-for="VisitNote" class="form-control" />
+                                    @* <input asp-for="VisitNote" class="form-control" required/> *@
+                                    @Html.TextArea("VisitNote", new { rows = 5, cols = 40 })
                                     <span asp-validation-for="VisitNote" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group form-check">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" asp-for="DischargePatient" /> @Html.DisplayNameFor(model => model.DischargePatient)?
-                                    </label>
+                                    <label asp-for="DischargePatient" class="control-label">Discharge Patient ?</label>
+                                    <input class="form-check-input" asp-for="DischargePatient" /> @* @Html.DisplayNameFor(model => model.DischargePatient) *@
                                 </div>
                             </div>
                         </div>
