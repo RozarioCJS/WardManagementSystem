@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {}
+    "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
+    "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
+        "projectUniqueName": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
         "projectName": "WardManagementSystem.Data",
-        "projectPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
-        "packagesPath": "C:\\Users\\sodie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\obj\\",
+        "projectPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
+        "packagesPath": "C:\\Users\\ayden\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\sodie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ayden\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -35,34 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.1.35, )"
-            },
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[5.2.2, )"
-            },
-            "Microsoft.Extensions.Configuration.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "itext7": {
-              "target": "Package",
-              "version": "[8.0.5, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -74,26 +55,25 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {
+    "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
         "projectName": "WardManagementSystem",
-        "projectPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\sodie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\",
+        "projectPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\ayden\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\sodie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ayden\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,8 +88,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
-                "projectPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj"
+              "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
+                "projectPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj"
               }
             }
           }
@@ -118,42 +98,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.1.35, )"
-            },
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[5.2.2, )"
-            },
-            "Microsoft.Extensions.Configuration.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[8.0.6, )"
-            },
-            "itext.bouncy-castle-adapter": {
-              "target": "Package",
-              "version": "[8.0.5, )"
-            },
-            "itext7": {
-              "target": "Package",
-              "version": "[8.0.5, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -165,15 +114,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
