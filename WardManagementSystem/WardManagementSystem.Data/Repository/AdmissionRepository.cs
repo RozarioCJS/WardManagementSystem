@@ -66,5 +66,25 @@ namespace WardManagementSystem.Data.Repository
                 return false; // Consider logging the exception
             }
         }
+
+
+
+        public async Task<IEnumerable<PatientFullNameViewModel>> GetPatientFullNameAsync()
+        {
+            var query = "sp_PatientFullName";
+            return await _db.GetData<PatientFullNameViewModel, dynamic>(query, new { });
+        }
+
+        public async Task<IEnumerable<DoctorFullNameViewModel>> GetDoctorFullNameAsync()
+        {
+            var query = "sp_DoctorFullName";
+            return await _db.GetData<DoctorFullNameViewModel, dynamic>(query, new { });
+        }
+
+        public async Task<IEnumerable<WardFullNameViewModel>> GetWardFullNameAsync()
+        {
+            var query = "sp_WardFullName";
+            return await _db.GetData<WardFullNameViewModel, dynamic>(query, new { });
+        }
     }
 }

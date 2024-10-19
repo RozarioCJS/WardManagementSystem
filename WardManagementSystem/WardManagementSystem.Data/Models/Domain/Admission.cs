@@ -11,11 +11,11 @@ namespace WardManagementSystem.Data.Models.Domain
     {
         [Key]
         public int AdmissionID { get; set; }
-        public string FirstName { get; set; }
+        public int PatientID { get; set; }
         public DateTime AdmissionDate { get; set; }
         public string AdmissionReason { get; set; }
-        public string WardName { get; set; }
-        public string DoctorName { get; set; }
+        public int WardID { get; set; }
+        public int DoctorID { get; set; }
         public string AdmissionStatus { get; set; }
         // public int WardID { get; set; }
     }

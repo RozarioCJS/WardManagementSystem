@@ -11,7 +11,7 @@ namespace WardManagementSystem.Data.Models.Domain
         [Required]
         public int PatientId { get; set; }
         public int WardId { get; set; }
-        public bool Status { get; set; }
+        public string Status { get; set; }
 
     }
 }
