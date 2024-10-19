@@ -20,7 +20,7 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-                await _db.SaveData("sp_InsertAdmission", new { admission });
+                await _db.SaveData("InsertAdmission", new { admission });
                 return true;
             }
             catch (Exception ex)
