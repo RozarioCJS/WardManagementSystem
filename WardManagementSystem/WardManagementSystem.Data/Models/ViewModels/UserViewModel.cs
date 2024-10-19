@@ -9,6 +9,7 @@ namespace WardManagementSystem.Data.Models.ViewModels
 {
     public class UserViewModel
     {
+        //Testing Ayden's git stuff
         //User Table
         public int UserID { get; set; }
         public string UserName { get; set; }
