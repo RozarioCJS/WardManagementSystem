@@ -20,7 +20,7 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-                await _db.SaveData("sp_InsertAdmission", new { admission });
+                await _db.SaveData("sp_InsertAdmission", new { admission.PatientID, admission.AdmissionDate, admission.DoctorID, admission.WardID, admission.AdmissionReason, admission.AdmissionStatus, admission.BedID });
                 return true;
             }
             catch (Exception ex)
@@ -42,10 +42,10 @@ namespace WardManagementSystem.Data.Repository
             }
         }
 
-        public async Task<IEnumerable<Admission>> GetAllAdmissionAsync()
+        public async Task<IEnumerable<AdmissionsViewModel>> GetAllAdmissionAsync()
         {
             string query = "sp_GetAllAdmissions";
-            return await _db.GetData<Admission, dynamic>(query, new { });
+            return await _db.GetData<AdmissionsViewModel, dynamic>(query, new { });
         }
 
         public async Task<AdmissionsViewModel> GetAdmissionByIdAsync(int id)

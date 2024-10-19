@@ -70,26 +70,27 @@ namespace WardManagementSystem.Controllers
             try
             {
                 if (!ModelState.IsValid)
-                    return View(admission);
+                {
+                    return View(_admissionRepo);
+                }
 
-                
                 bool admitted = await _admissionRepo.AddAdmissionAsync(admission);
 
-
-                //var patientFolder = await _patientFolderRepo.GetPatientFolderByIdAsync(admission.FirstName);
-                //patientFolder.WardID = admission.WardName;
-                //patientFolder.Status = "Admitted";
-
-                //await _patientFolderRepo.UpdatePatientFolderAsync(patientFolder);
-
-                TempData["msg"] = admitted ? "Patient successfully admitted." : "Failed to admit patient.";
+                if (admitted)
+                {
+                    TempData["msg"] = "Successfully Added!";
+                }
+                else
+                {
+                    TempData["msg"] = "Could not add.";
+                }
             }
             catch (Exception ex)
             {
-                TempData["msg"] = "An error occurred while admitting the patient.";
+                TempData["msg"] = "Something went wrong!";
             }
 
-            return RedirectToAction("Index");
+            return RedirectToAction(nameof(DisplayAllAdmissions));
         }
 
         [HttpPost]
