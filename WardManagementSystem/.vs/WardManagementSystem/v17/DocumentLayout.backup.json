@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\admin\\managewards.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\admin\\managewards.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\admin\\managemedications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\admin\\managemedications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,14 +51,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ManageWards.cshtml",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\ManageWards.cshtml",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Admin\\ManageWards.cshtml",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\ManageWards.cshtml",
-              "RelativeToolTip": "WardManagementSystem\\Views\\Admin\\ManageWards.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAFYAAAASAAAAAAAAAA==",
+              "Title": "Order.cshtml",
+              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
+              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAqwHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T16:02:38.064Z",
+              "WhenOpened": "2024-10-19T19:28:12.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManageMedications.cshtml",
+              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAMcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-19T19:20:13.659Z",
               "EditorCaption": ""
             }
           ]
