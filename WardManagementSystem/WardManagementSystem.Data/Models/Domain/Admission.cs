@@ -17,6 +17,6 @@ namespace WardManagementSystem.Data.Models.Domain
         public int WardID { get; set; }
         public int DoctorID { get; set; }
         public string AdmissionStatus { get; set; }
-        // public int WardID { get; set; }
+         public int BedID { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace WardManagementSystem.Data.Repository
 {
     public interface IAdmissionRepository
     {
-        Task<IEnumerable<Admission>> GetAllAdmissionAsync();
+        Task<IEnumerable<AdmissionsViewModel>> GetAllAdmissionAsync();
         Task<AdmissionsViewModel> GetAdmissionByIdAsync(int id);
         Task<bool> AddAdmissionAsync(Admission admission);
         Task<bool> UpdateAdmissionAsync(AdmissionsViewModel admission);
