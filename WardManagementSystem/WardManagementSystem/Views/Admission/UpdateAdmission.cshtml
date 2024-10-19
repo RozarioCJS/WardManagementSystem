@@ -7,13 +7,19 @@
 
 <form asp-action="UpdateAdmission" method="post">
     <input type="hidden" asp-for="AdmissionID" />
+    <div class="form-group">
+        <label asp-for="AdmissionID"></label>
+        <input asp-for="AdmissionID" class="form-control" />
+        <span asp-validation-for="AdmissionID" class="text-danger"></span>
+    </div>
 
     <div class="form-group">
-        <label asp-for="PatientFullName"></label>
-        <input asp-for="PatientFullName" class="form-control" />
-        <span asp-validation-for="PatientFullName" class="text-danger"></span>
+        <div class="form-group">
+            <label>Patient Name</label>
+            @Html.DropDownList("PatientID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
+        </div>
     </div>
-n
+
     <div class="form-group">
         <label asp-for="AdmissionDate"></label>
         <input asp-for="AdmissionDate" class="form-control" type="date" />
@@ -27,20 +33,26 @@ n
     </div>
 
     <div class="form-group">
-        <label asp-for="WardName"></label>
-        <input asp-for="WardName" class="form-control" />
-        <span asp-validation-for="WardName" class="text-danger"></span>
+        <div class="form-group">
+            <label>Ward Name</label>
+            @Html.DropDownList("WardID", (SelectList)@ViewBag.SelectListWard, "-select-", htmlAttributes: new { @class = "form-control" })
+        </div>
     </div>
 
     <div class="form-group">
-        <label asp-for="DoctorFullName"></label>
-        <input asp-for="DoctorFullName" class="form-control" />
-        <span asp-validation-for="DoctorFullName" class="text-danger"></span>
+        <div class="form-group">
+            <label>Doctor Name</label>
+            @Html.DropDownList("DoctorID", (SelectList)@ViewBag.SelectListDoctor, "-select-", htmlAttributes: new { @class = "form-control" })
+        </div>
     </div>
 
     <div class="form-group">
         <label asp-for="AdmissionStatus"></label>
-        <input asp-for="AdmissionStatus" class="form-control" />
+        <select asp-for="AdmissionStatus" class="form-control">
+            <option value="Admitted">Admitted</option>
+            <option value="Discharged">Discharged</option>
+            <option value="Pending">Pending</option>
+        </select>
         <span asp-validation-for="AdmissionStatus" class="text-danger"></span>
     </div>
 
