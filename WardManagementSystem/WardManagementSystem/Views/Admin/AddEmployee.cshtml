@@ -28,6 +28,13 @@
     }
 </style>
 <body>
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["msg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
     <h2>Create User</h2>
 
     <form asp-action="AddEmployee" method="post">
@@ -75,16 +82,19 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label asp-for="ContactNumber"></label>
-                                        <input asp-for="ContactNumber" type="text" class="form-control" required />
+                                        <input asp-for="ContactNumber" type="text" class="form-control" required pattern="\d*" title="Please enter numeric values only." />
                                         <span asp-validation-for="ContactNumber" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label asp-for="Email"></label>
-                                        <input asp-for="Email" type="text" class="form-control" required />
+                                        <input asp-for="Email" type="text" class="form-control" required/>
                                         <span asp-validation-for="Email" class="text-danger"></span>
                                     </div>
+
+
+
                                 </div>
                             </div>
 
@@ -110,9 +120,10 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label asp-for="Role"></label>
-                                    <select asp-for="Role" class="form-control">
+                                    <select asp-for="Role" class="form-control" id="roleSelect" required>
                                         <option value="">Select a role</option>
                                         @foreach (var role in ViewBag.Roles as List<string>)
+
                                         {
                                             <option value="@role">@role</option>
                                         }
@@ -120,7 +131,6 @@
                                     <span asp-validation-for="Role" class="text-danger"></span>
                                 </div>
                             </div>
-
 
                             <div class="button-container">
                                 <button type="submit" class="btn btn-primary">Add</button>
