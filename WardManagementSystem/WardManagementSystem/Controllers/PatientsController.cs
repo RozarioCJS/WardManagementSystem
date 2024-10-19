@@ -1,7 +1,6 @@
 ﻿using WardManagementSystem.Data.Repository;
 using Microsoft.AspNetCore.Mvc;
 using WardManagementSystem.Data.Models.Domain;
-using WardManagementSystem.Data.Repository;
 using WardManagementSystem.Data.Models.ViewModels;
 
 namespace WardManagementSystem.Controllers
