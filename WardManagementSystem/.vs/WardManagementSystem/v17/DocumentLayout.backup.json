@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\models\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\models\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\repository\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\repository\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\admin\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\admin\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\admin\\managemedications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\admin\\managemedications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,40 +54,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Order.cshtml",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "RelativeToolTip": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAGAAAABiAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ManageMedications.cshtml",
+              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T09:31:36.06Z",
+              "WhenOpened": "2024-10-19T10:08:57.776Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\ViewModels\\UserViewModel.cs",
-              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Models\\ViewModels\\UserViewModel.cs",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\ViewModels\\UserViewModel.cs",
-              "RelativeToolTip": "WardManagementSystem.Data\\Models\\ViewModels\\UserViewModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAyAAAAAAAAAA==",
+              "Title": "AdminRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\AdminRepository.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Repository\\AdminRepository.cs",
+              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\AdminRepository.cs",
+              "RelativeToolTip": "WardManagementSystem.Data\\Repository\\AdminRepository.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T09:28:02.36Z"
+              "WhenOpened": "2024-10-19T10:08:11.576Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddEmployee.cshtml",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\AddEmployee.cshtml",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Admin\\AddEmployee.cshtml",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\AddEmployee.cshtml",
-              "RelativeToolTip": "WardManagementSystem\\Views\\Admin\\AddEmployee.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T09:27:42.797Z"
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WardManagementSystem\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAwBAAAAAAAAAAAIwKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T10:06:19.033Z",
+              "EditorCaption": ""
             }
           ]
         }
