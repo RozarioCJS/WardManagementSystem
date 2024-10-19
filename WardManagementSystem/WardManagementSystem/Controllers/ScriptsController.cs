@@ -26,7 +26,6 @@ namespace WardManagementSystem.Controllers
         {
             //returns count for all scripts based on status
             var prescriptionManagerID = HttpContext.Session.GetInt32("PrescriptionManagerID");
-            int CMID = (int)prescriptionManagerID;
             int PMID = (int)prescriptionManagerID;
             var newcount = await _SDRepo.GetAllAsyncNew('N');
             var processedcount = await _SDRepo.GetAllAsync('P',prescriptionManagerID.Value);
