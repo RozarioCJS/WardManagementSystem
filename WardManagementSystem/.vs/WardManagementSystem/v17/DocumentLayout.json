@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\models\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\models\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\admin\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\admin\\addemployee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,40 +55,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Order.cshtml",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "RelativeToolTip": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAGAAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T09:31:36.06Z",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WardManagementSystem\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwEsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T09:37:24.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\ViewModels\\UserViewModel.cs",
-              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Models\\ViewModels\\UserViewModel.cs",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\ViewModels\\UserViewModel.cs",
-              "RelativeToolTip": "WardManagementSystem.Data\\Models\\ViewModels\\UserViewModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T09:28:02.36Z",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-19T09:37:14.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddEmployee.cshtml",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\AddEmployee.cshtml",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Admin\\AddEmployee.cshtml",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\AddEmployee.cshtml",
-              "RelativeToolTip": "WardManagementSystem\\Views\\Admin\\AddEmployee.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T09:27:42.797Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "WardManagementSystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\appsettings.json",
+              "RelativeToolTip": "WardManagementSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-19T09:37:07.51Z",
               "EditorCaption": ""
             }
           ]
