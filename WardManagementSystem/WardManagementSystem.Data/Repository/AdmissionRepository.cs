@@ -20,11 +20,7 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-<<<<<<< HEAD
-                await _db.SaveData("InsertAdmission", new { admission });
-=======
-                await _db.SaveData("sp_InsertAdmission", new { admission.PatientID, admission.AdmissionDate, admission.DoctorID, admission.WardID, admission.AdmissionReason, admission.AdmissionStatus, admission.BedID });
->>>>>>> 6f3ab3b6ce1341d778dce907d0a5ba6565a2cd82
+                await _db.SaveData("InsertAdmission", new { admission.PatientID, admission.AdmissionDate, admission.DoctorID, admission.WardID, admission.AdmissionReason, admission.AdmissionStatus, admission.BedID });
                 return true;
             }
             catch (Exception ex)
