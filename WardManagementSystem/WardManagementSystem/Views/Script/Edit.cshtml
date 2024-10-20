@@ -21,20 +21,9 @@
 
     body {
         background-image: url('/snake_icon.png');
-        /* background-size: cover; */
         background-repeat: no-repeat;
         background-position: right;
     }
-    /* .container {
-        display: flex;
-        align-items: center;
-        padding: 20px;
-        background-image: url('~/snake_icon.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100vh;
-    } */
 
     a {
         color: white;
@@ -62,13 +51,9 @@
                     <div class="card-header">
                         <h2 class="card-title">Edit Script</h2>
                     </div>
+                    <input asp-for="ScriptID" type="hidden" class="form-control" readonly />
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-4">
-                                <label asp-for="ScriptID" class="control-label"></label>
-                                <input asp-for="ScriptID" class="form-control" readonly />
-                                <span asp-validation-for="ScriptID" class="text-danger"></span>
-                            </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Medication Name</label>

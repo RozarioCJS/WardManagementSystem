@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_LayoutDoctor.cshtml";
 }
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Instruction";
 }
 <style>
     .card {
@@ -61,13 +61,9 @@
                     <div class="card-header">
                         <h2 class="card-title">Edit Instruction</h2>
                     </div>
+                    <input asp-for="PatientInstructionID" type="hidden" class="form-control" readonly />
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-4">
-                                <label asp-for="PatientInstructionID" class="control-label"></label>
-                                <input asp-for="PatientInstructionID" class="form-control" readonly />
-                                <span asp-validation-for="PatientInstructionID" class="text-danger"></span>
-                            </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Patient Name</label>
@@ -77,7 +73,6 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label asp-for="Instruction" class="control-label"></label>
-                                    @* <input asp-for="Instruction" class="form-control" required/> *@
                                     @Html.TextArea("Instruction", new { rows = 5, cols = 40 })
                                     <span asp-validation-for="Instruction" class="text-danger"></span>
                                 </div>
@@ -103,10 +98,3 @@
 <div>
     <a asp-action="DisplayAll">Back to List</a>
 </div>
-
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}

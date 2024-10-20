@@ -150,7 +150,7 @@ namespace WardManagementSystem.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateAdmission(AdmissionsViewModel admission)
+        public async Task<IActionResult> UpdateAdmission(Admission admission)
         {
             try
             {
