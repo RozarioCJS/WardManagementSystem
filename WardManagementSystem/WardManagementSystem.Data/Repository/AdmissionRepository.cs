@@ -48,17 +48,17 @@ namespace WardManagementSystem.Data.Repository
             return await _db.GetData<AdmissionsViewModel, dynamic>(query, new { });
         }
 
-        public async Task<AdmissionsViewModel> GetAdmissionByIdAsync(int id)
+        public async Task<Admission> GetAdmissionByIdAsync(int id)
         {
-            IEnumerable<AdmissionsViewModel> result = await _db.GetData<AdmissionsViewModel, dynamic>("sp_GetAdmission", new { AdmissionID = id });
+            IEnumerable<Admission> result = await _db.GetData<Admission, dynamic>("sp_GetAdmission", new { AdmissionID = id });
             return result.FirstOrDefault();
         }
 
-        public async Task<bool> UpdateAdmissionAsync(AdmissionsViewModel admission) // Ensure to use Domain Admission
+        public async Task<bool> UpdateAdmissionAsync(Admission admission) // Ensure to use Domain Admission
         {
             try
             {
-                await _db.SaveData("sp_UpdatePatient", admission);
+                await _db.SaveData("sp_UpdatePatient", new { admission.AdmissionDate });
                 return true;
             }
             catch (Exception ex)

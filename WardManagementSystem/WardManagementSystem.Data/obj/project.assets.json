@@ -6126,24 +6126,40 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\ayden\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\sodie\\.nuget\\packages\\": {}
+>>>>>>> a349992dbba87bf853dd7d8caabad549c134f707
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
       "projectName": "WardManagementSystem.Data",
       "projectPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
       "packagesPath": "C:\\Users\\ayden\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
+      "projectName": "WardManagementSystem.Data",
+      "projectPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
+      "packagesPath": "C:\\Users\\sodie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\obj\\",
+>>>>>>> a349992dbba87bf853dd7d8caabad549c134f707
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\ayden\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+        "C:\\Users\\sodie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> a349992dbba87bf853dd7d8caabad549c134f707
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

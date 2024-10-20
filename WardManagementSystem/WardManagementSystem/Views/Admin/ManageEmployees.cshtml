@@ -3,18 +3,16 @@
     Layout = "~/Views/Shared/_layoutAdmin.cshtml";
 }
 <style>
-    .container {
-        display: flex;
-        align-items: flex-start;
-        height: 90vh;
+    body {
         background-image: url('/snake_icon.png');
-        background-size: cover;
+        background-size: auto;
         background-repeat: no-repeat;
         background-position: center;
     }
 </style>
 <body>
     <h1>Employees</h1>
+    <hr/>
     <a asp-action="AddEmployee" class="btn btn-outline-primary">Add Employee</a>
     <div class="container">
         <table class="table table-hover">

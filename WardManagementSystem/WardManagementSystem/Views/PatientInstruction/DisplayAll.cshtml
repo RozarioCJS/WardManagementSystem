@@ -32,6 +32,15 @@
 <hr />
 
 <body>
+    @* Alert letting the user know whether the record was inserted or not *@
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @TempData["msg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
     @* Drop down list that displays patient name but has patientID as its value *@
     @using (Html.BeginForm("DisplayAll", "PatientInstruction", FormMethod.Get))
     {
@@ -59,8 +68,10 @@
                         <td>@patientInstructionViewModel.Instruction</td>
                         <td>@patientInstructionViewModel.Date.ToString("dd/MM/yyyy")</td>
                         <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = patientInstructionViewModel.PatientInstructionID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = patientInstructionViewModel.PatientInstructionID })
+                            <a asp-action="Edit" asp-route-id="@patientInstructionViewModel.PatientInstructionID" class="btn btn-primary">Edit</a>
+                            <form asp-action="Delete" asp-route-id="@patientInstructionViewModel.PatientInstructionID" method="post" style="display:inline;">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
                         </td>
                     </tr>
                 }
@@ -68,41 +79,9 @@
             </tbody>
         </table>
     }
-    @* else
+    else
     {
-    <table class="table table-striped">
-    <thead>
-    <tr>
-    <th scope="col">Patient Full Name</th>
-    <th scope="col">Instruction</th>
-    <th scope="col">Date</th>
-    <th scope="col"></th>
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (PatientInstructionViewModel patientInstructionViewModel in patientInstructionViewModels)
-    {
-    <tr>
-    <td>@patientInstructionViewModel.PatientName</td>
-    <td>@patientInstructionViewModel.Instruction</td>
-    <td>@patientInstructionViewModel.Date.ToString("dd/MM/yyyy")</td>
-    <td>
-    @Html.ActionLink("Edit", "Edit", new { id = patientInstructionViewModel.PatientInstructionID }) |
-    @Html.ActionLink("Delete", "Delete", new { id = patientInstructionViewModel.PatientInstructionID })
-    </td>
-    </tr>
+        <p>Please select a recored or there are no records available for the selected patient</p>
     }
 
-    </tbody>
-    </table>
-    } *@
-
-    @if (TempData["msg"] != null)
-
-    {
-        <div class="alert alert-info alert-dismissible fade show" role="alert">
-            @TempData["msg"]
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    }
 </body>

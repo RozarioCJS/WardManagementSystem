@@ -33,6 +33,15 @@
 <hr />
 
 <body>
+    @* Alert letting the user know whether the record was inserted or not *@
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @TempData["msg"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
     @* Drop down list that displays patient name but has patientID as its value *@
     @using (Html.BeginForm("DisplayAll", "Script", FormMethod.Get))
     {
@@ -66,8 +75,10 @@
                         <td>@patientScriptViewModel.MedicationName</td>
                         <td>@patientScriptViewModel.Dosage</td>
                         <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = patientScriptViewModel.ScriptID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = patientScriptViewModel.ScriptID })
+                            <a asp-action="Edit" asp-route-id="@patientScriptViewModel.ScriptID" class="btn btn-primary">Edit</a>
+                            <form asp-action="Delete" asp-route-id="@patientScriptViewModel.ScriptID" method="post" style="display:inline;">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
                         </td>
                     </tr>
                 }
@@ -77,17 +88,10 @@
     }
     else
     {
-        <p>Please select a patient, or selected may not have any current records.</p>
+        <p>Please select a recored or there are no records available for the selected patient</p>
     }
 
-     @if (TempData["msg"] != null)
-
-        {
-            <div class="alert alert-info alert-dismissible fade show" role="alert">
-                @TempData["msg"]
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        }
+     
 
 </body>
 
