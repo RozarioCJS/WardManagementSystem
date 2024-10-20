@@ -79,9 +79,31 @@
                     <h2>@item.ConsumableName</h2>
                     <input type="hidden" name="Id" value="@item.ConsumableID" />
                     <button class="btn btn-outline-secondary" type="submit" onclick="showUpdateForm('@item.ConsumableID','@item.ConsumableName')">Edit</button>
-                    <form asp-action="DeleteConsumables" method="post">
+
+                    <!-- Delete Confirmation Modal -->
+                    <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="deleteConfirmationModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="deleteConfirmationModalLabel">Confirm Delete</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Are you sure you want to delete this Consumable?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <form id="deleteconsumableForm" asp-action="DeleteConsumables" method="post">
+                                        <input type="hidden" name="Id" id="consumableID" />
+                                        <button type="submit" class="btn btn-outline-danger">Delete</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form>
                         <input type="hidden" name="Id" value="@item.ConsumableID" />
-                        <button class="btn btn-outline-danger" onclick="return window.confirm('Are you sure to delete this User?')" type="submit">Delete</button>
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal" onclick="setId('@item.ConsumableID')">Delete</button>
                     </form>
                 </div>
             </div>
@@ -121,9 +143,6 @@
                 </div>
             </form>
         </div>
-        <a class="btn btn-outline-info" asp-area="" asp-controller="Home" asp-action="Index">
-            <h6>Back</h6>
-        </a>
     </div>
 
 </body>
@@ -155,4 +174,8 @@
         var updateForm = document.getElementById("updateForm");
         updateForm.style.display = "none";
     }
+    function setId(consumableID) {
+        document.getElementById('consumableID').value = consumableID;
+    }
+
 </script>

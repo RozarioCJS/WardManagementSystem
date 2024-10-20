@@ -62,6 +62,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
     <div class="alert alert-info alert-dismissible fade show" role="alert">
         @TempData["msg"]
@@ -98,10 +122,27 @@
                 </div>
             }
 
-
-            <div class="button-container">
-                <button class="btn btn-outline-warning" type="submit">Place Order</button>
+            <!-- Order Confirmation Modal -->
+            <div class="modal fade" id="orderConfirmationModal" tabindex="-1" aria-labelledby="orderConfirmationModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="orderConfirmationModalLabel">Confirm Order</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to place this order?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-outline-warning">Confirm Order</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </form>
+        <div class="button-container">
+            <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#orderConfirmationModal">Place Order</button>
+        </div>
     </div>
 </div>
