@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using WardManagementSystem.Data.Models.Domain;
 using WardManagementSystem.Data.Models.ViewModels;
 using WardManagementSystem.Data.Repository;
+using static iText.StyledXmlParser.Jsoup.Select.Evaluator;
 
 namespace WardManagementSystem.Controllers
 {
@@ -100,13 +101,14 @@ namespace WardManagementSystem.Controllers
                 TempData["msg"] = "Something went wrong!";
             }
 
-            //return RedirectToRoute(new
-            //{
-            //    controller = "PatientInstruction",
-            //    action = "DisplayAll",
-            //    id = patient_instruction.PatientFileID
-            //});
-            return RedirectToAction(nameof(DisplayAll));
+            return RedirectToRoute(new
+            {
+                controller = "PatientInstruction",
+                action = "DisplayAll",
+                id = patient_instruction.PatientFileID
+            });
+            //return RedirectToAction(nameof(DisplayAll));
+            //return ControllerContext.MyDisplayRouteInfo(id, product.name);
         }
 
         //Delete
