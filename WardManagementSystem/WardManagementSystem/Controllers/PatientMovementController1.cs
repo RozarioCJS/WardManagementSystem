@@ -1,18 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WardManagementSystem.Data.Repository;
 using WardManagementSystem.Data.Models.Domain;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace WardManagementSystem.Controllers
 {
     public class PatientMovementController : Controller
     {
         private readonly IPatientMovementRepository _movementRepo;
-        private readonly IPatientFolderRepository _patientfolderRepo;
 
-        public PatientMovementController(IPatientMovementRepository movementRepo, IPatientFolderRepository patientfolderRepo)
+        public PatientMovementController(IPatientMovementRepository movementRepo)
         {
             _movementRepo = movementRepo;
-            _patientfolderRepo = patientfolderRepo;
         }
 
         public async Task<IActionResult> MovePatient(int patientId, int wardId, int bedId)
@@ -32,31 +31,21 @@ namespace WardManagementSystem.Controllers
 
                 if (moveSuccess)
                 {
-                    var patientFolder = await _patientfolderRepo.GetPatientFolderByIdAsync(patientId);
-                    if (patientFolder != null)
-                    {
-                        patientFolder.WardID = wardId;
-                        patientFolder.BedID = bedId;
-                        await _patientfolderRepo.UpdatePatientFolderAsync(patientFolder);
-                    }
-                    TempData["msg"] = "Patient moved and folder updated successfully.";
+                    TempData["msg"] = "Patient has been transferred.";
                 }
                 else
                 {
-                    TempData["msg"] = "Could not move patient.";
+                    TempData["msg"] = "Could not transfer the patient.";
                 }
             }
             catch (Exception ex)
             {
-                TempData["msg"] = "An error occurred while moving the patient.";
+                TempData["msg"] = "An error occurred while transferring the patient.";
             }
 
             return RedirectToAction("DisplayPatientMovements", new { patientId });
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+
     }
 }

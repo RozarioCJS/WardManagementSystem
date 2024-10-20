@@ -1,0 +1,39 @@
+﻿@model WardManagementSystem.Data.Models.Domain.Movement
+
+@{
+    ViewData["Title"] = "Move Patient";
+    Layout = "~/Views/Shared/_LayoutWardAdmin.cshtml";
+}
+
+<h2 class="text-center" style="text-decoration: underline; margin-top: 20px;">Move Patient</h2>
+
+<div class="container" style="max-width: 600px; margin-top: 30px;">
+    <form asp-action="MovePatient" method="post">
+        <div class="form-group">
+            <label for="PatientId">Select Patient</label>
+            @Html.DropDownList("PatientId", (SelectList)ViewBag.SelectListPatients, "- Select Patient -", new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label for="WardId">Select Ward</label>
+            @Html.DropDownList("WardId", (SelectList)ViewBag.SelectListWards, "- Select Ward -", new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label for="BedId">Bed Number</label>
+            <input asp-for="BedId" type="number" class="form-control" placeholder="Enter Bed ID" required />
+            <span asp-validation-for="BedId" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Move Patient</button>
+    </form>
+
+    <a asp-action="Index" class="btn btn-secondary btn-block mt-3">Back to Home</a>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-info mt-3">
+            @TempData["msg"]
+        </div>
+    }
+</div>

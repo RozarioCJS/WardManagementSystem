@@ -1,18 +1,9 @@
 ﻿@model IEnumerable<WardManagementSystem.Data.Models.ViewModels.PatientsDisplayViewModel>
-@{
-    Layout = "~/Views/Shared/_LayoutWardAdmin.cshtml";
-}
-
-
-
+@*changes made*@
 @{
     ViewData["Title"] = "All Patients";
 }
-@*@{
-    @using PatientManagementSystem.Data.Models.ViewModels
-    IEnumerable<PatientsDisplayViewModel> patientsDisplayViewModels = ViewData["PatientsDisplayViewModel"] as IEnumerable<PatientsDisplayViewModel>;
-}
-*@
+
 <h2>All Patients</h2>
 
 <table class="table">
@@ -20,11 +11,11 @@
         <tr>
             <th>First Name</th>
             <th>Gender</th>
-            <th>AllergyName</th>
+            <th>Allergy Name</th>
             <th>Contact Number</th>
             <th>Email</th>
-            <th>Address1</th>
-            <th>Address2</th>
+            <th>Address 1</th>
+            <th>Address 2</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -40,7 +31,7 @@
                 <td>@patient.Address1</td>
                 <td>@patient.Address2</td>
                 <td>
-                    <a asp-action="GetPatient" asp-route-id="@patient.PatientID" class="btn btn-primary">Edit</a>
+                    <a asp-action="UpdatePatient" asp-route-id="@patient.PatientID" class="btn btn-primary">Edit</a>
                     <button type="button" class="btn btn-danger"
                             data-toggle="modal"
                             data-target="#deleteModal-@patient.PatientID">
@@ -74,5 +65,3 @@
         }
     </tbody>
 </table>
-
-

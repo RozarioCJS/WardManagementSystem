@@ -2,7 +2,7 @@
 using WardManagementSystem.Data.Models.Domain;
 using WardManagementSystem.Data.Repository;
 
-namespace PatientManagementSystem.Controllers
+namespace WardManagementSystem.Controllers
 {
     public class BedsController : Controller
     {
