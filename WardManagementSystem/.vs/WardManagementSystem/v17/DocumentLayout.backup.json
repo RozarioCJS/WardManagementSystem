@@ -1,21 +1,76 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\controllers\\patientmovementcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\controllers\\patientmovementcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\repository\\patientmovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\repository\\patientmovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\patientmovement\\movepatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\patientmovement\\movepatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\admission\\displayalladmissions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\admission\\displayalladmissions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\admission\\addadmission.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\admission\\addadmission.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\shared\\_layoutwardadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\shared\\_layoutwardadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\beds\\displayallbeds.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\beds\\displayallbeds.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\beds\\addbeds.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\beds\\addbeds.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\models\\domain\\beds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\models\\domain\\beds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\repository\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\repository\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\patients\\displayallpatients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\patients\\displayallpatients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\consumables\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\sodie\\desktop\\wardsystem\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\admin\\managemedications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\ayden\\onedrive\\desktop\\wardsystem2\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\admin\\managemedications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\admin\\managemedications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
-=======
-  "WorkspaceRootPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\",
-  "Documents": [],
->>>>>>> a03e5896ad9c5e3bb9754d3d8c2c3f8fc583c664
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -23,19 +78,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DisplayAllPatients.cshtml",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Patients\\DisplayAllPatients.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Patients\\DisplayAllPatients.cshtml",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Patients\\DisplayAllPatients.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Patients\\DisplayAllPatients.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T11:24:13.081Z",
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -43,54 +99,216 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-<<<<<<< HEAD
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Order.cshtml",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "RelativeToolTip": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAqwHsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T19:28:12.306Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ManageMedications.cshtml",
-              "DocumentMoniker": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
-              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
-              "ToolTip": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
-              "RelativeToolTip": "WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAAAMcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T19:20:13.659Z",
-              "EditorCaption": ""
-=======
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Program.cs",
+              "RelativeToolTip": "WardManagementSystem\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T18:35:09.175Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
->>>>>>> a03e5896ad9c5e3bb9754d3d8c2c3f8fc583c664
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PatientMovementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\PatientMovementRepository.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Repository\\PatientMovementRepository.cs",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\PatientMovementRepository.cs",
+              "RelativeToolTip": "WardManagementSystem.Data\\Repository\\PatientMovementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T18:31:29.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MovePatient.cshtml",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\PatientMovement\\MovePatient.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\PatientMovement\\MovePatient.cshtml",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\PatientMovement\\MovePatient.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\PatientMovement\\MovePatient.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T17:24:54.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatientMovementController1.cs",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\PatientMovementController1.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Controllers\\PatientMovementController1.cs",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\PatientMovementController1.cs",
+              "RelativeToolTip": "WardManagementSystem\\Controllers\\PatientMovementController1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T17:11:43.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-20T16:21:27.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T15:18:36.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddAdmission.cshtml",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admission\\AddAdmission.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Admission\\AddAdmission.cshtml",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admission\\AddAdmission.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Admission\\AddAdmission.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T14:58:04.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_LayoutWardAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_LayoutWardAdmin.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Shared\\_LayoutWardAdmin.cshtml",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_LayoutWardAdmin.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Shared\\_LayoutWardAdmin.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T14:50:07.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DisplayAllBeds.cshtml",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Beds\\DisplayAllBeds.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Beds\\DisplayAllBeds.cshtml",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Beds\\DisplayAllBeds.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Beds\\DisplayAllBeds.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T13:38:59.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Controllers\\PatientsController.cs",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "WardManagementSystem\\Controllers\\PatientsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T11:26:51.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DisplayAllAdmissions.cshtml",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admission\\DisplayAllAdmissions.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Admission\\DisplayAllAdmissions.cshtml",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admission\\DisplayAllAdmissions.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Admission\\DisplayAllAdmissions.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T15:23:38.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Beds.cs",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\Domain\\Beds.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Models\\Domain\\Beds.cs",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\Domain\\Beds.cs",
+              "RelativeToolTip": "WardManagementSystem.Data\\Models\\Domain\\Beds.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T13:38:06.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Repository\\IPatientRepository.cs",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\IPatientRepository.cs",
+              "RelativeToolTip": "WardManagementSystem.Data\\Repository\\IPatientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T13:10:11.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddBeds.cshtml",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Beds\\AddBeds.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Beds\\AddBeds.cshtml",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Beds\\AddBeds.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Beds\\AddBeds.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T12:55:05.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Order.cshtml",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Consumables\\Order.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Consumables\\Order.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T11:20:41.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ManageMedications.cshtml",
+              "DocumentMoniker": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "ToolTip": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem2\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Admin\\ManageMedications.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T11:20:42.397Z"
             }
           ]
         }

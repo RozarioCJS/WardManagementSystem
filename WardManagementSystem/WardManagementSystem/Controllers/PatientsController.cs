@@ -1,6 +1,7 @@
 ﻿using WardManagementSystem.Data.Repository;
 using Microsoft.AspNetCore.Mvc;
 using WardManagementSystem.Data.Models.Domain;
+using WardManagementSystem.Data.Repository;
 using WardManagementSystem.Data.Models.ViewModels;
 
 namespace WardManagementSystem.Controllers
@@ -113,6 +114,19 @@ namespace WardManagementSystem.Controllers
         public async Task<IActionResult> DisplayAllPatients()
         {
             var patientsinfo = await _patientRepo.GetPatientInfo();
+            //ViewData["PatientsDisplayViewModel"] = patientsinfo;
+            // Map to the view model
+            //var patientViewModels = patients.Select(p => new PatientsDisplayViewModel
+            //{
+            //    PatientID = p.PatientId,
+            //    FirstName = p.FirstName,
+            //    LastName = p.LastName,
+            //    ContactNumber = p.ContactNumber,
+            //    Address1 = p.Address1,
+            //    Address2 = p.Address2,
+            //   // AllergyName = AllergyName 
+            //}).ToList();
+
             return View(patientsinfo);
         }
 

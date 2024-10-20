@@ -34,6 +34,7 @@ builder.Services.AddTransient<IAdmissionRepository, AdmissionRepository>();
 builder.Services.AddTransient<IPatientFolderRepository, PatientFolderRepository>();
 builder.Services.AddTransient<IPatientRepository, PatientRepository>();
 builder.Services.AddTransient<IWardRepository, WardRepository>();
+builder.Services.AddTransient<IPatientMovementRepository, PatientMovementRepository>();
 //To gain acces to HttpContext in the view
 builder.Services.AddHttpContextAccessor();
 

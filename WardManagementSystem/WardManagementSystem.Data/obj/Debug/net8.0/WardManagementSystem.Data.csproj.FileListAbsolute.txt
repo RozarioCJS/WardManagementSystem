@@ -75,3 +75,16 @@ C:\Users\sodie\Desktop\WardSystem\WardManagementSystem\WardManagementSystem\Ward
 C:\Users\sodie\Desktop\WardSystem\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\refint\WardManagementSystem.Data.dll
 C:\Users\sodie\Desktop\WardSystem\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.pdb
 C:\Users\sodie\Desktop\WardSystem\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\ref\WardManagementSystem.Data.dll
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\bin\Debug\net8.0\WardManagementSystem.Data.deps.json
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\bin\Debug\net8.0\WardManagementSystem.Data.dll
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\bin\Debug\net8.0\WardManagementSystem.Data.pdb
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.csproj.AssemblyReference.cache
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.AssemblyInfoInputs.cache
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.AssemblyInfo.cs
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.csproj.CoreCompileInputs.cache
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.sourcelink.json
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.dll
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\refint\WardManagementSystem.Data.dll
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.pdb
+C:\Users\ayden\OneDrive\Desktop\WardSystem2\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\ref\WardManagementSystem.Data.dll
