@@ -52,7 +52,11 @@
 
     @if (patientScriptViewModels != null && patientScriptViewModels.Any())
     {
-
+        @* <form asp-action="DisplayScriptListP" method="get">
+            <label for="SearchDate">Search by Date:</label>
+            <input type="date" class="form-control" id="SearchDate" name="searchDate" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+            <button type="submit" class="btn btn-outline-primary">Search</button>
+        </form> *@
 
         <table class="table table-striped">
             <thead>

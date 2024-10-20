@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\naido\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\patientinstruction\\displayall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\patientinstruction\\displayall.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\naido\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\controllers\\patientinstructioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\controllers\\patientinstructioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\naido\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\scripts\\displayscriptlistp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\scripts\\displayscriptlistp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\naido\\desktop\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\controllers\\scriptscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\controllers\\scriptscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScriptsController.cs",
+              "DocumentMoniker": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\ScriptsController.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Controllers\\ScriptsController.cs",
+              "ToolTip": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\ScriptsController.cs",
+              "RelativeToolTip": "WardManagementSystem\\Controllers\\ScriptsController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T20:08:05.353Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DisplayScriptListP.cshtml",
+              "DocumentMoniker": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Scripts\\DisplayScriptListP.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Scripts\\DisplayScriptListP.cshtml",
+              "ToolTip": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Scripts\\DisplayScriptListP.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Scripts\\DisplayScriptListP.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T20:07:46.889Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DisplayAll.cshtml",
+              "DocumentMoniker": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\PatientInstruction\\DisplayAll.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\PatientInstruction\\DisplayAll.cshtml",
+              "ToolTip": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\PatientInstruction\\DisplayAll.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\PatientInstruction\\DisplayAll.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-20T20:51:13.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientInstructionController.cs",
+              "DocumentMoniker": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\PatientInstructionController.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Controllers\\PatientInstructionController.cs",
+              "ToolTip": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\PatientInstructionController.cs",
+              "RelativeToolTip": "WardManagementSystem\\Controllers\\PatientInstructionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T20:50:19.816Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
