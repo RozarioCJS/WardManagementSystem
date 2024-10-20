@@ -22,20 +22,9 @@
 
     body {
         background-image: url('/snake_icon.png');
-        /* background-size: cover; */
         background-repeat: no-repeat;
         background-position: right;
     }
-    /* .container {
-        display: flex;
-        align-items: center;
-        padding: 20px;
-        background-image: url('~/snake_icon.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100vh;
-    } */
 
     a {
         color: white;
@@ -62,13 +51,9 @@
                     <div class="card-header">
                         <h2 class="card-title">Edit Visit Note</h2>
                     </div>
+                    <input asp-for="VisitID" type="hidden" class="form-control" readonly />
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-4">
-                                <label asp-for="VisitID" class="control-label"></label>
-                                <input asp-for="VisitID" class="form-control" readonly />
-                                <span asp-validation-for="VisitID" class="text-danger"></span>
-                            </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Patient Name</label>

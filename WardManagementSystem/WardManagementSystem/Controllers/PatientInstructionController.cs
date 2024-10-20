@@ -186,5 +186,7 @@ namespace WardManagementSystem.Controllers
 
             return RedirectToAction(nameof(DisplayAll));
         }
+
+       
     }
 }

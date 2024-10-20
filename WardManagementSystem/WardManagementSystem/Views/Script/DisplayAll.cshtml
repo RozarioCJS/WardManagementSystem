@@ -75,8 +75,10 @@
                         <td>@patientScriptViewModel.MedicationName</td>
                         <td>@patientScriptViewModel.Dosage</td>
                         <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = patientScriptViewModel.ScriptID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = patientScriptViewModel.ScriptID })
+                            <a asp-action="Edit" asp-route-id="@patientScriptViewModel.ScriptID" class="btn btn-primary">Edit</a>
+                            <form asp-action="Delete" asp-route-id="@patientScriptViewModel.ScriptID" method="post" style="display:inline;">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
                         </td>
                     </tr>
                 }

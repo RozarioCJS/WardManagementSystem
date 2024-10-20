@@ -11,9 +11,9 @@ namespace WardManagementSystem.Data.Repository
     public interface IAdmissionRepository
     {
         Task<IEnumerable<AdmissionsViewModel>> GetAllAdmissionAsync();
-        Task<AdmissionsViewModel> GetAdmissionByIdAsync(int id);
+        Task<Admission> GetAdmissionByIdAsync(int id);
         Task<bool> AddAdmissionAsync(Admission admission);
-        Task<bool> UpdateAdmissionAsync(AdmissionsViewModel admission);
+        Task<bool> UpdateAdmissionAsync(Admission admission);
         Task<bool> DeleteAdmissionAsync(int id);
         Task<IEnumerable<PatientFullNameViewModel>> GetPatientFullNameAsync();      //used to fill drop down list with patient name
         Task<IEnumerable<DoctorFullNameViewModel>> GetDoctorFullNameAsync();        //used to fill drop down list with doctor name

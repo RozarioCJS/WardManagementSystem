@@ -68,8 +68,10 @@
                         <td>@patientInstructionViewModel.Instruction</td>
                         <td>@patientInstructionViewModel.Date.ToString("dd/MM/yyyy")</td>
                         <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = patientInstructionViewModel.PatientInstructionID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = patientInstructionViewModel.PatientInstructionID })
+                            <a asp-action="Edit" asp-route-id="@patientInstructionViewModel.PatientInstructionID" class="btn btn-primary">Edit</a>
+                            <form asp-action="Delete" asp-route-id="@patientInstructionViewModel.PatientInstructionID" method="post" style="display:inline;">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
                         </td>
                     </tr>
                 }
