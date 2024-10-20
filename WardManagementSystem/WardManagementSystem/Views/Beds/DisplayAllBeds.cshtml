@@ -21,7 +21,7 @@
             <tr>
                 <td>@bed.PatientId</td>
                 <td>@bed.WardId</td>
-                <td>@(bed.Status ? "Occupied" : "Available")</td>
+                <td>@bed.Status</td>
                 <td>
                     <a asp-action="UpdateBeds" asp-route-id="@bed.BedId" class="btn btn-primary">Edit</a>
                     <form asp-action="DeleteBeds" asp-route-id="@bed.BedId" method="post" style="display:inline;">
