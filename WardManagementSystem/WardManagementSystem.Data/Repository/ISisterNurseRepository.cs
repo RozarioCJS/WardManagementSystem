@@ -11,5 +11,7 @@ namespace WardManagementSystem.Data.Repository
         Task<bool> DeleteAsync(int id);
         Task<SisterNurse?> GetByIdAsync(int id);
         Task<IEnumerable<SisterNurse>> GetAllAsync();
+        Task<List<SisterNurseTask>> GetTasksAsync(int sisterNurseId); // Add this line
+
     }
 }

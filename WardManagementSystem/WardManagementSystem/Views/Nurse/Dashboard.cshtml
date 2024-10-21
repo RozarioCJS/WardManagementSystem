@@ -1,30 +1,4 @@
-﻿@model WardManagementSystem.Data.Models.Domain.Nurse
-
-<div class="container">
-    <h1>Nurse Dashboard</h1>
-    <div class="row">
-        <div class="col-md-6">
-            <!-- Patient List -->
-            <h2>Patients</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Loop through patients -->
-                </tbody>
-            </table>
-        </div>
-        <div class="col-md-6">
-            <!-- Notifications -->
-            <h2>Notifications</h2>
-            <ul class="list-group">
-                <!-- List notifications -->
-            </ul>
-        </div>
-    </div>
-</div>
+﻿@{
+    Layout = "~/Views/Shared/_LayoutNurse.cshtml"; // Set the layout to _LayoutNurse
+    ViewData["Title"] = "Nurse Dashboard";
+}

@@ -101,3 +101,16 @@ C:\Users\naido\Documents\Project backup 4\WardManagementSystem\WardManagementSys
 C:\Users\naido\Documents\Project backup 4\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\refint\WardManagementSystem.Data.dll
 C:\Users\naido\Documents\Project backup 4\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.pdb
 C:\Users\naido\Documents\Project backup 4\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\ref\WardManagementSystem.Data.dll
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\bin\Debug\net8.0\WardManagementSystem.Data.deps.json
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\bin\Debug\net8.0\WardManagementSystem.Data.dll
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\bin\Debug\net8.0\WardManagementSystem.Data.pdb
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.csproj.AssemblyReference.cache
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.AssemblyInfoInputs.cache
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.AssemblyInfo.cs
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.csproj.CoreCompileInputs.cache
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.sourcelink.json
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.dll
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\refint\WardManagementSystem.Data.dll
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\WardManagementSystem.Data.pdb
+C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\obj\Debug\net8.0\ref\WardManagementSystem.Data.dll

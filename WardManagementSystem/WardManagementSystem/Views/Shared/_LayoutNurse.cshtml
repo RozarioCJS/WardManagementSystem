@@ -1,9 +1,9 @@
 ﻿@using Microsoft.AspNetCore.Http;
 @inject IHttpContextAccessor HttpContextAccessor;
+
 @{
     string LastName = HttpContextAccessor.HttpContext.Session.GetString("LastName");
 }
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,9 @@
     <title>@ViewData["Title"] - Nurse Dashboard</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         .navbar-custom {
             background-color: white; /* White background for the navbar */
@@ -38,7 +40,7 @@
         .hospital-logo {
             display: flex;
             gap: 10px;
-            justify-content:center;
+            justify-content: center;
             align-items: center;
             font-size: 1.5rem; /* Increase hospital name size */
             color: white;
@@ -57,10 +59,21 @@
                 margin-right: 10px; /* Space between image and name */
             }
 
-            .btn:hover {
-                background-color: white;
-                color: #1a1824;
-            }
+        .btn:hover {
+            background-color: white;
+            color: #1a1824;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 40vh;
+            width: 80vw;
+            margin: auto;
+        }
+
+        .table-container {
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -69,7 +82,7 @@
         <nav class="navbar navbar-expand-lg navbar-custom">
             <div class="container-fluid">
                 <div class="nurse-info">
-                    <img src="" alt="Nurse Image" /> <!-- Update with the actual image path -->
+                    <img src="/images/peakyblinderlogo.png" alt="Nurse Image" /> <!-- Update with the actual image path -->
                     <span class="navbar-text" style="padding-left: 10px;">@LastName</span>
                 </div>
                 <div class="navbar-collapse collapse ms-auto">
@@ -80,11 +93,10 @@
             </div>
         </nav>
 
-
         <div class="row flex-grow-1">
             <div class="sidebar col-auto col-md-2 d-flex flex-column">
                 <div class="hospital-logo">
-                    <img src="./images/peakyblinderlogo.png" height="20px"/>
+                    <img src="/images/peakyblinderlogo.png" height="20px" />
                     <h5>Peaky Blinders Medical Centre</h5>
                 </div>
                 <ul class="nav nav-pills flex-column mt-4">
@@ -145,21 +157,146 @@
 
             <div class="col">
                 <main role="main" class="pb-3">
-                    @RenderBody()
+                    <h2>Dashboard</h2>
+
+                    <!-- Calendar -->
+                    <div id="calendar" class="mb-4"></div>
+
+                    <!-- Patient Chart -->
+                    <div class="chart-container">
+                        <canvas id="patientChart"></canvas>
+                    </div>
+
+                    <!-- Tasks Table -->
+                    <div class="table-container">
+                        <h4>Tasks</h4>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Task</th>
+                                    <th>Status</th>
+                                    <th>Due Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var task in Model.Tasks)
+                                {
+                                    <tr>
+                                        <td>@task.TaskName</td>
+                                        <td>@task.Status</td>
+                                        <td>@task.DueDate.ToString("dd/MM/yyyy")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Instructions Table -->
+                    <div class="table-container">
+                        <h4>Doctor Instructions</h4>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Instruction</th>
+                                    <th>Patient Name</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var instruction in Model.DoctorInstructions)
+                                {
+                                    <tr>
+                                        <td>@instruction.Text</td>
+                                        <td>@instruction.PatientName</td>
+                                        <td>@instruction.Date.ToString("dd/MM/yyyy")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Duties Table -->
+                    <div class="table-container">
+                        <h4>Duties</h4>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Duty</th>
+                                    <th>Assigned To</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var duty in Model.Duties)
+                                {
+                                    <tr>
+                                        <td>@duty.Description</td>
+                                        <td>@duty.AssignedTo</td>
+                                        <td>@duty.Status</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </main>
             </div>
         </div>
     </div>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
     <script>
-        function updateDateTime() {
-            const now = new Date();
-            const currentDateTime = now.toLocaleString();
-            document.querySelector('#datetime').textContent = currentDateTime;
-        }
-        setInterval(updateDateTime, 1000);
+        $(document).ready(function () {
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                editable: true,
+                events: [
+                    // Sample data; replace this with dynamic data from your database
+                    {
+                        title: 'Patient Appointment',
+                        start: '2024-10-20'
+                    },
+                    {
+                        title: 'Nurse Shift',
+                        start: '2024-10-21'
+                    }
+                ]
+            });
+
+            // Patient Chart
+            var ctx = document.getElementById('patientChart').getContext('2d');
+            var patientChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                    datasets: [{
+                        label: 'Patients This Week',
+                        data: [12, 19, 3, 5, 2, 3, 7],
+                        backgroundColor: 'rgba(29, 222, 188, 0.6)',
+                        borderColor: 'rgba(29, 222, 188, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            // Show current date and time
+            setInterval(function () {
+                var now = new Date();
+                $('#datetime').text(now.toLocaleString());
+            }, 1000);
+        });
     </script>
-    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

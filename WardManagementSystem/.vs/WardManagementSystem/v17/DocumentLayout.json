@@ -1,7 +1,48 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\kenneth malgas\\desktop\\ont pro web view\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\repository\\sisternurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\repository\\sisternurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\kenneth malgas\\desktop\\ont pro web view\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\repository\\isisternurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\repository\\isisternurserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\kenneth malgas\\desktop\\ont pro web view\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\models\\viewmodels\\sisternursedashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\models\\viewmodels\\sisternursedashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\kenneth malgas\\desktop\\ont pro web view\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\models\\domain\\sisternursetask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\models\\domain\\sisternursetask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\kenneth malgas\\desktop\\ont pro web view\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\models\\domain\\sisternursetasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\models\\domain\\sisternursetasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\kenneth malgas\\desktop\\ont pro web view\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\controllers\\sisternursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\controllers\\sisternursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\kenneth malgas\\desktop\\ont pro web view\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\shared\\_layoutsisternurse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\shared\\_layoutsisternurse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\kenneth malgas\\desktop\\ont pro web view\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\views\\shared\\_layoutnurse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\views\\shared\\_layoutnurse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|c:\\users\\kenneth malgas\\desktop\\ont pro web view\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B444C06-9415-4152-A0A2-3A5FB796E66D}|WardManagementSystem\\WardManagementSystem.csproj|solutionrelative:wardmanagementsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|c:\\users\\kenneth malgas\\desktop\\ont pro web view\\wardmanagementsystem\\wardmanagementsystem\\wardmanagementsystem.data\\models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E8C4E2-E94E-413E-B2E4-1B37CBAE10ED}|WardManagementSystem.Data\\WardManagementSystem.Data.csproj|solutionrelative:wardmanagementsystem.data\\models\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,47 +50,137 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SisterNurseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\SisterNurseRepository.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Repository\\SisterNurseRepository.cs",
+              "ToolTip": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\SisterNurseRepository.cs",
+              "RelativeToolTip": "WardManagementSystem.Data\\Repository\\SisterNurseRepository.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwEgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T14:41:56.271Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ISisterNurseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\ISisterNurseRepository.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Repository\\ISisterNurseRepository.cs",
+              "ToolTip": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Repository\\ISisterNurseRepository.cs",
+              "RelativeToolTip": "WardManagementSystem.Data\\Repository\\ISisterNurseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T14:41:22.35Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SisterNurseTask.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\Domain\\SisterNurseTask.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Models\\Domain\\SisterNurseTask.cs",
+              "ToolTip": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\Domain\\SisterNurseTask.cs",
+              "RelativeToolTip": "WardManagementSystem.Data\\Models\\Domain\\SisterNurseTask.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T14:38:23.938Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SisterNurseController.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\SisterNurseController.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Controllers\\SisterNurseController.cs",
+              "ToolTip": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\SisterNurseController.cs",
+              "RelativeToolTip": "WardManagementSystem\\Controllers\\SisterNurseController.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAUwGkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T14:33:01.686Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SisterNurseDashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\ViewModels\\SisterNurseDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Models\\ViewModels\\SisterNurseDashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\ViewModels\\SisterNurseDashboardViewModel.cs",
+              "RelativeToolTip": "WardManagementSystem.Data\\Models\\ViewModels\\SisterNurseDashboardViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T14:31:29.478Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SisterNurseTasks.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\Domain\\SisterNurseTasks.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Models\\Domain\\SisterNurseTasks.cs",
+              "ToolTip": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\Domain\\SisterNurseTasks.cs",
+              "RelativeToolTip": "WardManagementSystem.Data\\Models\\Domain\\SisterNurseTasks.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T14:30:30.765Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_LayoutSisterNurse.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_LayoutSisterNurse.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Shared\\_LayoutSisterNurse.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_LayoutSisterNurse.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Shared\\_LayoutSisterNurse.cshtml",
+              "ViewState": "AQIAABkBAAAAAAAAAAAAAC4BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T14:03:57.457Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_LayoutNurse.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_LayoutNurse.cshtml",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Views\\Shared\\_LayoutNurse.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Views\\Shared\\_LayoutNurse.cshtml",
+              "RelativeToolTip": "WardManagementSystem\\Views\\Shared\\_LayoutNurse.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T14:03:29.206Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WardManagementSystem\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T13:20:28.066Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "WardManagementSystem.Data\\Models\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\Models\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "WardManagementSystem.Data\\Models\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T13:19:52.21Z",
+              "EditorCaption": ""
             }
           ]
         }
