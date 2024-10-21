@@ -10586,19 +10586,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\naido\\.nuget\\packages\\": {}
+    "C:\\Users\\sodie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
       "projectName": "WardManagementSystem",
-      "projectPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\naido\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\",
+      "projectPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\sodie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\naido\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sodie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10613,8 +10613,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
-              "projectPath": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj"
+            "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
+              "projectPath": "C:\\Users\\sodie\\Desktop\\WardSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj"
             }
           }
         }
