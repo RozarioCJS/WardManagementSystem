@@ -21,11 +21,7 @@
 }
 
 <style>
-    /*  // FIND A WAY TO GET RID OF WHITE SPACE NEXT TO NAVIGATION BAR ON THE RIGHT!!!! */ 
-    /* * {
-        box-sizing: border-box;            
-    } */ 
-
+    
     .row {
         display: flex;
         margin-left: -11.9px;
@@ -69,11 +65,10 @@
     @* Drop down list that displays patient name but has patientID as its value *@
     @using (Html.BeginForm("DisplayAll", "PatientFile", FormMethod.Get))
     {
+        <label>Please select the patient you would like to view:</label>
         @Html.DropDownList("PatientID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
         <input type="submit" value="Search" class="btn btn-primary" />
     }
-    @* @Html.DropDownList("PatientID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
-    <input type="submit" value="Search" class="btn btn-primary" /> *@
 
     @if (patientFileViewModels != null && patientFileViewModels.Any())
     {

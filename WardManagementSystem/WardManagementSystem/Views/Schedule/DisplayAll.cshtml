@@ -45,7 +45,7 @@
     @* Drop down list that displays patient name but has patientID as its value *@
     @using (Html.BeginForm("DisplayAll", "Schedule", FormMethod.Get))
     {
-        <label>Select Patient:</label>
+        <label>Please select the patient you would like to view:</label>
         @Html.DropDownList("PatientID", (SelectList)@ViewBag.SelectList, "-select-", htmlAttributes: new { @class = "form-control" })
         <input type="submit" value="Search" class="btn btn-primary" />
     }

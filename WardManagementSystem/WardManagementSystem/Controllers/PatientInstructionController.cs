@@ -54,6 +54,7 @@ namespace WardManagementSystem.Controllers
 
 
         //add
+        [HttpGet]
         public async Task<IActionResult> Add()
         {
             //filling the drop down list with patient names
@@ -89,7 +90,7 @@ namespace WardManagementSystem.Controllers
 
                 if (addInstruction)
                 {
-                    TempData["msg"] = "Successfully Added!";
+                    TempData["msg"] = "Successfully Added! Please select patient to view the addition.";
                 }
                 else
                 {
@@ -124,7 +125,7 @@ namespace WardManagementSystem.Controllers
                 bool deleteInstruction = await _patientInstructionRepo.DeleteAsync(id);
                 if (deleteInstruction)
                 {
-                    TempData["msg"] = "Successfully Deleted!";
+                    TempData["msg"] = "Successfully Deleted! Please select patient to view the deletion.";
                 }
                 else
                 {
@@ -140,6 +141,7 @@ namespace WardManagementSystem.Controllers
         }
 
         //edit
+        [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
             //filling the drop down list
@@ -172,7 +174,7 @@ namespace WardManagementSystem.Controllers
                 bool updateInstruction = await _patientInstructionRepo.UpdateAsync(patient_instruction);
                 if (updateInstruction)
                 {
-                    TempData["msg"] = "Successfully Updated!";
+                    TempData["msg"] = "Successfully Updated! Please select patient to view the update.";
                 }
                 else
                 {
