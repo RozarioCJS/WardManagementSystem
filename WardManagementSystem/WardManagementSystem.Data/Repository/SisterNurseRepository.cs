@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using WardManagementSystem.Data.DataAccess;
+using iText.Commons.Actions.Contexts;
 
 namespace WardManagementSystem.Data.Repository
 {
@@ -64,5 +65,12 @@ namespace WardManagementSystem.Data.Repository
             string query = "sp_get_sister_nurses";
             return await _db.GetData<SisterNurse, dynamic>(query, new { });
         }
+
+        public async Task<IEnumerable<SisterNurseTask>> GetTasksAsync(int sisterNurseId)
+        {
+            var tasks = await _db.GetData<SisterNurseTask, dynamic>("sp_get_sister_nurse_tasks", new { SisterNurseId = sisterNurseId });
+            return tasks;
+        }
+
     }
 }

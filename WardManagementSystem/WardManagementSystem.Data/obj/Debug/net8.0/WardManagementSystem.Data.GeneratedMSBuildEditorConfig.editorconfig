@@ -8,6 +8,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WardManagementSystem.Data
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\ayden\OneDrive\Desktop\WardSystem3\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\
+=======
+build_property.ProjectDir = C:\Users\Kenneth Malgas\Desktop\ONT pro web view\WardManagementSystem\WardManagementSystem\WardManagementSystem.Data\
+>>>>>>> 764d11cfeeab669750461fcbac94e8575fff4f81
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem3\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem3\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
         "packagesPath": "C:\\Users\\ayden\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem3\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\obj\\",
+=======
+    "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
+        "projectName": "WardManagementSystem.Data",
+        "projectPath": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj",
+        "packagesPath": "C:\\Users\\Kenneth Malgas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\obj\\",
+>>>>>>> 764d11cfeeab669750461fcbac94e8575fff4f81
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\ayden\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Kenneth Malgas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 764d11cfeeab669750461fcbac94e8575fff4f81
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +44,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,10 +100,11 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem3\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -95,12 +113,26 @@
         "projectPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem3\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
         "packagesPath": "C:\\Users\\ayden\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem3\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\",
+=======
+    "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
+        "projectName": "WardManagementSystem",
+        "projectPath": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\Kenneth Malgas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\",
+>>>>>>> 764d11cfeeab669750461fcbac94e8575fff4f81
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\ayden\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Kenneth Malgas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 764d11cfeeab669750461fcbac94e8575fff4f81
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -109,15 +141,19 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem3\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
                 "projectPath": "C:\\Users\\ayden\\OneDrive\\Desktop\\WardSystem3\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj"
+=======
+              "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj": {
+                "projectPath": "C:\\Users\\Kenneth Malgas\\Desktop\\ONT pro web view\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem.Data\\WardManagementSystem.Data.csproj"
+>>>>>>> 764d11cfeeab669750461fcbac94e8575fff4f81
               }
             }
           }
@@ -181,7 +217,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

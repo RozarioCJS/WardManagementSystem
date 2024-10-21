@@ -15,5 +15,8 @@ namespace WardManagementSystem.Data.Models.ViewModels
         public int DoctorID { get; set; }
         public int ConsumableManagerID { get; set; }
         public int PrescriptionManagerID { get; set; }
+        public int SisterID { get; set; }
+        public int NurseID { get; set; }
+
     }
 }

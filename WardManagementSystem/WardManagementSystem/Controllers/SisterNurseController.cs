@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WardManagementSystem.Data.Models.Domain;
+using WardManagementSystem.Data.Models.ViewModels;
 using WardManagementSystem.Data.Repository;
 
 namespace WardManagementSystem.Controllers
@@ -12,9 +13,16 @@ namespace WardManagementSystem.Controllers
         {
             _sisterNurseRepo = sisterNurseRepo;
         }
-        public IActionResult Dashboard()
+
+        public async Task<IActionResult> Dashboard()
         {
-            return View();
+            // Fetch data relevant for the dashboard (e.g., tasks, statistics)
+            var tasks = await _sisterNurseRepo.GetTasksAsync(); // Assuming this method exists
+            var model = new SisterNurseDashboardViewModel
+            {
+                Tasks = tasks
+            };
+            return View(model);
         }
 
         public async Task<IActionResult> Add()
@@ -25,12 +33,19 @@ namespace WardManagementSystem.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(SisterNurse sisterNurse)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(sisterNurse);
+            }
+
             var result = await _sisterNurseRepo.AddAsync(sisterNurse);
             if (result)
             {
                 return RedirectToAction(nameof(DisplayAll));
             }
-            return View();
+
+            ModelState.AddModelError("", "Error adding Sister Nurse.");
+            return View(sisterNurse);
         }
 
         public async Task<IActionResult> Edit(int id)
@@ -46,12 +61,19 @@ namespace WardManagementSystem.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(SisterNurse sisterNurse)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(sisterNurse);
+            }
+
             var result = await _sisterNurseRepo.UpdateAsync(sisterNurse);
             if (result)
             {
                 return RedirectToAction(nameof(DisplayAll));
             }
-            return View();
+
+            ModelState.AddModelError("", "Error updating Sister Nurse.");
+            return View(sisterNurse);
         }
 
         public async Task<IActionResult> GetById(int id)
@@ -73,7 +95,11 @@ namespace WardManagementSystem.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var result = await _sisterNurseRepo.DeleteAsync(id);
-            return RedirectToAction(nameof(DisplayAll));
+            if (result)
+            {
+                return RedirectToAction(nameof(DisplayAll));
+            }
+            return NotFound();
         }
     }
 }
