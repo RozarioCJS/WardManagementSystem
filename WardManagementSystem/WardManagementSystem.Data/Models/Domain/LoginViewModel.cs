@@ -11,8 +11,6 @@ namespace PatientCareSubsystem.UI.Models
         public int AdminID { get; set; }
         public int WardAdminID { get; set; }
         public int DoctorID { get; set; }       //to allow for a specific doctor's information to be displayed 
-        public int NurseID { get; set; }
-        public int SisterID { get; set; }
-        //when that doctor logs in.
+                                                //when that doctor logs in.
     }
 }

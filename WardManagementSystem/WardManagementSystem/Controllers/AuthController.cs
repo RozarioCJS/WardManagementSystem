@@ -41,11 +41,6 @@ public class AuthController : Controller
             HttpContext.Session.SetInt32("AdminID", user.AdminID);
             HttpContext.Session.SetString("DoctorID", user.DoctorID.ToString());
             HttpContext.Session.SetString("WardAdminID", user.WardAdminID.ToString());
-            HttpContext.Session.SetString("SisterID", user.SisterID.ToString());
-            HttpContext.Session.SetString("NurseID", user.NurseID.ToString());
-            
-            
-
 
             // Redirect to the respective dashboard
             if (user.Role == "Nurse")
@@ -86,18 +81,13 @@ public class AuthController : Controller
         // Use Dapper to fetch user from the database and validate password
         using (var connection = new SqlConnection(connectionString))
         {
-            var sql = "SELECT u.UserName, u.Password, u.Role, d.DoctorID, cm.ConsumableManagerID, sm.PrescriptionManagerID, a.AdminID, wa.WardAdminID, n.NurseID, sn.SisterID, d.LastName, cm.LastName, sm.LastName, a.LastName, wa.LastName, n.LastName, sn.LastName FROM " +
-                      "[User] AS u " +
-                      "LEFT JOIN [DOCTOR] AS d ON u.UserID = d.UserID " +
-                      "LEFT JOIN Consumable_Manager AS cm ON u.UserID = cm.UserID " +
-                      "LEFT JOIN Prescription_Manager AS sm ON u.UserID = sm.UserID " +
-                      "LEFT JOIN Admin AS a ON u.UserID = a.UserID " +
-                      "LEFT JOIN Ward_Administrator AS wa ON u.UserID = wa.UserID " +
-                      "LEFT JOIN Nursing_Sister AS sn ON u.UserID = sn.UserID " + // Added space at the end of this line
-                      "LEFT JOIN Nurse AS n ON u.UserID = n.UserID " + // Added space at the end of this line
-                      "WHERE Username = @UserName AND Password = @Password"; // Added space at the beginning of this line
-
-
+            var sql = "SELECT u.UserName, u.Password, u.Role, d.DoctorID,cm.ConsumableManagerID, sm.PrescriptionManagerID, a.AdminID, wa.WardAdminID, n.NurseID, d.LastName, cm.LastName, sm.LastName, a.LastName, wa.LastName, n.LastName FROM " +
+                "[User] AS u LEFT JOIN [DOCTOR] AS d ON u.UserID = d.UserID " +
+                "LEFT JOIN Consumable_Manager AS cm ON u.UserID = cm.UserID " +
+                "LEFT JOIN Prescription_Manager AS sm ON u.UserID = sm.UserID " +
+                "LEFT JOIN Admin AS a ON u.UserID = a.UserID " +
+                "LEFT JOIN Ward_Administrator AS wa ON u.UserID = wa.UserID " +
+                "LEFT JOIN Nurse AS n ON u.UserID = n.UserID WHERE Username = @UserName AND Password = @Password";
             var user = connection.QuerySingleOrDefault<LoginViewModel>(sql, new { UserName = username, Password = password });
             return user; // Ensure you securely handle passwords (use hashing)
         }
