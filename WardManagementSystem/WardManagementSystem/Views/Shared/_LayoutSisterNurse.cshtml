@@ -1,0 +1,174 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@{
+    string LastName = HttpContextAccessor.HttpContext.Session.GetString("LastName");
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Sister Nurse Dashboard</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        .navbar-custom {
+            background-color: white; /* White background for the navbar */
+        }
+
+        .sidebar {
+            background-color: #1a1824; /* Sidebar background color */
+            height: 100vh; /* Full height */
+        }
+
+        .nav-link {
+            color: white; /* Quick links text color */
+            font-size: 12px; /* Decrease font size */
+            padding-right: 10px;
+        }
+
+            .nav-link:hover {
+                background-color: white; /* Accent color for hover effect */
+                color: #1a1824;
+            }
+
+        .hospital-logo {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem; /* Increase hospital name size */
+            color: white;
+            padding: 10px;
+        }
+
+        .nurse-info {
+            display: flex;
+            align-items: center; /* Aligns image and text */
+            margin-right: auto; /* Pushes the rest of the navbar items to the right */
+        }
+
+            .nurse-info img {
+                width: 40px; /* Adjust image size */
+                height: 40px; /* Adjust image size */
+                border-radius: 50%; /* Makes the image circular */
+                margin-right: 10px; /* Space between image and name */
+            }
+
+            .btn {
+                border: solid 1px white;
+                color: white;
+                margin-bottom: 20px;
+            }
+
+        .btn:hover {
+            background-color: white;
+            color: #1a1824;
+            border: solid 1px white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <div class="nurse-info">
+                    <img src="" alt="Sister Nurse Image" /> <!-- Update with the actual image path -->
+                    <span class="navbar-text" style="padding-left: 10px;">@LastName</span>
+                </div>
+                <div class="navbar-collapse collapse ms-auto">
+                    <div class="navbar-nav">
+                        <!-- You can add additional nav links here if needed -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row flex-grow-1">
+            <div class="sidebar col-auto col-md-2 d-flex flex-column">
+                <div class="hospital-logo">
+                    <img src="./images/peakyblinderlogo.png" height="20px" />
+                    <h5>Peaky Blinders Medical Centre</h5>
+                </div>
+                <ul class="nav nav-pills flex-column mt-4">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="SisterNurse" asp-action="Dashboard">
+                            <i class="bi bi-house"></i> <span class="fs-6 d-none d-sm-inline">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Patients" asp-action="Manage">
+                            <i class="bi bi-person-badge"></i> <span class="fs-6 d-none d-sm-inline">Patients</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="PatientRecords" asp-action="Manage">
+                            <i class="bi bi-folder2-open"></i> <span class="fs-6 d-none d-sm-inline">Patient Records</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="VitalSigns" asp-action="View">
+                            <i class="bi bi-clock-history"></i> <span class="fs-6 d-none d-sm-inline">Shift Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="IncidentReporting" asp-action="Report">
+                            <i class="bi bi-list-task"></i> <span class="fs-6 d-none d-sm-inline">Task Delegation</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Shift" asp-action="View">
+                            <i class="bi bi-calendar-range"></i> <span class="fs-6 d-none d-sm-inline">Scheduling</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="DoctorInstructions" asp-action="View">
+                            <i class="bi bi-file-earmark-medical"></i> <span class="fs-6 d-none d-sm-inline">Doctor Instructions</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Tasks" asp-action="View">
+                            <i class="bi bi-check-circle"></i> <span class="fs-6 d-none d-sm-inline">Tasks</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Reports" asp-action="View">
+                            <i class="bi bi-file-earmark-bar-graph"></i> <span class="fs-6 d-none d-sm-inline">Reports</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="mt-auto p-3">
+                    <p class="text-white">Welcome, <i class="bi bi-person-fill"></i> @LastName</p>
+                    <span id="datetime" class="text-white"></span>
+                </div>
+                <a class="btn btn-outline-info" asp-area="" asp-controller="LandingPage" asp-action="Home">
+                    <h6>Logout</h6>
+                </a>
+            </div>
+
+            <div class="col">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const currentDateTime = now.toLocaleString();
+            document.querySelector('#datetime').textContent = currentDateTime;
+        }
+        setInterval(updateDateTime, 1000);
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

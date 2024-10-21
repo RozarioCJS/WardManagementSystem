@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YDbSlmEbhWADk5yA9DiSZ9S86+EDaQ2c77Ahj9FWVNE=",
+  "Hash": "lBeoD+eUq5/NfGBIhOytAowTyIbJN19kdmSFA39eQ78=",
   "Source": "WardManagementSystem",
   "BasePath": "_content/WardManagementSystem",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WardManagementSystem\\wwwroot",
       "Source": "WardManagementSystem",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WardManagementSystem.styles.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WardManagementSystem.styles.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "WardManagementSystem.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WardManagementSystem.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WardManagementSystem.styles.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WardManagementSystem.bundle.scp.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WardManagementSystem.bundle.scp.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "WardManagementSystem.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WardManagementSystem.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WardManagementSystem.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\css\\site.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\favicon.ico",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\hero-background.jpg",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\hero-background.jpg",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "hero-background.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\hero-background.jpg"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\home-page-doctors-image.jpg",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\home-page-doctors-image.jpg",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "home-page-doctors-image.jpg",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\home-page-doctors-image.jpg"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\article1.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\article1.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/article1.png",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\article1.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\article2.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\article2.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/article2.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\article2.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\article3.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\article3.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/article3.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\article3.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\article4.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\article4.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/article4.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\article4.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\doctor1.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\doctor1.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/doctor1.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\doctor1.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\doctor2.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\doctor2.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/doctor2.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\doctor2.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\doctor3.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\doctor3.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/doctor3.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\doctor3.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\clock.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\clock.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/icons/clock.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\clock.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\envelope.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\envelope.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/icons/envelope.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\envelope.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\facebook.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\facebook.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/icons/facebook.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\facebook.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\heart.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\heart.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/icons/heart.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\heart.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\instagram.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\instagram.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/icons/instagram.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\instagram.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\location.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\location.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/icons/location.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\location.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\phone-call.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\phone-call.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/icons/phone-call.png",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\phone-call.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\show.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\show.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/icons/show.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\show.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\twitter.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\icons\\twitter.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/icons/twitter.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\icons\\twitter.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\peakyblinderlogo.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\peakyblinderlogo.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/peakyblinderlogo.png",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\peakyblinderlogo.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\services-image1.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\services-image1.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/services-image1.png",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\services-image1.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\services-image2.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\images\\services-image2.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "images/services-image2.png",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\services-image2.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\js\\site.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\peaky-blinders-logo.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\peaky-blinders-logo.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "peaky-blinders-logo.png",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\peaky-blinders-logo.png"
     },
     {
-      "Identity": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\snake_icon.png",
+      "Identity": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\snake_icon.png",
       "SourceId": "WardManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\naido\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Kenneth Malgas\\Desktop\\WardManagementSystem\\WardManagementSystem\\WardManagementSystem\\wwwroot\\",
       "BasePath": "_content/WardManagementSystem",
       "RelativePath": "snake_icon.png",
       "AssetKind": "All",

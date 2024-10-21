@@ -2,39 +2,45 @@ using WardManagementSystem.Data.DataAccess;
 using WardManagementSystem.Data.Models.Services;
 using WardManagementSystem.Data.Repository;
 using WardManagementSystem.Data.Respository;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("connectionString");
-
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add your application's data access and repository services
 builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddTransient<IAdminRepository, AdminRepository>();
-//Rozario's Services
+
+// Rozario's Services
 builder.Services.AddTransient<IScriptDetailsRepo, ScriptDetailsRepo>();
 builder.Services.AddTransient<IWardConsumableRepository, WardConsumableRepository>();
 builder.Services.AddScoped<PDFService>();
-//Ryan's Services
+
+// Ryan's Services
 builder.Services.AddTransient<IPatientInstructionRepo, PatientInstructionRepo>();
 builder.Services.AddTransient<IScriptRepo, ScriptRepo>();
 builder.Services.AddTransient<IScriptDetailRepo, ScriptDetailRepo>();
 builder.Services.AddTransient<IScheduleRepo, ScheduleRepo>();
 builder.Services.AddTransient<IPatientFileRepo, PatientFileRepo>();
 builder.Services.AddTransient<IVisitRepo, VisitRepo>();
-//Kenneth's Services
-builder.Services.AddTransient<ISqlDataAccess, SqlDataAccess>();
+
+// Kenneth's Services
 builder.Services.AddTransient<INurseRepository, NurseRepository>();
 builder.Services.AddTransient<ISisterNurseRepository, SisterNurseRepository>();
 builder.Services.AddTransient<INurseScheduleRepository, NurseScheduleRepository>();
-//Ayden's Services
+
+// Ayden's Services
 builder.Services.AddTransient<IBedsRepository, BedsRepository>();
 builder.Services.AddTransient<IAdmissionRepository, AdmissionRepository>();
 builder.Services.AddTransient<IPatientFolderRepository, PatientFolderRepository>();
 builder.Services.AddTransient<IPatientRepository, PatientRepository>();
 builder.Services.AddTransient<IWardRepository, WardRepository>();
-//To gain acces to HttpContext in the view
+
+// To gain access to HttpContext in the view
 builder.Services.AddHttpContextAccessor();
 
 // Session and Cache configuration
@@ -52,7 +58,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -60,10 +65,12 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 app.UseSession(); // Ensure session is used here
 app.UseAuthentication();
 app.UseAuthorization();
 
+// Define routes
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=LandingPage}/{action=Home}/{id?}");
