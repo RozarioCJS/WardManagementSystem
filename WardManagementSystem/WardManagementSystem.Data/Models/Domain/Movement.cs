@@ -9,8 +9,6 @@ namespace WardManagementSystem.Data.Models.Domain
         [Required]
         public int PatientMovementId { get; set; }
         [Required]
-        public string Location { get; set; }
-        [Required]
         public DateTime DateTime { get; set; }
         [Required]
         public int PatientId { get; set; }

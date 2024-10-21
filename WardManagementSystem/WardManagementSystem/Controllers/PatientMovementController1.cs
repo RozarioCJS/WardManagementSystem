@@ -24,7 +24,7 @@ namespace WardManagementSystem.Controllers
                     WardId = wardId,
                     BedId = bedId,
                     DateTime = DateTime.Now,
-                    Location = $"Moved to Ward {wardId}"
+
                 };
 
                 bool moveSuccess = await _movementRepo.AddMovementAsync(movement);
@@ -43,7 +43,7 @@ namespace WardManagementSystem.Controllers
                 TempData["msg"] = "An error occurred while transferring the patient.";
             }
 
-            return RedirectToAction("DisplayPatientMovements", new { patientId });
+            return View();
         }
 
 

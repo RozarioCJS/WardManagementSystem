@@ -16,7 +16,8 @@ namespace WardManagementSystem.Data.Models.Domain
         [Required]
         public string LastName { get; set; }
 
-        public int AllergyId { get; set; }
+        public int AllergyID { get; set; }
+        public string ChronicMedication { get; set; }
 
         public string Gender { get; set; }
 
@@ -24,8 +25,6 @@ namespace WardManagementSystem.Data.Models.Domain
         public string Email { get; set; }
         public string Address1 { get; set; }
         public string Address2 { get; set; }
-
-        public int WardId { get; set; }
 
     }
 }

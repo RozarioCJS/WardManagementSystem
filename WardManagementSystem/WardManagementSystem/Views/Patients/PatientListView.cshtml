@@ -1,0 +1,43 @@
+﻿@model IEnumerable<WardManagementSystem.Data.Models.ViewModels.PatientListViewModel>
+@{
+    Layout = "~/Views/Shared/_layoutAdmin.cshtml";
+}
+<style>
+    body {
+        background-image: url('/snake_icon.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+<body>
+    <h1>Patients</h1>
+    <hr />
+    <a asp-action="AddPatient" class="btn btn-outline-primary">Add Patient</a>
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Patient ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Allergy</th>
+                    <th>Chronic Medication</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="clickable-row" data-href="@Url.Action("DisplayAllPatients", "Patients", new { id = item.PatientID })">
+                        <td>@item.PatientID</td>
+                        <td>@item.FirstName</td>
+                        <td>@item.LastName</td>
+                        <td>@item.AlleryName</td>
+                        <td>@item.ChronicMedication</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</body>

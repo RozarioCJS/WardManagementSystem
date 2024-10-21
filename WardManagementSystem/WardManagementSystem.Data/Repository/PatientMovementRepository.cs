@@ -20,7 +20,7 @@ namespace WardManagementSystem.Data.Repository
         {
             try
             {
-                await _db.SaveData("sp_InsertMovement", movement);
+                await _db.SaveData("sp_TrackPatientMovement", movement);
                 return true;
             }
             catch
@@ -46,5 +46,6 @@ namespace WardManagementSystem.Data.Repository
                 return false;
             }
         }
+        
     }
 }

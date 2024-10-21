@@ -23,7 +23,7 @@ namespace WardManagementSystem.Data.Repository
 
             try
             {
-                await _db.SaveData("sp_InsertPatient", new { patients});
+                await _db.SaveData("sp_InsertPatient", new { patients.FirstName, patients.LastName, patients.AllergyID, patients.ChronicMedication, patients.ContactNumber, patients.Email, patients.Address1, patients.Address2, patients.Gender });
                 return true;
             }
 
@@ -45,15 +45,15 @@ namespace WardManagementSystem.Data.Repository
             }
         }
 
-        public async Task<IEnumerable<Patient>> GetAllPatientsAsync()
-        {
-            string query = "sp_GetPatientDetails";
-            return await _db.GetData<Patient, dynamic>(query, new { });
-        }
+        //public async Task<IEnumerable<Patient>> GetAllPatientsAsync()
+        //{
+        //    string query = "sp_GetPatientDetails";
+        //    return await _db.GetData<Patient, dynamic>(query, new { });
+        //}
 
-        public async Task<Patient> GetPatientByIdAsync(int id)
+        public async Task<PatientsDisplayViewModel> GetPatientByIdAsync(int id)
         {
-            IEnumerable<Patient> result = await _db.GetData<Patient, dynamic>("sp_GetPatientDetails", new { PatientID = id });
+            IEnumerable<PatientsDisplayViewModel> result = await _db.GetData<PatientsDisplayViewModel, dynamic>("sp_GetPatientDetails", new { PatientID = id });
             return result.FirstOrDefault();
         }
 
@@ -75,6 +75,16 @@ namespace WardManagementSystem.Data.Repository
             {
                 return false;
             }
+        }
+        public async Task<IEnumerable<AllergyNameViewModel>> GetAllergyName()
+        {
+            var query = "sp_AllergyFullName";
+            return await _db.GetData<AllergyNameViewModel, dynamic>(query, new { });
+        }
+        public async Task<IEnumerable<PatientListViewModel>> GetPatientListAsync()
+        {
+            var query = "sp_PatientList";
+            return await _db.GetData<PatientListViewModel, dynamic>(query, new { });
         }
 
     }

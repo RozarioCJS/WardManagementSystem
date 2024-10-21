@@ -13,6 +13,7 @@ namespace WardManagementSystem.Data.Models.ViewModels
         public string PatientFullName { get; set; }
         public string AllergyName { get; set;}
         public string Gender { get; set;}   
+        public string ChronicMedication { get; set;}
         public int ContactNumber { get; set;}
         public string Email { get; set;}
         public string Address1 { get; set;}

@@ -10,11 +10,13 @@ namespace WardManagementSystem.Data.Repository
 {
     public interface IPatientRepository
     {
-        Task<IEnumerable<Patient>> GetAllPatientsAsync();  
-        Task<Patient> GetPatientByIdAsync(int id);  
+        //Task<IEnumerable<Patient>> GetAllPatientsAsync();  
+        Task<PatientsDisplayViewModel> GetPatientByIdAsync(int id);  
         Task<bool> AddPatientAsync(Patient patient);  
         Task<bool> UpdatePatientAsync(Patient patient);  
         Task<bool> DeletePatientAsync(int id);
         Task<IEnumerable<PatientsDisplayViewModel>> GetPatientInfo();
+        Task<IEnumerable<AllergyNameViewModel>> GetAllergyName();
+        Task<IEnumerable<PatientListViewModel>> GetPatientListAsync();
     }
 }
