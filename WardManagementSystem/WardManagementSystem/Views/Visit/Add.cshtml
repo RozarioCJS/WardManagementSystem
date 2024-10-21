@@ -21,20 +21,9 @@
 
     body {
         background-image: url('/snake_icon.png');
-        /* background-size: cover; */
         background-repeat: no-repeat;
         background-position: right;
     }
-    /* .container {
-        display: flex;
-        align-items: center;
-        padding: 20px;
-        background-image: url('~/snake_icon.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100vh;
-    } */
 
     a {
         color: white;
@@ -77,14 +66,18 @@
                                     <span asp-validation-for="VisitNote" class="text-danger"></span>
                                 </div>
                             </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-4"></div>
                             <div class="col-md-4">
                                 <div class="form-group form-check">
-                                    <label asp-for="DischargePatient" class="control-label" ></label>
+                                    <label asp-for="DischargePatient" class="control-label"></label>
                                     <input class="form-check-input" asp-for="DischargePatient" /> @* @Html.DisplayNameFor(model => model.DischargePatient) *@
                                 </div>
                             </div>
+                            <div class="col-md-4"></div>
                         </div>
-                        <br />
                         <br />
                         <div class="row">
                             <div class="col-md-4"></div>
