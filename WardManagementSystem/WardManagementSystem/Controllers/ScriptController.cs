@@ -52,6 +52,7 @@ namespace WardManagementSystem.Controllers
 
 
         //add
+        [HttpGet]
         public async Task<IActionResult> Add()
         {
             //filling the drop down list (patient full name)
@@ -99,7 +100,7 @@ namespace WardManagementSystem.Controllers
                 bool addScript = await _scriptRepo.AddAsync(script, doctorID);
                 if (addScript)
                 {
-                    TempData["msg"] = "Successfully Added!";
+                    TempData["msg"] = "Successfully Added! Please select patient to view the addition.";
                 }
                 else
                 {
@@ -127,7 +128,7 @@ namespace WardManagementSystem.Controllers
                 bool deleteScript = await _scriptRepo.DeleteAsync(id);
                 if (deleteScript)
                 {
-                    TempData["msg"] = "Successfully Deleted!";
+                    TempData["msg"] = "Successfully Deleted! Please select patient to view the deletion.";
                 }
                 else
                 {
@@ -143,6 +144,7 @@ namespace WardManagementSystem.Controllers
         }
 
         //edit
+        [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
             //filling the drop down list (medication name)
@@ -176,7 +178,7 @@ namespace WardManagementSystem.Controllers
                 bool updateScript = await _scriptRepo.UpdateAsync(script);
                 if (updateScript)
                 {
-                    TempData["msg"] = "Successfully Updated!";
+                    TempData["msg"] = "Successfully Updated! Please select patient to view the update.";
                 }
                 else
                 {

@@ -77,22 +77,9 @@ namespace WardManagementSystem.Controllers
 
 
         //add
+        [HttpGet]
         public async Task<IActionResult> Add()
         {
-            ////filling the drop down list with doctor names
-            //var doctorFullName = await _scheduleRepo.GetDoctorFullNameAsync();
-            //ViewData["DoctorFullNameViewModel"] = doctorFullName;
-
-            //List<SelectListItem> doctors = new List<SelectListItem>();     //creating a list to store doctors
-            //foreach (DoctorFullNameViewModel d in doctorFullName)        //iterating through the data to fill the list with doctors
-            //{
-            //    doctors.Add(new SelectListItem { Value = d.DoctorID.ToString(), Text = d.DoctorName });     //doctor gets added to the list
-            //}
-            //ViewBag.Doctor = doctors;        //Setting a ViewBag to contain the list of doctors
-            //var selectListDoctor = new SelectList(doctors, "Value", "Text");    //setting the format to be carrient to drop down list
-            //ViewBag.SelectListDoctor = selectListDoctor;       //Stores the data with the correct format to be used in view with drop down list
-
-
             //filling the drop down list
             var patientComboBox = await _scheduleRepo.GetPatientFullNameAsync();
             ViewData["PatientComboViewModel"] = patientComboBox;
@@ -126,7 +113,7 @@ namespace WardManagementSystem.Controllers
                 bool addSchedule = await _scheduleRepo.AddAsync(schedule, doctorID);
                 if (addSchedule)
                 {
-                    TempData["msg"] = "Successfully Added!";
+                    TempData["msg"] = "Successfully Added! Please select patient to view the addition.";
                 }
                 else
                 {
@@ -157,7 +144,7 @@ namespace WardManagementSystem.Controllers
                 bool deleteSchedule = await _scheduleRepo.DeleteAsync(id);
                 if (deleteSchedule)
                 {
-                    TempData["msg"] = "Successfully Deleted!";
+                    TempData["msg"] = "Successfully Deleted! Please select patient to view the deletion.";
                 }
                 else
                 {
@@ -173,6 +160,7 @@ namespace WardManagementSystem.Controllers
         }
 
         //edit
+        [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
             //Searching for patient to be displayed
@@ -205,7 +193,7 @@ namespace WardManagementSystem.Controllers
                 bool updateSchedule = await _scheduleRepo.UpdateAsync(schedule);
                 if (updateSchedule)
                 {
-                    TempData["msg"] = "Successfully Updated!";
+                    TempData["msg"] = "Successfully Updated! Please select patient to view the edit.";
                 }
                 else
                 {
