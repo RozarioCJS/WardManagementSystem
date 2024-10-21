@@ -79,9 +79,36 @@
                         <td>@patientScriptViewModel.MedicationName</td>
                         <td>@patientScriptViewModel.Dosage</td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@patientScriptViewModel.ScriptID" class="btn btn-primary">Edit</a>
-                            <form asp-action="Delete" asp-route-id="@patientScriptViewModel.ScriptID" method="post" style="display:inline;">
-                                <button type="submit" class="btn btn-danger">Delete</button>
+                            <!--Edit button-->
+                            <form asp-action="Edit" method="get">
+                                <input asp-for="@patientScriptViewModel.ScriptID" type="hidden" name="Id" value="@patientScriptViewModel.ScriptID" />
+                                <button class="btn btn-outline-secondary" type="submit">Edit</button>
+                            </form>
+
+                            <!-- Delete Confirmation Modal -->
+                            <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="deleteConfirmationModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="deleteConfirmationModalLabel">Confirm Delete</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to delete this Script Detail?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                            <form id="deleteScriptForm" asp-action="Delete" method="post">
+                                                <input type="hidden" name="Id" id="scriptID" />
+                                                <button type="submit" class="btn btn-outline-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <input type="hidden" name="Id" value="@patientScriptViewModel.ScriptID" />
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal" onclick="setId('@patientScriptViewModel.ScriptID')">Delete</button>
                             </form>
                         </td>
                     </tr>
@@ -99,3 +126,8 @@
 
 </body>
 
+<script>
+    function setId(scriptID) {
+        document.getElementById('scriptID').value = scriptID;
+    }
+</script>

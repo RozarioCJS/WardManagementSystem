@@ -12,9 +12,9 @@
 <style>
     body {
         background-image: url('/snake_icon.png');
-        /* background-size: cover; */
         background-repeat: no-repeat;
         background-position: right;
+        /* background-size: auto; */
     }
     a.link {
         color: white;
@@ -68,9 +68,36 @@
                         <td>@patientInstructionViewModel.Instruction</td>
                         <td>@patientInstructionViewModel.Date.ToString("dd/MM/yyyy")</td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@patientInstructionViewModel.PatientInstructionID" class="btn btn-primary">Edit</a>
-                            <form asp-action="Delete" asp-route-id="@patientInstructionViewModel.PatientInstructionID" method="post" style="display:inline;">
-                                <button type="submit" class="btn btn-danger">Delete</button>
+                            <!--Edit button-->
+                            <form asp-action="Edit" method="get">
+                                <input asp-for="@patientInstructionViewModel.PatientInstructionID" type="hidden" name="Id" value="@patientInstructionViewModel.PatientInstructionID" />
+                                <button class="btn btn-outline-secondary" type="submit">Edit</button>
+                            </form>
+
+                            <!-- Delete Confirmation Modal -->
+                            <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="deleteConfirmationModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="deleteConfirmationModalLabel">Confirm Delete</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to delete this Instruction?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                            <form id="deleteInstructionForm" asp-action="Delete" method="post">
+                                                <input type="hidden" name="Id" id="patientInstructionID" />
+                                                <button type="submit" class="btn btn-outline-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <input type="hidden" name="Id" value="@patientInstructionViewModel.PatientInstructionID" />
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal" onclick="setId('@patientInstructionViewModel.PatientInstructionID')">Delete</button>
                             </form>
                         </td>
                     </tr>
@@ -85,3 +112,9 @@
     }
 
 </body>
+
+<script>
+    function setId(patientInstructionID) {
+        document.getElementById('patientInstructionID').value = patientInstructionID;
+    }
+</script>

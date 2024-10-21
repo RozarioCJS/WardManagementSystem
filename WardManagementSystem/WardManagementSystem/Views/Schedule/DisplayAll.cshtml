@@ -73,9 +73,36 @@
                         </td>
                         <td>@scheduleDisplayViewModel.Time</td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@scheduleDisplayViewModel.ScheduleID" class="btn btn-primary">Edit</a>
-                            <form asp-action="Delete" asp-route-id="@scheduleDisplayViewModel.ScheduleID" method="post" style="display:inline;">
-                                <button type="submit" class="btn btn-danger">Delete</button>
+                            <!--Edit button-->
+                            <form asp-action="Edit" method="get">
+                                <input asp-for="@scheduleDisplayViewModel.ScheduleID" type="hidden" name="Id" value="@scheduleDisplayViewModel.ScheduleID" />
+                                <button class="btn btn-outline-secondary" type="submit">Edit</button>
+                            </form>
+
+                            <!-- Delete Confirmation Modal -->
+                            <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="deleteConfirmationModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="deleteConfirmationModalLabel">Confirm Delete</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to delete this Schedule?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                            <form id="deleteScheduleForm" asp-action="Delete" method="post">
+                                                <input type="hidden" name="Id" id="scheduleID" />
+                                                <button type="submit" class="btn btn-outline-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <input type="hidden" name="Id" value="@scheduleDisplayViewModel.ScheduleID" />
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal" onclick="setId('@scheduleDisplayViewModel.ScheduleID')">Delete</button>
                             </form>
                         </td>
                     </tr>
@@ -90,3 +117,9 @@
     }
 
 </body>
+
+<script>
+    function setId(scheduleID) {
+        document.getElementById('scheduleID').value = scheduleID;
+    }
+</script>
